@@ -1,42 +1,219 @@
-body {
-    font-family: Arial, sans-serif;
+/* RESET CSS para remover margens e paddings padrão */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
 header {
-    background: #333;
+    background-color: black;
     color: white;
-    padding: 15px;
+    padding: 20px 0;
     text-align: center;
 }
 
-nav ul {
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    margin-top: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Seções */
 main {
-    text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Seção de boas-vindas */
+.welcome {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.welcome h2 {
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Seção de Pastores */
+.pastors-section {
+    margin-top: 40px;
+}
+
+.pastors-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.pastor {
+    background-color: #ffffff;
+    width: 48%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pastor img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.pastor h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pastor p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.pastor p:last-child {
+    margin-top: 10px;
+}
+
+/* Rodapé */
 footer {
-    background: #333;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Logo */
+.logo img {
+    max-width: 100%;  /* A imagem ocupará no máximo 100% da largura disponível */
+    height: auto;     /* A altura será ajustada automaticamente para manter a proporção */
+    max-height: 100px; /* Definir uma altura máxima para a imagem do logo */
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 768px (tablets e dispositivos móveis em modo paisagem) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .welcome h2 {
+        font-size: 1.8rem;
+    }
+
+    .welcome p {
+        font-size: 1rem;
+    }
+
+    .pastors-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pastor {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .pastor img {
+        max-width: 90%;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+    .welcome h2 {
+        font-size: 1.6rem;
+    }
+
+    .welcome p {
+        font-size: 0.95rem;
+    }
+
+    .pastor {
+        width: 100%;
+    }
+
+    .pastor img {
+        max-width: 100%;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
 }

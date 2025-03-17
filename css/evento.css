@@ -1,0 +1,37 @@
+/* Estilos para a agenda */
+table.agenda {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.agenda th, table.agenda td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table.agenda th {
+    background-color: #004a99;
+    color: white;
+    font-size: 1.1rem;
+}
+
+table.agenda td {
+    font-size: 1rem;
+}
+
+table.agenda tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.agenda tr:hover {
+    background-color: #eaeaea;
+}
+
+@media (max-width: 768px) {
+    table.agenda th, table.agenda td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
