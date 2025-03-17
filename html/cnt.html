@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CNT | Nome da Igreja</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cnt.css">
+    <link rel="icon" href="../img/favicon.png" type="logo">
 </head>
 <body>
     <header>
@@ -14,6 +16,8 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="quem somos.html">Quem Somos</a></li>
                 <li><a href="cnt.html">CNT</a></li>
+
+                <li><a href="ebnt.html">EBNT</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="on.html">Assista Agora</a></li>
                 <li><a href="sos.html">SOS</a></li>
@@ -22,6 +26,37 @@
             </ul>
         </nav>
     </header>
+
+
+    <main>
+        <section>
+            <h2>Sobre nossas células</h2>
+            <p>As células são pequenos grupos de fé que se reúnem semanalmente para compartilhar a Palavra de Deus, orar, cuidar uns dos outros e viver a comunhão cristã de forma mais íntima. Elas são o coração pulsante da Igreja Novo Tempo, pois nos permitem crescer em nossa jornada espiritual em um ambiente acolhedor e de apoio mútuo.</p>
+            <p>Em cada célula, você encontrará um espaço seguro para estudar a Bíblia, compartilhar experiências e ser edificado na fé. Além disso, as células são uma excelente oportunidade para desenvolver relacionamentos profundos e fortalecer a unidade da igreja. Se você deseja fazer parte de uma célula, entre em contato conosco ou participe de uma de nossas reuniões!</p>
+        </section>
+
+        <section>
+            <h2>Entre em contato para participar das células</h2>
+            <form action="enviar.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Igreja Novo Tempo - A igreja da família - Todos os direitos reservados.</p>
+    </footer>
+
     <main>
         <section>
             <h2>Sobre nossas células</h2>
@@ -31,5 +66,6 @@
     <footer>
         <p>&copy; 2025 Igreja Novo Tempo - A igreja da familia - Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>

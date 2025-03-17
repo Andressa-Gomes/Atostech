@@ -1,0 +1,46 @@
+/* Adicionar estilo para a seção de evangelismo */
+section h2 {
+    font-size: 1.8rem;
+    color: black;
+    margin-top: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Estilo para o versículo do dia */
+#versiculo {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
+    color: #007b3a;
+}
+
+/* Adicionar estilo para o formulário */
+form {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #004a99;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366;
+}
