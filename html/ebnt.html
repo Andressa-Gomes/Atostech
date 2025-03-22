@@ -12,7 +12,7 @@
 
     <header>
         
-        <h1>Escola Bíblica Novo Tempo</h1>
+        <h2>Escola Bíblica Novo Tempo</h2>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -26,6 +26,20 @@
                 <li><a href="generosidade.html">Generosidade</a></li>
             </ul>
         </nav>
+        <div class="Ouvir">
+            <button onclick="leitorDeTexto()">🔊 Ouvir Página</button>
+        
+            <div class="acessibilidade" class="container">
+                <label for="selecione"></label>
+                <select name="GrupoSelect" id="selecione">
+                <option value="" disabled selected>Escolha uma opção:</option>
+                <option value="cor">Alterar Cor Da Página</option>
+                <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
+                <option value="fonte-media">Tamanho de Fonte Médio</option>
+                <option value="fonte-grande">Tamanho de Fonte Grande</option>
+                <option value="reset">Voltar ao Padrão</option>
+                </select>
+            </div>
     </header>
 
     <main>
@@ -71,6 +85,6 @@
         <p>Endereço: Rua Exemplo, 123, Bairro Exemplo, Cidade Exemplo, Estado Exemplo</p>
         <p>Telefone: (11) 1234-5678 | Email: contato@escolabiblicanovotempo.com.br</p>
     </footer>
-
+    <script src="../Js/index.js"></script>
 </body>
 </html>

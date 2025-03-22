@@ -7,7 +7,8 @@
 
 /* Corpo da página */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Greze", serif;
+    /* font-family: 'Arial', sans-serif; */
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -15,10 +16,14 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: black;
+    /* background-color: black; */
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
+    margin: 0 20px; /* Adiciona margem nas laterais */
+    border-radius: 10px; /* (Opcional) Arredonda os cantos para um visual mais elegante */
 }
 
 header h1 {
@@ -29,7 +34,7 @@ header h1 {
 header nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 header nav ul li {
@@ -122,13 +127,82 @@ main {
     margin-top: 10px;
 }
 
+
+/* Acessibilidade */
+.Ouvir {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #dbdd; /* Fundo suave */
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 10px 0;
+}
+
+.Ouvir {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    background-color: #ddd; /* Fundo suave */
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 10px 0;
+    margin-left: auto; /* Move o container para a margem direita da tela */
+    width: fit-content; /* Ajusta a largura conforme o conteúdo */
+}
+
+.Ouvir img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o botão */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.Ouvir img:hover {
+    transform: scale(1.2); /* Aumenta levemente o ícone ao passar o mouse */
+}
+
+.Ouvir button {
+    background-color: #ddd; /* Cor de fundo do botão */
+    color: black; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animações suaves */
+}
+
+.Ouvir button:hover {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    /* background-color: #8938e069; Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+.Ouvir button:active {
+    background-color: #004494; /* Cor de fundo ao clicar */
+}
+#pageFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #B3E5FC; /* Pode ajustar conforme o tema da sua página */
+    text-align: center;
+    width: 100%;
+}
+
 /* Rodapé */
 footer {
-    background-color: #000000;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    /* background-color: black; */
     color: white;
+    padding: 10px 0;
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+    margin: 0 20px; /* Aumenta a margem lateral para melhor espaçamento */
+    border-radius: 5px; /* Mantém os cantos arredondados */
 }
 
 footer p {
@@ -139,7 +213,9 @@ footer p {
 .logo img {
     max-width: 100%;  /* A imagem ocupará no máximo 100% da largura disponível */
     height: auto;     /* A altura será ajustada automaticamente para manter a proporção */
-    max-height: 100px; /* Definir uma altura máxima para a imagem do logo */
+    max-height: 100px; /* Definir uma altura máxima para a imagem do logo 
+    */
+    border-radius: 50px;
 }
 
 /* Media Queries para Responsividade */
