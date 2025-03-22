@@ -1,67 +1,81 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Igreja</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/pastores.css">
-    <link rel="icon" href="img/favicon.png" type="logo">
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | Igreja</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/pastores.css">
+        <link rel="icon" href="img/favicon.png" type="logo">
+    </head>
+    <body>
 
-    <header>
-        <div class="logo">
-        <img src="img/logo.jpg" alt="Logo Igreja Novo Tempo">
-    </div>
-        <h1> A Igreja da Família</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/quem somos.html">Quem Somos</a></li>
-                <li><a href="html/cnt.html">CNT</a></li>
-                <li><a href="html/ebnt.html">EBNT</a></li>
-                <li><a href="html/eventos.html">Eventos</a></li>
-                <li><a href="html/on.html">Assista Agora</a></li>
-                <li><a href="html/sos.html">SOS</a></li>
-                <li><a href="html/localizacao.html">Localização</a></li>
-                <li><a href="html/generosidade.html">Generosidade</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="welcome">
-            <h2>Bem-vindo à nossa igreja!</h2>
-            <p>A Família NT é guiada com fé, amor e dedicação pelos Bispos Samuel Gonçalves dos Santos e Thais Paulino dos Santos. Com sabedoria, eles inspiram nossa igreja a crescer espiritualmente e viver os propósitos de Deus. Sob sua liderança, a Família NT se torna um lugar de transformação, acolhimento e fortalecimento, sempre lembrando que pessoas são mais importantes que coisas.</p>
-        </section>
-
-        <section class="pastors-section">
-            <h2>Conheça nossos pastores</h2>
-            <div class="pastors-container">
-                <div class="pastor">
-                    <img src="img/bispos.jpg" alt="bispos">
-                    <h3>Bispo Samuel e Bispa Thais</h3>
-                    <p>Samuel, gerente no ramo de vendas, e Thais, bioquímica na Pfizer, tinham carreiras promissoras, mas sentiam um vazio interior. Diante de um forte chamado de Deus, foram profundamente tocados pela necessidade das comunidades carentes e perceberam um chamado maior para servir a Deus <p> Enfrentaram desafios financeiros e a incompreensão de muitos, mas a fé os sustentou. Com o tempo, suas iniciativas prosperaram, impactando inúmeras vidas. Hoje, seguem firmes na missão, testemunhando que a verdadeira realização está em servir a Deus e ao próximo.</p>.</p>
+        <header>
+            <div class="logo">
+            <img src="img/logo.jpg" alt="Logo Igreja Novo Tempo">
+        </div>
+            <h1> A Igreja da Família</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/quem somos.html">Quem Somos</a></li>
+                    <li><a href="html/cnt.html">CNT</a></li>
+                    <li><a href="html/ebnt.html">EBNT</a></li>
+                    <li><a href="html/eventos.html">Eventos</a></li>
+                    <li><a href="html/on.html">Assista Agora</a></li>
+                    <li><a href="html/sos.html">SOS</a></li>
+                    <li><a href="html/localizacao.html">Localização</a></li>
+                    <li><a href="html/generosidade.html">Generosidade</a></li>
+                </ul>
+            </nav>
+            <div class="Ouvir">
+                <button onclick="leitorDeTexto()">🔊 Ouvir Página</button>
+            
+                <div class="acessibilidade" class="container">
+                    <label for="selecione"></label>
+                    <select name="GrupoSelect" id="selecione">
+                    <option value="" disabled selected>Escolha uma opção:</option>
+                    <option value="cor">Alterar Cor Da Página</option>
+                    <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
+                    <option value="fonte-media">Tamanho de Fonte Médio</option>
+                    <option value="fonte-grande">Tamanho de Fonte Grande</option>
+                    <option value="reset">Voltar ao Padrão</option>
+                    </select>
                 </div>
-                <div class="pastor">
-                    <img src="img/deboraecaio.jpg" alt="Pastor 2">
-                    <h3>Pastor Caio e Pastora Débora</h3>
-                    <p>Com corações dispostos e cheios de fé, ouviram atentamente a voz de Deus e, com coragem, deixaram para trás seus planos pessoais para abraçar o ministério pastoral. Hoje, são referência de liderança jovem, inspirando muitos com seu testemunho e dedicação.
+        </header>
 
-                        Atualmente, pastora Débora e pastor Caio servem no Nordeste, levando a mensagem do evangelho e fortalecendo a comunidade da nossa igreja. Com amor e compromisso, trabalham para transformar vidas, guiando jovens e famílias no caminho da fé. Além disso, dedicam-se ao ensino teológico, atuando como professores de teologia, compartilhando seu profundo conhecimento e experiência para formar futuros líderes espirituais. Seu exemplo é um reflexo do poder de Deus agindo através de corações dispostos a servi-Lo.
-                        
-                        </p>
-                        
+        <main>
+            <section class="welcome">
+                <h2>Bem-vindo à nossa igreja!</h2>
+                <p>A Família NT é guiada com fé, amor e dedicação pelos Bispos Samuel Gonçalves dos Santos e Thais Paulino dos Santos. Com sabedoria, eles inspiram nossa igreja a crescer espiritualmente e viver os propósitos de Deus. Sob sua liderança, a Família NT se torna um lugar de transformação, acolhimento e fortalecimento, sempre lembrando que pessoas são mais importantes que coisas.</p>
+            </section>
+
+            <section class="pastors-section">
+                <h2>Conheça nossos pastores</h2>
+                <div class="pastors-container">
+                    <div class="pastor">
+                        <img src="img/bispos.jpg" alt="bispos">
+                        <h3>Bispo Samuel e Bispa Thais</h3>
+                        <p>Samuel, gerente no ramo de vendas, e Thais, bioquímica na Pfizer, tinham carreiras promissoras, mas sentiam um vazio interior. Diante de um forte chamado de Deus, foram profundamente tocados pela necessidade das comunidades carentes e perceberam um chamado maior para servir a Deus <p> Enfrentaram desafios financeiros e a incompreensão de muitos, mas a fé os sustentou. Com o tempo, suas iniciativas prosperaram, impactando inúmeras vidas. Hoje, seguem firmes na missão, testemunhando que a verdadeira realização está em servir a Deus e ao próximo.</p>.</p>
+                    </div>
+                    <div class="pastor">
+                        <img src="img/deboraecaio.jpg" alt="Pastor 2">
+                        <h3>Pastor Caio e Pastora Débora</h3>
+                        <p>Com corações dispostos e cheios de fé, ouviram atentamente a voz de Deus e, com coragem, deixaram para trás seus planos pessoais para abraçar o ministério pastoral. Hoje, são referência de liderança jovem, inspirando muitos com seu testemunho e dedicação.
+
+                            Atualmente, pastora Débora e pastor Caio servem no Nordeste, levando a mensagem do evangelho e fortalecendo a comunidade da nossa igreja. Com amor e compromisso, trabalham para transformar vidas, guiando jovens e famílias no caminho da fé. Além disso, dedicam-se ao ensino teológico, atuando como professores de teologia, compartilhando seu profundo conhecimento e experiência para formar futuros líderes espirituais. Seu exemplo é um reflexo do poder de Deus agindo através de corações dispostos a servi-Lo.
+                            
+                            </p>
+                            
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2025 Igreja Novo Tempo - A igreja da família - Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-</html>
+        <footer>
+            <p>&copy; 2025 Igreja Novo Tempo - A igreja da família - Todos os direitos reservados.</p>
+        </footer>
+        <script src="./Js/index.js"></script>
+    </body>
+    </html>
