@@ -7,26 +7,45 @@
 
 /* Corpo da página */
 body {
+    
     font-family: "Greze", serif;
     /* font-family: 'Arial', sans-serif; */
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    
 }
+
+
 
 /* Cabeçalho */
 header {
     /* background-color: black; */
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
-
+    
     color: white;
-    padding: 10px 0;
+    padding: 10px 20px; /* Mantém espaço interno */
     text-align: center;
-    margin: 0 20px; /* Adiciona margem nas laterais */
-    border-radius: 10px; /* (Opcional) Arredonda os cantos para um visual mais elegante */
+    
+    max-width: 95%; /* Mantém um tamanho ajustado à tela */
+    margin: 10px auto; /* Centraliza e adiciona um pequeno espaçamento superior */
+    border-radius: 10px; /* Arredonda os cantos */
 }
 
-header h1 {
+   
+.titilo-pagina {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente (se necessário) */
+    text-align: center;
+}
+
+
+
+
+
+
+header h1 h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
@@ -205,8 +224,14 @@ footer {
     border-radius: 5px; /* Mantém os cantos arredondados */
 }
 
-footer p {
+footer p  {
     font-size: 1rem;
+    
+}
+.retornar{
+    font-size: 1rem;
+    color: white;
+
 }
 
 /* Logo */

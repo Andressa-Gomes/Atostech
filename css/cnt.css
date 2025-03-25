@@ -25,6 +25,7 @@ main {
 
 section {
     margin-bottom: 30px;
+    margin-right: 1px;
 }
 
 h2 {
@@ -52,6 +53,8 @@ form label {
     margin-bottom: 8px;
     color: #555;
 }
+.label-mengem{
+}
 
 form input, form textarea {
     width: 100%;
@@ -62,9 +65,7 @@ form input, form textarea {
     font-size: 1rem;
 }
 
-form textarea {
-    resize: vertical;
-}
+
 
 form button {
     background-color: #004a99;
