@@ -8,8 +8,7 @@
 /* Corpo da página */
 body {
     
-    font-family: "Greze", serif;
-    /* font-family: 'Arial', sans-serif; */
+    font-family: "Greze", serif,Arial,sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -74,6 +73,7 @@ header nav ul li a:hover {
 
 /* Seções */
 main {
+ font: 1em sans-serif;
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -230,9 +230,47 @@ footer p  {
 }
 .retornar{
     font-size: 1rem;
-    color: white;
+    color: black;
 
 }
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .midia-link-lista {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background 0.3s;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .midia-link-lista:hover {
+    background: #dbdd;
+  }
+  
+  .midia-link-lista li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .midia-link-lista img {
+    width: 20px;
+    height: 20px;
+  }
+  
 
 /* Logo */
 .logo img {
@@ -242,6 +280,7 @@ footer p  {
     */
     border-radius: 50px;
 }
+
 
 /* Media Queries para Responsividade */
 
@@ -283,10 +322,20 @@ footer p  {
         max-width: 90%;
     }
 
-    footer p {
+    footer p lu li{
         font-size: 0.9rem;
     }
 }
+
+@media (max-width: 480px) {
+    footer ul li {
+      width: 100%;
+    }
+  
+    footer p {
+      font-size: 9px;
+    }
+  }
 
 /* Para telas menores que 480px (smartphones) */
 @media (max-width: 480px) {
