@@ -26,10 +26,11 @@ header {
     padding: 10px 20px; /* Mantém espaço interno */
     text-align: center;
     
-    max-width: 95%; /* Mantém um tamanho ajustado à tela */
-    margin: 10px auto; /* Centraliza e adiciona um pequeno espaçamento superior */
-    border-radius: 10px; /* Arredonda os cantos */
+    width: 100%; /* Ocupa toda a largura da tela */
+    margin: 0; /* Remove qualquer margem */
+    border-radius: 0; /* Remove arredondamento */
 }
+
 
    
 .titilo-pagina {
@@ -183,6 +184,12 @@ main {
     transform: scale(1.2); /* Aumenta levemente o ícone ao passar o mouse */
 }
 
+.container {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens no lado direito */
+    align-items: center; /* Centraliza verticalmente */
+}
+
 .Ouvir button {
     background-color: #ddd; /* Cor de fundo do botão */
     color: black; /* Cor do texto do botão */
@@ -193,6 +200,7 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Animações suaves */
 }
+
 
 .Ouvir button:hover {
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
@@ -216,24 +224,30 @@ main {
 /* Rodapé */
 footer {
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
-    /* background-color: black; */
     color: white;
     padding: 10px 0;
     text-align: center;
-    margin: 0 20px; /* Aumenta a margem lateral para melhor espaçamento */
-    border-radius: 5px; /* Mantém os cantos arredondados */
+    margin: 0; /* Remove as margens laterais */
+    border-radius: 0; /* Remove arredondamento para alinhar com as bordas da tela */
+    width: 100%; /* Garante que ocupe toda a largura */
 }
+
 
 footer p  {
     font-size: 1rem;
     
 }
 .retornar{
+    margin-top: 20px;
     font-size: 1rem;
     color: black;
 
 }
 
+#volta {
+    width: 100%px;
+    height: 20px;
+}
 footer ul {
     list-style: none;
     padding: 0;
@@ -254,6 +268,7 @@ footer ul {
     font-size: 14px;
     font-weight: bold;
     color: #333;
+    margin-top: 10px;
   }
   
   .midia-link-lista:hover {
@@ -328,7 +343,7 @@ footer ul {
 }
 
 @media (max-width: 480px) {
-    footer ul li {
+    footer ul li a{
       width: 100%;
     }
   
@@ -363,7 +378,7 @@ footer ul {
         max-width: 100%;
     }
 
-    footer p {
+    footer p lu li {
         font-size: 0.8rem;
     }
 }
