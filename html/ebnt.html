@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escola Bíblica Novo Tempo</title>
+    <title>EBNT | Novo Tempo</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/sos.css">
+    <link rel="stylesheet" href="../css/ebnt.css">
     <link rel="icon" href="../img/favicon.png" type="logo">
+    
+    
 </head>
 <body>
-
     <header>
+        <div class="logo">
+        <img src="../img/logo.jpg" alt="Logo Igreja Novo Tempo">
+    </div>
+    <h1> Novo Tempo - A Igreja da Família</h1>
         
-        <h1>Escola Bíblica Novo Tempo</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -22,20 +27,39 @@
                 <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="on.html">Assista Agora</a></li>
                 <li><a href="sos.html">SOS</a></li>
-                <li><a href="localização.html">Localização</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
                 <li><a href="generosidade.html">Generosidade</a></li>
             </ul>
         </nav>
+       
+        <div class="Ouvir">
+            <button onclick="leitorDeTexto()">🔊 Ouvir Página</button>
+        
+            <div class="acessibilidade" class="container">
+                <label for="selecione"></label>
+                <select name="GrupoSelect" id="selecione">
+                <option value="" disabled selected>Escolha uma opção:</option>
+                <option value="cor">Alterar Cor Da Página</option>
+                <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
+                <option value="fonte-media">Tamanho de Fonte Médio</option>
+                <option value="fonte-grande">Tamanho de Fonte Grande</option>
+                <option value="reset">Voltar ao Padrão</option>
+                </select>
+            </div>
     </header>
+   
 
     <main>
+      
+      <h2 class="titilo-pagina">Escola Bíblica Novo Tempo</h2>
+
         <section class="welcome">
-            <h2>Bem-vindo à Escola Bíblica Novo Tempo!</h2>
+            <h3>Bem-vindo à Escola Bíblica Novo Tempo!</h3>
             <p>A nossa missão é proporcionar ensino bíblico de qualidade para capacitar líderes e todos aqueles que desejam conhecer mais sobre a palavra de Deus.</p>
         </section>
 
         <section class="courses">
-            <h2>Cursos Oferecidos</h2>
+            <h3>Cursos Oferecidos</h3>
             <div class="course-container">
                 <div class="course">
                     <h3>Cursos de Introdução à Bíblia</h3>
@@ -56,7 +80,7 @@
         </section>
 
         <section class="testimonials">
-            <h2>Depoimentos de Alunos</h2>
+            <h3>Depoimentos de Alunos</h3>
             <div class="testimonial">
                 <p>"A Escola Bíblica Novo Tempo me ajudou a entender a palavra de Deus de maneira profunda e prática. Foi uma bênção em minha vida!" - João da Silva</p>
             </div>
@@ -67,10 +91,61 @@
     </main>
 
     <footer>
+        
+      <ul>
+        <li>
+            <a class="midia-link-lista" href="https://www.youtube.com/@MinisterioNovotempo">
+                <img src="../img/imag-YouTube.jpg" alt="Logo do YouTube" />
+            </a>
+        </li>
+        <!-- YouTube -->
+    
+        <li>
+            <a class="midia-link-lista" href="https://www.instagram.com/mnovotempo/">
+                <img src="../img/instagram.jpg" alt="Logo do Instagram" />
+            </a>
+        </li>
+        <!-- Instagram -->
+    
+        <li>
+            <a class="midia-link-lista" href="https://www.facebook.com/imnovotempo">
+                <img src="../img/facebook_log.png" alt="Logo do Facebook" />
+            </a>
+        </li>
+        <!-- Facebook -->
+    
+        <li>
+            <a class="midia-link-lista" href="https://www.tiktok.com/@hashtagprogramacao">
+                <img src="../img/imag-tik-tok.jpg" alt="Logo do TikTok" />
+            </a>
+        </li>
+        <!-- TikTok -->
+    
+        <li>
+            <a class="midia-link-lista" href="#">
+                <img src="../img/imagwhatsapp.jpg" alt="Ícone do Whatsapp" />
+            </a>
+        </li>
+        <!-- Whatsapp -->
+    
+        <li>
+            <a href="#" class="midia-link-lista" id="retornar">
+                <img src="../img/Seta-volta.jpg" alt="Ícone de seta para voltar" />
+                <p id="volta">Inicio</p>
+            </a>
+        </li>
+        <!-- Retornar -->
+    </ul>
+    
+         <br>
+          <addres>
+            <p>Endereço: Rua Jaime Duprat, 530, Bairro: Parque Vitoria, Cidade Franco da Rocha, Estado SP,CEP:07857-0800 </p>
+        <p>Telefone: (11) xxxx-xxxx| Email: </p>
+          </addres>
+          
+        
         <p>&copy; 2025 Escola Bíblica Novo Tempo - Todos os direitos reservados.</p>
-        <p>Endereço: Rua Exemplo, 123, Bairro Exemplo, Cidade Exemplo, Estado Exemplo</p>
-        <p>Telefone: (11) 1234-5678 | Email: contato@escolabiblicanovotempo.com.br</p>
     </footer>
-
+    <script src="../Js/index.js"></script>
 </body>
 </html>

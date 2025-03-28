@@ -13,42 +13,7 @@ body {
     padding: 0 10px;
 }
 
-/* Cabeçalho */
-header {
-    background-color:black;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
 
-header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ff6347;
-}
-
-/* Main Content */
 main {
     max-width: 1200px;
     margin: 30px auto;
@@ -60,6 +25,7 @@ main {
 
 section {
     margin-bottom: 30px;
+    margin-right: 1px;
 }
 
 h2 {
@@ -87,6 +53,8 @@ form label {
     margin-bottom: 8px;
     color: #555;
 }
+.label-mengem{
+}
 
 form input, form textarea {
     width: 100%;
@@ -97,9 +65,7 @@ form input, form textarea {
     font-size: 1rem;
 }
 
-form textarea {
-    resize: vertical;
-}
+
 
 form button {
     background-color: #004a99;
@@ -116,17 +82,6 @@ form button:hover {
     background-color: #003366;
 }
 
-/* Rodapé */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9rem;
-}
 
 footer p {
     margin: 10px 0;

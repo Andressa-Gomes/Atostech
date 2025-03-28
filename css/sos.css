@@ -1,14 +1,30 @@
 /* Adicionar estilo para a seção de evangelismo */
+section {
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    padding: 20px;
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
 section h2 {
-    font-size: 1.8rem;
-    color: black;
-    margin-top: 20px;
+    color: #2c3e50; /* Cor do título */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    color: #555; /* Cor do texto */
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
+
+section p:last-child {
+    font-weight: bold; /* Destacar o último parágrafo */
+}
+
 
 /* Estilo para o versículo do dia */
 #versiculo {
@@ -21,6 +37,13 @@ section p {
 /* Adicionar estilo para o formulário */
 form {
     margin-top: 20px;
+    font-family: "Gadugi", serif;
+    font-size: 1.2rem;
+
+}
+.pedido{
+    font-family: "Greze", serif;
+    font-size: 1.2rem;
 }
 
 textarea {
