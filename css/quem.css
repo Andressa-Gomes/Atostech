@@ -13,5 +13,17 @@
     line-height: 1.6;
 }
 
+.imagem-secao {
+    width: 50%; /* A imagem ocupa 80% da largura da caixa, ajustável */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Preenche a área sem distorcer */
+    display: block; /* Remove espaços indesejados */
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 20px; /* Bordas arredondadas */
+}
 
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
 

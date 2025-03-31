@@ -1,0 +1,29 @@
+/* Estilo para a seção de história */
+.historia {
+    padding: 20px;
+    background-color: #f4f4f4;  /* Cor de fundo suave */
+    margin-bottom: 30px;         /* Espaço abaixo da seção */
+}
+
+/* Estilo para a caixa de história */
+.historia-box {
+    background-color: #fff;      /* Cor de fundo da caixa */
+    padding: 20px;               /* Espaçamento interno */
+    border-radius: 8px;          /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para destacar a caixa */
+    margin-bottom: 20px;         /* Espaço abaixo da caixa */
+}
+
+/* Estilo para a imagem */
+.imagem-historia {
+    width: 50%; /* A imagem ocupa 80% da largura da caixa, ajustável */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Preenche a área sem distorcer */
+    display: block; /* Remove espaços indesejados */
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 20px; /* Bordas arredondadas */
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
