@@ -41,10 +41,6 @@ header {
 }
 
 
-
-
-
-
 header h1 h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -81,6 +77,15 @@ main {
 }
 
 /* Seção de boas-vindas */
+
+#video {
+    display: block;
+    margin: 0 auto; /* Centraliza o iframe horizontalmente */
+    width: 100%; /* Ajusta o vídeo para 80% da largura da página (pode aumentar para 100%) */
+    height: 600px; /* Define a altura fixa para o vídeo */
+    max-width: 100%; /* Impede que o vídeo ultrapasse a largura da página */
+}
+
 .welcome {
     background-color: #ffffff;
     padding: 30px;
@@ -147,7 +152,12 @@ main {
     margin-top: 10px;
 }
 
-
+/* Estilo para a imagem */
+.container img {
+    max-width: 100%;          /* Garante que a imagem não ultrapasse a largura do box */
+    max-height: 100%;         /* Garante que a imagem não ultrapasse a altura do box */
+    object-fit: contain;      /* Faz a imagem se ajustar ao box, mantendo a proporção */
+}
 /* Acessibilidade */
 .Ouvir {
     display: flex;
