@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+
 /* Estilos das caixas */
 
 .box {
@@ -11,10 +14,11 @@
 
 .box p {
     line-height: 1.6;
+    
 }
 
 .imagem-secao {
-    width: 50%; /* A imagem ocupa 80% da largura da caixa, ajustável */
+    width: 30%; /* A imagem ocupa 80% da largura da caixa, ajustável */
     height: auto; /* Mantém a proporção da imagem */
     object-fit: cover; /* Preenche a área sem distorcer */
     display: block; /* Remove espaços indesejados */
@@ -23,7 +27,7 @@
 }
 
 p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
     font-size: 25px;
 }
 
