@@ -6,7 +6,7 @@ main{
 
 /* Adicionar estilo para a seção de evangelismo */
 section {
-    background-color: #f9f9f9; /* Cor de fundo suave */
+    background-color: white; /* Cor de fundo suave */
     padding: 20px;
     border-radius: 8px; /* Borda arredondada */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -37,7 +37,8 @@ section p:last-child {
     font-size: 1.2rem;
     font-style: italic;
     margin-top: 10px;
-    color: #007b3a;
+    color:  #6d318c;
+    
 }
 
 /* Adicionar estilo para o formulário */

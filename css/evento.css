@@ -4,7 +4,6 @@ main{
     font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
 }
 
-/* Estilos para a agenda */
 /* Estilo da Seção de Eventos */
 .eventos {
     width: 90%;
@@ -40,7 +39,7 @@ main{
 }
 
 .agenda thead {
-    background: #6d318c;
+    background: #4a90e2;
     color: white;
     font-weight: bold;
 }
@@ -52,4 +51,54 @@ main{
 }
 
 .agenda tbody tr:nth-child(even) {
-    background: #f
+    background: #f2f2f2;
+}
+
+.agenda tbody tr:hover {
+    background: #d6eaf8;
+    transition: 0.3s;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .eventos {
+        padding: 15px;
+    }
+
+    .agenda th, .agenda td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .eventos h2 {
+        font-size: 24px;
+    }
+}
+
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 480px) {
+    .eventos {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .eventos h2 {
+        font-size: 20px;
+    }
+
+    .eventos p {
+        font-size: 14px;
+    }
+
+    /* Transformando a tabela em um layout mais responsivo */
+    .agenda {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .agenda th, .agenda td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
