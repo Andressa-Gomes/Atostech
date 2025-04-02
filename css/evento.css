@@ -1,42 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Capriola&family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
+main{
+    font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
+}
 
 /* Estilos para a agenda */
-table.agenda {
+/* Estilo da Seção de Eventos */
+.eventos {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.eventos h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.eventos p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilo da Tabela */
+.agenda {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-table.agenda th, table.agenda td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-table.agenda th {
-    background-color: #004a99;
+.agenda thead {
+    background: #6d318c;
     color: white;
-    font-size: 1.1rem;
-    font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-table.agenda td {
-    font-size: 1rem;
-    font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
+.agenda th, .agenda td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
-table.agenda tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-table.agenda tr:hover {
-    background-color: #eaeaea;
-}
-
-@media (max-width: 768px) {
-    table.agenda th, table.agenda td {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-}
+.agenda tbody tr:nth-child(even) {
+    background: #f
