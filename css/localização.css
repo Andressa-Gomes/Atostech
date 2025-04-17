@@ -16,7 +16,7 @@ body {
 /* Seções */
 section {
     background-color: #fff;
-    max-width: 800px;
+    max-width: auto;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
@@ -48,7 +48,7 @@ p {
 }
 
 .map-button {
-    background-color: #8e44ad;
+    background-color: #6d318c;
     color: white;
     font-size: 16px;
     padding: 10px 20px;

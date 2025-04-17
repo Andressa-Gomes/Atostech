@@ -28,7 +28,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .doacao h2, .doacao h3 {
@@ -38,7 +38,7 @@ body {
 }
 
 .doacao p {
-    font-size: 16px;
+    font-size: 20px;
     color: #333;
     margin-bottom: 10px;
 }
@@ -58,7 +58,7 @@ body {
 }
 
 .qrcode {
-    width: 200px;
+    width: 300px;
     height: auto;
     margin: 15px 0;
     border: 2px solid #6d318c;
