@@ -7,7 +7,7 @@ main{
 /* Estilo da Seção de Eventos */
 .eventos {
     width: 90%;
-    max-width: 1000px;
+    max-width: auto;
     margin: 40px auto;
     padding: 20px;
     background: #ffffff;

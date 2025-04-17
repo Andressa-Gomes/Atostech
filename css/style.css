@@ -50,6 +50,7 @@ header h1 h2 {
     margin-bottom: 10px;
 }
 
+
 header nav ul {
     list-style: none;
     padding: 0;
@@ -102,24 +103,39 @@ main {
     font-size: 2.2rem;
     color: black;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .welcome p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: #555;
     line-height: 1.8;
+    text-align: center;
+}
+
+.live-link {
+    display: inline-block;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: #f4f4f4;
+    font-size: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
 }
 
 /* Estilo para a seção "Queremos te conhecer" */
 .know-us {
     text-align: center;
-    background: linear-gradient(135deg, #8e44ad, #6d318c);
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
     color: white;
-    padding: 40px 20px;
+    padding: 30px;
     border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 /* Título estilizado */
@@ -129,6 +145,13 @@ main {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+.know-us  p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
 
 /* Botão moderno */
 .know-us a {
