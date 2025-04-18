@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home | Novo Tempo</title>
         <link rel="stylesheet" href="css/style.css">
+     
         
         <link rel="icon" href="img/favicon.png" type="logo">
 
@@ -14,11 +15,12 @@
     </head>
     <body>
 
-        <header>
+        <header> 
             <div class="logo">
-            <img src="img/logo.jpg" alt="Logo Igreja Novo Tempo">
-        </div>
-            <h1 id="titulo">Novo Tempo - A Igreja da Família</h1>
+                <img src="img/logo.jpg" alt="Logo Igreja Novo Tempo">
+            </div>
+        
+            <h1 class="titulo">Novo Tempo - A Igreja da Família</h1>
             
             <nav>
                 <ul>
@@ -28,32 +30,39 @@
                     <li><a href="html/ebnt.html">EBNT</a></li>
                     <li><a href="html/eventos.html">Eventos</a></li>
                     <li><a href="html/on.html">Assista Agora</a></li>
-                    <li><a href="html/sos.html">SOS</a></li>
+                    <li><a href="html/sos.html">Sabedoria</a></li>
                     <li><a href="html/localização.html">Localização</a></li>
                     <li><a href="html/generosidade.html">Generosidade</a></li>
+                    
                 </ul>
             </nav>
+        
             <div class="Ouvir">
                 <button onclick="leitorDeTexto()">🔊 Ouvir Página</button>
-            
-                <div class="acessibilidade" class="container">
-                    <label for="selecione"></label>
+        
+                <div class="acessibilidade container">
+                   
                     <select name="GrupoSelect" id="selecione">
-                    <option value="" disabled selected>Escolha uma opção:</option>
-                    <option value="cor">Alterar Cor Da Página</option>
-                    <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
-                    <option value="fonte-media">Tamanho de Fonte Médio</option>
-                    <option value="fonte-grande">Tamanho de Fonte Grande</option>
-                    <option value="reset">Voltar ao Padrão</option>
+                        <option value="" disabled selected>Escolha uma opção: Cor/Fonte:</option>
+                        <option value="cor">Alterar Cor Da Página</option>
+                        <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
+                        <option value="fonte-media">Tamanho de Fonte Médio</option>
+                        <option value="fonte-grande">Tamanho de Fonte Grande</option>
+                        <option value="reset">Voltar ao Padrão</option>
                     </select>
                 </div>
+            </div> <!-- fechamento de Ouvir -->
+        
         </header>
+        
+        
    
         
 
         <main>
+           
             <section class="welcome">
-                <h2><center> Bem-vindo à nossa Família!</center></h2>
+                <h2 class="sub-titulo"> Bem-vindo à nossa Família!</h2>
                 <p>A <strong>Igreja Novo Tempo</strong> é um lugar onde você será acolhido, amado e poderá crescer espiritualmente. Nossa missão é levar esperança e transformar vidas pelo amor de Cristo.</p>
                 <iframe id="video" src="https://www.youtube.com/embed/v3E8XbLalwQ?autoplay=1&mute=1&si=mDf5ghHvb8BB_nLJ" 
     title="YouTube video player" frameborder="0" 

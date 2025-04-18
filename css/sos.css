@@ -13,7 +13,11 @@ section {
     max-width: 900px;
     margin: 20px auto;
     text-align: center;
+    background-color: #f6e4f14b;
+    border-top: 2px solid  #ff00e150;
+    border-bottom: 2px solid #ff00e150;
 }
+
 
 section h2 {
     color: #2c3e50; /* Cor do título */
@@ -38,41 +42,10 @@ section p:last-child {
     font-style: italic;
     margin-top: 10px;
     color:  #6d318c;
+    background-color: #f6e4f14b;
+    border-top: 2px solid  #ff00e150;
+    border-bottom: 2px solid #ff00e150;
+
     
 }
 
-/* Adicionar estilo para o formulário */
-form {
-    margin-top: 20px;
-  font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-
-}
-.pedido{
-    font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
-}
-
-button {
-    font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
-    padding: 10px 20px;
-    background-color: #004a99;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #003366;
-}
