@@ -89,6 +89,7 @@ main {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Seção de boas-vindas */
@@ -135,7 +136,7 @@ main {
     padding: 12px 20px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -171,6 +172,8 @@ main {
 /* Botão moderno */
 .know-us a {
     display: inline-block;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
     font-size: 18px;
     text-decoration: none;
     font-weight: bold;
@@ -178,7 +181,15 @@ main {
     color: white;
 }
 
-
+.formulario-link a {
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold; /* Deixa o texto mais marcante */
+  }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
@@ -198,60 +209,7 @@ main {
 }
 
 
-/* Seção de Pastores */
-.pastors-section {
-    margin-top: 40px;
-}
 
-.pastors-container {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.pastor {
-    background-color: #ffffff;
-    width: 48%;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.pastor img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    max-width: 300px;
-    margin-bottom: 20px;
-}
-
-.pastor h3 {
-    font-size: 1.6rem;
-    color: #333;
-    margin-bottom: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif sans-serif;
-}
-
-.pastor p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-}
-
-.pastor p:last-child {
-    margin-top: 10px;
-}
-
-/* Estilo para a imagem */
-.container img {
-    max-width: 100%;          /* Garante que a imagem não ultrapasse a largura do box */
-    max-height: 100%;         /* Garante que a imagem não ultrapasse a altura do box */
-    object-fit: contain;      /* Faz a imagem se ajustar ao box, mantendo a proporção */
-}
 /* Acessibilidade */
 
 
