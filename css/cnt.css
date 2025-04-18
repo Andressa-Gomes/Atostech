@@ -125,9 +125,8 @@ button:hover {
     background-color: #1f6692;
 }
 
-footer p {
-    margin: 10px 0;
-}
+
+
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -169,7 +168,11 @@ footer p {
     }
 }
 
-.menu ul li {
-    background: none; /* Remove o ícone de check apenas do menu */
-    padding-left: 0;
+
+
+
+.menu ul li,
+footer ul li {
+    background: none;
+    padding-left: 0;
 }
