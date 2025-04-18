@@ -125,9 +125,8 @@ button:hover {
     background-color: #1f6692;
 }
 
-footer p {
-    margin: 10px 0;
-}
+
+
 
 /* Responsividade */
 @media (max-width: 768px) {
