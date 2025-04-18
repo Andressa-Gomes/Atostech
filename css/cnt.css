@@ -168,7 +168,8 @@ button:hover {
     }
 }
 
-.menu ul li {
+.menu ul li  {
     background: none; /* Remove o ícone de check apenas do menu */
     padding-left: 0;
 }
+
