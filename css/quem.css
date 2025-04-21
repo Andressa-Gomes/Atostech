@@ -1,152 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* Geral */
 
-main{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
-/* Estilo da seção "História", "Missão" e "Visão" */
-.historia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    line-height: 1.8;
-    
-    
-}
 
-.historia-box {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+
+.sub-titulo {
     text-align: center;
-    max-width: auto;
-    background-color: #f6e4f14b;
-    border-top: 2px solid  #ff00e150;
-    border-bottom: 2px solid #ff00e150;
-    
-
-}
-
-/* Estilização da imagem */
-.imagem-historia {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-
-/* Container principal para as caixas */
-.content-container {
-    display: flex;
-    flex-direction: column; /* Agora as caixas ficam uma acima da outra */
-    align-items: center;
-    gap: 20px;
-    margin: 40px auto;
-    max-width: 700px;
-    
-}
-
-/* Estilização das caixas */
-.box {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    text-align: center;
-    background-color: #f6e4f14b;
-    border-top: 2px solid  #ff00e150;
-    border-bottom: 2px solid #ff00e150;
-    
-}
-
-/* Estilização para Missão e Visão */
-.missao {
-    border-left: 5px solid #
-}
-
-.missao p{
-    
-    line-height: 1.8;
-}
-.visao {
-    border-left: 5px solid #;
-    line-height: 1.8;
-}
-
-/* Estilização das imagens */
-.box img {
-    width: 75%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-
-/* Seção de Pastores */
-.pastors-section {
-    margin-top: 40px;
-    text-align: center;
-}
-
-/* Container de pastores */
-.pastors-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 0 auto;
-    max-width: 1200px; /* Limita a largura máxima do container */
-}
-
-/* Caixa de pastor */
-.pastor {
-    
-    width: 48%; /* Ajusta o tamanho para não ultrapassar a largura do container */
-    margin-bottom: 30px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background-color: #f6e4f14b;
-    border-top: 2px solid  #ff00e150;
-    border-bottom: 2px solid #ff00e150;
-}
-
-/* Ajuste da imagem dos pastores */
-.pastor img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px;
-    object-fit: cover; /* Ajusta a imagem dentro do box sem distorcer */
-    max-width: 300px; /* Limita a largura máxima da imagem */
+    font-size: 1.4rem;
     margin-bottom: 20px;
 }
 
-/* Nome do pastor */
-.pastor h3 {
-    font-size: 1.6rem;
-    color: #333;
+/* História */
+.historia-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    background-color: #f6e4f14b;
+    border-top: 2px solid  #ff00e150;
+     border-bottom: 2px solid #ff00e150;
+}
+
+.imagem-historia {
+    width: 100%;
+    max-width: 600px; /* ou o valor que preferir, tipo 500px, 400px */
+    height: auto;
+    border-radius: 10px;
+    margin: 5px auto;
+    display: block;
+}
+
+/* Missão e Visão */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     margin-bottom: 10px;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+ 
 }
 
-/* Descrição do pastor */
-.pastor p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
+.box {
+    flex: 1 1 300px;
+    background-color: #eaf2f8;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    background-color: #f6e4f14b;
+    border-top: 2px solid  #ff00e150;
+     border-bottom: 2px solid #ff00e150;
 }
 
-/* Espessura e separação final */
-.pastor p:last-child {
-    margin-top: 10px;
+.imagem-secao {
+    width: 100%;
+    max-width: 400px; /* ou o valor que preferir, tipo 500px, 400px */
+    height: auto;
+    border-radius: 10px;
+    margin: 5px auto;
+    display: block;
+    margin: 5px;
 }
 
-/* Estilo para a imagem */
-.container img {
-    max-width: 100%;          /* Garante que a imagem não ultrapasse a largura do box */
-    max-height: 100%;         /* Garante que a imagem não ultrapasse a altura do box */
-    object-fit: contain;      /* Faz a imagem se ajustar ao box, mantendo a proporção */
+/* Pastores */
+.pastors-section {
+    margin-bottom: 40px;
+  
+}
+
+.pastors-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+   
+}
+
+.pastor {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: #fff9f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f6e4f14b;
+    border-top: 2px solid  #ff00e150;
+     border-bottom: 2px solid #ff00e150;
+}
+
+.pastor img {
+    width: 100%;
+    max-width: 600px; /* ou o valor que preferir, tipo 500px, 400px */
+    height: auto;
+    border-radius: 10px;
+    margin: 5px auto;
+    display: block;
+}
+
+h3{
+    margin: 10px 10px;
+    
+    
+}
+.pastor P{
+line-height: 1.4;
+    margin: 10px 10px;
+}
+
+
+
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .content-container, .pastors-container {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .box, .pastor {
+        max-width: 100%;
+        line-height: 1.4;
+        font-size: 1.4rem;
+    }
+    
+    .historia-box {
+        line-height: 1.4;
+        font-size: 1.4rem;
+
 }
