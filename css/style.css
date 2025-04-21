@@ -24,7 +24,6 @@ body {
 header {
     /* background-color: black; */
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
-    
     color: white;
     padding: 10px 20px; /* Mantém espaço interno */
     text-align: center;
