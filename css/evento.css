@@ -7,102 +7,111 @@ main{
 /* Estilo da Seção de Eventos */
 .eventos {
     width: 90%;
-    max-width: auto;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
-    background: #ffffff;
+    background-color: #f6e4f14b;
+    border-top: 1px solid  #ff00e150;
+    border-bottom: 1px solid #ff00e150;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    background-color: #f6e4f14b;
-    border-top: 2px solid  #ff00e150;
-    border-bottom: 2px solid #ff00e150;
-}
-}
-
-.eventos h2 {
+  }
+  
+  .eventos h2 {
     font-size: 28px;
     color: #2c3e50;
     margin-bottom: 15px;
     font-weight: 700;
-}
-
-.eventos p {
+  }
+  
+  .eventos p {
     font-size: 16px;
     color: #555;
     margin-bottom: 20px;
-}
-
-/* Estilo da Tabela */
-.agenda {
+  }
+  
+  /* Estilo da Tabela */
+  .agenda {
     width: 100%;
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.agenda thead {
-    background: #6d318c;
+  }
+  
+  .agenda thead {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
     color: white;
     font-weight: bold;
-}
-
-.agenda th, .agenda td {
+    border-radius: 2rem;
+  
+  }
+  
+  .agenda th, .agenda td {
     padding: 14px;
     text-align: center;
     border-bottom: 1px solid #ddd;
-}
-
-.agenda tbody tr:nth-child(even) {
+    
+  }
+  
+  .agenda tbody tr:nth-child(even) {
     background: #f2f2f2;
-}
-
-.agenda tbody tr:hover {
+  }
+  
+  .agenda tbody tr:hover {
     background: #d6eaf8;
     transition: 0.3s;
-}
+  }
 
-/* Responsividade para tablets */
-@media (max-width: 768px) {
+  .agenda tbody button {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    transition: 0.3s;
+    padding: 5px;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  /* Responsividade para tablets */
+  @media (max-width: 768px) {
     .eventos {
         padding: 15px;
     }
-
+  
     .agenda th, .agenda td {
         padding: 10px;
         font-size: 14px;
     }
-
+  
     .eventos h2 {
         font-size: 24px;
     }
-}
-
-/* Responsividade para telas menores (celulares) */
-@media (max-width: 480px) {
+  }
+  
+  /* Responsividade para telas menores (celulares) */
+  @media (max-width: 480px) {
     .eventos {
         width: 95%;
         padding: 10px;
     }
-
+  
     .eventos h2 {
         font-size: 20px;
     }
-
+  
     .eventos p {
         font-size: 14px;
     }
-
+  
     /* Transformando a tabela em um layout mais responsivo */
     .agenda {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
     }
-
+  
     .agenda th, .agenda td {
         font-size: 12px;
         padding: 8px;
     }
-}
+  }

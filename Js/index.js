@@ -1,5 +1,4 @@
 // Acessibilidade  botão ouvir
-
 let speech = null;
 let isPaused = false;
 
@@ -11,6 +10,7 @@ function leitorDeTexto() {
     speechSynthesis.resume();
     isPaused = false;
   } else {
+    speechSynthesis.cancel(); // Cancela qualquer leitura anterior
     const text = document.body.innerText;
     speech = new SpeechSynthesisUtterance(text);
     speech.lang = "pt-BR";
@@ -23,70 +23,94 @@ function leitorDeTexto() {
   }
 }
 
+function pararLeitura() {
+  speechSynthesis.cancel();
+  isPaused = false;
+}
+
 function verificarFimDaPagina() {
-  // Verifica se o usuário chegou ao final da página
   if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
     if (speechSynthesis.speaking) {
-      // Pausa ou para a leitura ao chegar no final da página
       speechSynthesis.pause();
       isPaused = true;
     }
   }
 }
 
-function lerPagina() {
-  let texto = document.body.innerText; // Captura o texto da página
-  let fala = new SpeechSynthesisUtterance(texto); // Cria a fala
-  fala.lang = "pt-BR"; // Define o idioma para português
-  fala.rate = 1; // Ajusta a velocidade (1 = normal)
-  fala.pitch = 1; // Ajusta o tom de voz
-  window.speechSynthesis.speak(fala); // Fala o texto
-}
-
-// Acessibilidade fonte/cor
-
 document.addEventListener("DOMContentLoaded", function() {
   const tamanhosDeFonte = {
     "fonte-pequena": "0.8rem",
-    "fonte-media": "1rem",
-    "fonte-grande": "1.8rem"
+    "fonte-media": "1.6rem",
+    "fonte-grande": "2rem"
   };
 
   const body = document.body;
   const footer = document.getElementById("pageFooter");
-  const welcomeSection = document.querySelector(".welcome"); // Seleciona a seção Welcome
+  const welcomeSection = document.querySelector(".welcome");
 
-  // Função para alterar a cor de fundo da página e da seção welcome
   function alterarCorDaPagina() {
-    body.style.backgroundColor = "black";
-    footer.style.backgroundColor = "#444"; // Muda a cor do footer
-    if (welcomeSection) {
-      welcomeSection.style.backgroundColor = "#222"; // Define cor de fundo para welcome
-      welcomeSection.style.color = "#fff"; // Define cor do texto para contraste
-    }
+    body.style.backgroundColor = "#000";
+    if (footer) footer.style.backgroundColor = "#000";
+
+    const secoes = [
+      ...document.querySelectorAll("section"),
+      document.querySelector(".welcome"),
+      document.querySelector(".know-us"),
+      document.querySelector(".historia"),
+      document.querySelector(".content-container"),
+      document.querySelector(".pastors-section"),
+      document.querySelector(".courses"),
+      document.querySelector(".eventos"),
+      document.querySelector(".doacao"),
+      document.querySelector("h2.sub-titulo"),
+      document.querySelector("table.agenda"),
+      ...document.querySelectorAll("div.course")
+    ];
+
+    secoes.forEach(secao => {
+      if (secao) {
+        secao.style.backgroundColor = "#000";
+        secao.style.color = "#fff";
+
+        secao
+          .querySelectorAll(
+            "h1, h2, h3, h4, p, span, a, strong, div, li, td, th"
+          )
+          .forEach(el => {
+            el.style.color = "#fff";
+          });
+
+        // Se for uma tabela, aplica borda e cor também
+        if (secao.tagName === "TABLE") {
+          secao.style.borderColor = "#fff";
+          secao.querySelectorAll("td, th").forEach(celula => {
+            celula.style.borderColor = "#fff";
+          });
+        }
+      }
+    });
   }
 
-  // Função para alterar o tamanho da fonte em toda a página
   function alterarFonte(tamanho) {
     document.querySelectorAll("body, body *").forEach(el => {
       el.style.fontSize = tamanho;
     });
   }
 
-  // Função para resetar as configurações para o padrão
   function resetarConfiguracoes() {
-    body.style.backgroundColor = "";
-    footer.style.backgroundColor = "initial";
-    if (welcomeSection) {
-      welcomeSection.style.backgroundColor = "";
-      welcomeSection.style.color = "";
-    }
+    body.removeAttribute("style");
+    if (footer) footer.removeAttribute("style");
+    if (welcomeSection) welcomeSection.removeAttribute("style");
+
     document.querySelectorAll("body, body *").forEach(el => {
-      el.style.fontSize = "1em"; // Volta ao tamanho padrão
+      el.style.fontSize = "";
+      el.style.backgroundColor = "";
+      el.style.color = "";
     });
+
+    document.getElementById("selecione").value = "";
   }
 
-  // Evento 'change' para capturar a seleção do usuário
   document.getElementById("selecione").addEventListener("change", function() {
     const valorSelecionado = this.value;
 
@@ -100,9 +124,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// Configura o evento de rolagem para verificar quando chega ao final da página
+// Eventos de rolagem e botões
 window.addEventListener("scroll", verificarFimDaPagina);
-
-// Configura o evento de clique no botão para iniciar a leitura
 document.getElementById("botaoLeitor").addEventListener("click", leitorDeTexto);
-// 3. Adicione o evento ao botão "Parar":
+document
+  .getElementById("botaoPararLeitura")
+  .addEventListener("click", pararLeitura);
