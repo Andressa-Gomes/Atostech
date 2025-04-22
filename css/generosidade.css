@@ -53,7 +53,7 @@ main{
 }
 
 .qrcode {
-    width: 300px;
+    width: 200px;
     height: auto;
     margin: 15px 0;
     border: 2px solid #6d318c;
@@ -63,11 +63,11 @@ main{
 
 .botao-doacao {
     display: inline-block;
-    background: #6d318c;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
     color: #fff;
     padding: 12px 20px;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 8px;
     text-decoration: none;
     transition: 0.3s;
     margin-top: 15px;
@@ -75,4 +75,71 @@ main{
 
 .botao-doacao:hover {
     background: #511d6b;
+}
+
+/* RESPONSIVIDADE PARA A SEÇÃO DE DOAÇÃO */
+@media (max-width: 768px) {
+    .doacao {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .doacao h2,
+    .doacao h3 {
+        font-size: 20px;
+    }
+
+    .doacao p {
+        font-size: 18px;
+    }
+
+    .doacao ul {
+        width: 100%;
+        text-align: left;
+    }
+
+    .doacao li {
+        font-size: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .qrcode {
+        width: 150px;
+        margin: 10px 0;
+    }
+
+    .botao-doacao {
+        font-size: 16px;
+        padding: 10px 16px;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .doacao {
+        padding: 15px 10px;
+        border-radius: 8px;
+    }
+
+    .doacao h2,
+    .doacao h3 {
+        font-size: 18px;
+    }
+
+    .doacao p,
+    .doacao li {
+        font-size: 16px;
+    }
+
+    .qrcode {
+        width: 130px;
+    }
+
+    .botao-doacao {
+        font-size: 15px;
+        padding: 8px 12px;
+        width: 100%;
+    }
 }

@@ -15,15 +15,6 @@ main{
 
 
 
-p, h2, li {
-    font-size: 1.1rem;
-    margin-bottom: 2px;
-    line-height: 1.6;
-    
-}
-
-
-
 /* Seções */
 section {
     background-color: #fff;
@@ -37,13 +28,11 @@ section {
     border-top: 2px solid  #ff00e150;
     border-bottom: 2px solid #ff00e150;
 }
-}
 
 /* Estilização dos títulos dentro das seções */
 section h2 {
     font-size: 22px;
-    color: #781bc4;
-    border-bottom: 2px solid #2980b9;
+   
     padding-bottom: 5px;
 }
 
@@ -51,34 +40,19 @@ section h2 {
 section p {
     font-size: 20px;
     line-height: 1.6;
-    text-align: justify;
+    
 }
 
 /* Bloco de versículos */
 blockquote {
     font-style: italic;
-    color: #555;
+ color: black;
     background-color: #f9f9f9;
     padding: 15px;
-    border-left: 5px solid #781bc4;
+    border-left: 2px solid #ff00e150;
     margin: 15px 0;
     border-radius: 5px;
 }
-
-cite {
-    display: block;
-    text-align: right;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Lista de benefícios */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-
 
 
 
@@ -98,10 +72,7 @@ ul {
         font-size: 20px;
     }
 
-    ul li {
-        font-size: 14px;
-        padding-left: 25px;
-    }
+ 
 
     blockquote {
         font-size: 14px;
@@ -118,9 +89,6 @@ ul {
         padding: 10px;
     }
 
-    input, textarea, button {
-        font-size: 14px;
-    }
 }
 
 

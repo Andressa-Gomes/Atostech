@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Capriola&family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
+body{
+
+    background-color: #f6e4f14b;
+
+}
 
 main{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
-    
+   
 }
 
   
@@ -40,18 +44,21 @@ margin-top: 3%;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+
+}
+    
     
 
     .testemunho {
-        background-color: #ffffff;
+        background-color: #f6e4f14b;
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 40px;
-        background-color: #f6e4f14b;
-        border-top: 2px solid  #ff00e150;
-        border-bottom: 2px solid #ff00e150;
+        background-color: #ffffff;
+    border-top: 2px solid  #ff00e150;
+    border-bottom: 2px solid #ff00e150;
 
      }
 
@@ -62,7 +69,7 @@ margin-top: 3%;
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    background-color: #f6e4f14b;
+    background-color: #ffffff;
     border-top: 2px solid  #ff00e150;
     border-bottom: 2px solid #ff00e150;
 }
@@ -76,12 +83,13 @@ margin-top: 3%;
 /* Seção de cursos */
 .courses {
     margin-top: 20px;
-    background-color: #f6e4f14b;
+    background-color: #ffffff;
     border-top: 2px solid  #ff00e150;
     border-bottom: 2px solid #ff00e150;
 }
 
 .course-container {
+    line-height: 1.4rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -107,6 +115,7 @@ margin-top: 3%;
 .course:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #f6e4f14b;
 }
 
 .course h3 {
@@ -117,13 +126,14 @@ margin-top: 3%;
 
 .course p {
     font-size: 16px;
-    color: #555;
+    color: black;
+    
 }
 
 /* Botões */
 .btn {
     display: inline-block;
-    background: #6d318c;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -135,4 +145,71 @@ margin-top: 3%;
 
 .btn:hover {
     background: #51236b;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .course-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .course {
+        flex: 1 1 45%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .welcome, .testemunho, .courses {
+        padding: 20px 15px;
+    }
+
+    .welcome h2 {
+        font-size: 22px;
+    }
+
+    .courses h3,
+    .testemunho h3,
+    .welcome h3 {
+        font-size: 1.2rem;
+    }
+
+    .welcome p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .course {
+        padding: 15px;
+    }
+
+    .welcome,
+    .testemunho,
+    .courses {
+        border-radius: 8px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
 }
