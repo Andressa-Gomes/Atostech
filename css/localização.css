@@ -66,21 +66,27 @@ p {
     section {
         max-width: 90%;
         padding: 15px;
+        margin: 0 auto;
     }
 
     h2 {
-        font-size: 20px;
-        margin: 5px;
+        font-size: 1.4rem;
+        margin: 10px 0;
+        text-align: center;
     }
 
     .map-button {
-        font-size: 14px;
-        padding: 8px 15px;
+        font-size: 1rem;
+        padding: 10px 16px;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+        display: block;
+        border-radius: 8px;
     }
 }
 
-
 /* Centraliza o título e o parágrafo */
-.titilo-pagina, p {
+.titulo-pagina, p {
     text-align: center;
 }

@@ -119,27 +119,39 @@ main{
 
 @media (max-width: 480px) {
     .doacao {
-        padding: 15px 10px;
-        border-radius: 8px;
+        padding: 15px 12px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        font-size: 1rem;
+        text-align: center;
     }
 
     .doacao h2,
     .doacao h3 {
-        font-size: 18px;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
     }
 
     .doacao p,
     .doacao li {
-        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 8px;
     }
 
     .qrcode {
-        width: 130px;
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        margin: 10px auto;
+        display: block;
     }
 
     .botao-doacao {
-        font-size: 15px;
-        padding: 8px 12px;
+        font-size: 1rem;
+        padding: 10px 16px;
         width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
     }
 }

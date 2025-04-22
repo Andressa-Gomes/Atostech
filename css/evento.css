@@ -92,26 +92,42 @@ main{
   @media (max-width: 480px) {
     .eventos {
         width: 95%;
-        padding: 10px;
+        padding: 15px;
+        margin: 0 auto;
+        font-size: 1rem;
     }
-  
+
     .eventos h2 {
-        font-size: 20px;
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 10px;
     }
-  
+
     .eventos p {
-        font-size: 14px;
+        font-size: 1rem;
+        line-height: 1.4;
+        text-align: justify;
     }
-  
-    /* Transformando a tabela em um layout mais responsivo */
+
+    /* Agenda responsiva */
     .agenda {
         display: block;
+        width: 100%;
         overflow-x: auto;
         white-space: nowrap;
+        margin-top: 10px;
     }
-  
-    .agenda th, .agenda td {
-        font-size: 12px;
+
+    .agenda table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .agenda th,
+    .agenda td {
+        font-size: 0.9rem;
         padding: 8px;
+        text-align: left;
     }
-  }
+
+    
