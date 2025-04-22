@@ -58,6 +58,49 @@ blockquote {
 
 
 /* Responsividade */
+/* Telas grandes (até 1280px) */
+@media (max-width: 1280px) {
+    section {
+        max-width: 95%;
+        padding: 25px;
+    }
+
+    .titulo-pagina {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    blockquote {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+}
+
+/* Telas médias (até 1024px) */
+@media (max-width: 1024px) {
+    section {
+        max-width: 92%;
+        padding: 20px;
+    }
+
+    .titulo-pagina {
+        font-size: 26px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    blockquote {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+/* Telas pequenas (até 768px) */
 @media (max-width: 768px) {
     section {
         max-width: 90%;
@@ -72,25 +115,28 @@ blockquote {
         font-size: 20px;
     }
 
- 
-
     blockquote {
         font-size: 14px;
         padding: 10px;
     }
 }
 
+/* Telas muito pequenas (até 480px) */
 @media (max-width: 480px) {
-    .titulo-pagina {
-        font-size: 22px;
-    }
-
     section {
         padding: 10px;
     }
 
+    .titulo-pagina {
+        font-size: 22px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    blockquote {
+        font-size: 13px;
+        padding: 8px;
+    }
 }
-
-
-
-

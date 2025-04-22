@@ -148,6 +148,32 @@ margin-top: 3%;
 }
 
 /* RESPONSIVIDADE */
+/* Telas grandes (entre 1024px e 1280px) */
+@media (max-width: 1280px) {
+    .course-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .course {
+        flex: 1 1 40%;
+        max-width: 45%;
+    }
+
+    .welcome h2,
+    .courses h2,
+    .testemunho h3 {
+        font-size: 1.8rem;
+    }
+
+    .welcome p,
+    .courses p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Telas médias (até 1024px) */
 @media (max-width: 1024px) {
     .course-container {
         flex-direction: row;
@@ -159,8 +185,19 @@ margin-top: 3%;
         flex: 1 1 45%;
         max-width: 90%;
     }
+
+    .welcome h2,
+    .courses h2,
+    .testemunho h3 {
+        font-size: 1.6rem;
+    }
+
+    .course p {
+        font-size: 1rem;
+    }
 }
 
+/* Telas tablets e pequenas (até 768px) */
 @media (max-width: 768px) {
     .course-container {
         flex-direction: column;
@@ -172,7 +209,9 @@ margin-top: 3%;
         max-width: 100%;
     }
 
-    .welcome, .testemunho, .courses {
+    .welcome,
+    .testemunho,
+    .courses {
         padding: 20px 15px;
     }
 
@@ -186,16 +225,20 @@ margin-top: 3%;
         font-size: 1.2rem;
     }
 
-    .welcome p {
+    .welcome p,
+    .course p {
         font-size: 1rem;
+        line-height: 1.5;
     }
 
     .btn {
         width: 100%;
         text-align: center;
+        font-size: 1rem;
     }
 }
 
+/* Telas muito pequenas (até 480px) */
 @media (max-width: 480px) {
     .course {
         padding: 15px;
@@ -205,11 +248,22 @@ margin-top: 3%;
     .testemunho,
     .courses {
         border-radius: 8px;
+        padding: 15px 10px;
     }
 
     .btn {
         padding: 8px 12px;
         font-size: 0.9rem;
     }
-    
+
+    .welcome h2,
+    .courses h2,
+    .testemunho h3 {
+        font-size: 1.2rem;
+    }
+
+    .welcome p,
+    .course p {
+        font-size: 0.95rem;
+    }
 }

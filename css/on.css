@@ -72,6 +72,50 @@ main{
 }
 
 /* Responsividade */
+
+/* Telas grandes (até 1280px) */
+@media (max-width: 1280px) {
+    .live-transmission {
+        max-width: 95%;
+        padding: 35px 20px;
+    }
+
+    .live-transmission h2 {
+        font-size: 24px;
+    }
+
+    .live-link {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .schedule {
+        font-size: 18px;
+    }
+}
+
+/* Telas médias (até 1024px) */
+@media (max-width: 1024px) {
+    .live-transmission {
+        max-width: 92%;
+        padding: 30px 20px;
+    }
+
+    .live-transmission h2 {
+        font-size: 22px;
+    }
+
+    .live-link {
+        font-size: 17px;
+        padding: 12px 18px;
+    }
+
+    .schedule {
+        font-size: 17px;
+    }
+}
+
+/* Telas pequenas (até 768px) */
 @media (max-width: 768px) {
     .live-transmission {
         max-width: 90%;
@@ -89,5 +133,25 @@ main{
 
     .schedule {
         font-size: 16px;
+    }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+    .live-transmission {
+        padding: 20px 10px;
+    }
+
+    .live-transmission h2 {
+        font-size: 18px;
+    }
+
+    .live-link {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .schedule {
+        font-size: 14px;
     }
 }

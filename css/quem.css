@@ -117,20 +117,42 @@ line-height: 1.4;
 
 /* Responsivo */
 @media (max-width: 768px) {
-    .content-container, .pastors-container {
+    .content-container,
+    .pastors-container {
         flex-direction: column;
         align-items: center;
-       
     }
 
-    .box, .pastor {
+    .box,
+    .pastor {
         max-width: 100%;
-        line-height: 1.4;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        padding: 15px;
     }
-    
-    .historia-box {
-        line-height: 1.4;
-        font-size: 1.4rem;
 
+    .historia-box {
+        font-size: 1.3rem;
+        padding: 15px;
+    }
+
+    .imagem-historia,
+    .imagem-secao,
+    .pastor img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .sub-titulo {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .pastor p {
+        font-size: 1.3rem;
+        padding: 0 10px;
+    }
 }
