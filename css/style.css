@@ -441,9 +441,13 @@ footer ul {
 
     /* .pastor img {
         max-width: 100%; */
+        footer p lu li {
+            font-size: 0.8rem;
+        }
+    
+        header{ 
+        background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black); 
+    }
     }
 
-    footer p lu li {
-        font-size: 0.8rem;
-    }
-
+   
