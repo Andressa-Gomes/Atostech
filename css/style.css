@@ -361,6 +361,9 @@ footer ul {
 
 /* Para telas menores que 768px (tablets e dispositivos móveis em modo paisagem) */
 @media (max-width: 768px) {
+
+    header{ background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black); }
+
     header h1 {
         font-size: 2rem;
     }
@@ -418,8 +421,12 @@ footer ul {
 
 /* Para telas menores que 480px (smartphones) */
 @media (max-width: 480px) {
+    
+    header{ background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black); }
+
     header h1 {
         font-size: 1rem;
+
     }
 
     header nav ul li a {
@@ -437,6 +444,7 @@ footer ul {
 
     .pastor {
         width: 100%;
+        
     }
 
     /* .pastor img {
