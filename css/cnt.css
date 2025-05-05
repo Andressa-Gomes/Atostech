@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+main{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Seções */
+section {
+    background-color: #fff;
+    max-width: auto;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f6e4f14b;
+    border-top: 2px solid  #ff00e150;
+    border-bottom: 2px solid #ff00e150;
+}
+
+/* Estilização dos títulos dentro das seções */
+section h2 {
+    font-size: 22px;
+   
+    padding-bottom: 5px;
+}
+
+/* Parágrafos */
+section p {
+    font-size: 20px;
+    line-height: 1.6;
+    
+}
+
+/* Bloco de versículos */
+blockquote {
+    font-style: italic;
+ color: black;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 2px solid #ff00e150;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+
+
+
+/* Responsividade */
+/* Telas grandes (até 1280px) */
+@media (max-width: 1280px) {
+    section {
+        max-width: 95%;
+        padding: 25px;
+    }
+
+    .titulo-pagina {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    blockquote {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+}
+
+/* Telas médias (até 1024px) */
+@media (max-width: 1024px) {
+    section {
+        max-width: 92%;
+        padding: 20px;
+    }
+
+    .titulo-pagina {
+        font-size: 26px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    blockquote {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+/* Telas pequenas (até 768px) */
+@media (max-width: 768px) {
+    section {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .titulo-pagina {
+        font-size: 24px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    blockquote {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+    section {
+        padding: 10px;
+    }
+
+    .titulo-pagina {
+        font-size: 22px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    blockquote {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
