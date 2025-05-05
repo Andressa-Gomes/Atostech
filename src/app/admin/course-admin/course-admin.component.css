@@ -1,0 +1,171 @@
+/* Layout geral */
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fdf7fc;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Cabeçalho */
+  .admin-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .admin-header h1 {
+    font-size: 2.8rem;
+    font-family: 'Georgia', serif;
+    color: #2c2c2c;
+  }
+  
+  .admin-header .sub-titulo {
+    font-size: 1.5rem;
+    color: #777;
+    margin-top: 8px;
+  }
+  
+  /* Formulário */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #ff00e1;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fefefe;
+    transition: border 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #ff00e1;
+    outline: none;
+  }
+  
+  /* Botão principal */
+  button[type="submit"] {
+    background-color: #ff00e1;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #cc00b4;
+  }
+  
+  /* Seletor de ícones */
+  .icon-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .icon-option {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 8px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  
+  .icon-option:hover {
+    border-color: #bbb;
+    background-color: #f2f2f2;
+  }
+  
+  .icon-option.selected {
+    border-color: #ff00e1;
+    background-color: #ffe6f7;
+    box-shadow: 0 0 5px rgba(255, 0, 225, 0.4);
+  }
+  
+  /* Lista de cursos */
+  .courses-list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .course-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 3px solid #ff00e1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .course-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .course-item button {
+    background-color: #ff00e1;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 6px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .course-item button:hover {
+    background-color: #cc00b4;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .admin-container {
+      padding: 20px;
+    }
+  
+    .courses-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  

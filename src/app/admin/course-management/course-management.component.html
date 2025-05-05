@@ -1,0 +1,31 @@
+<div class="course-management-container">
+    <h2>Gestão do Curso: {{ course.title }}</h2>
+    <div class="course-description-section">
+        <h3>Editar Descrição</h3>
+        <label for="description">Descrição do Curso</label>
+        <textarea [(ngModel)]="course.description" placeholder="Digite a descrição do curso..."></textarea>
+        <div class="form-group">
+            <label>
+                <input type="checkbox" [(ngModel)]="course.isActive" name="isActive" />
+                <span>Curso Ativo</span>
+            </label>
+        </div>
+        <button class="save-description-btn" (click)="updateCourseDetails()">Salvar Descrição</button>
+    </div>
+
+    <div class="course-videos-section">
+        <h3>Vídeos Atuais</h3>
+        <ul>
+            <li *ngFor="let video of course?.videos" class="video-item">
+                {{ video.title }}
+                <button class="delete-video-btn" (click)="deleteVideo(video.id)">🗑️</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="add-video-section">
+        <h3>Adicionar Novos Vídeos</h3>
+        <input type="file" (change)="onVideoSelected($event)" multiple />
+        <button class="save-video-btn" (click)="saveVideos()">Salvar</button>
+    </div>
+</div>
