@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos | Novo Tempo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/evento.css">
+    <link rel="icon" href="../img/favicon.png" type="logo">
+    
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="../img/logo.jpg" alt="Logo Igreja Novo Tempo">
+    </div>
+    <h1> Novo Tempo - A Igreja da Família</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="quem somos.html">Quem Somos</a></li>
+                <li><a href="cnt.html">CNT</a></li>
+                <li><a href="ebnt.html">EBNT</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="on.html">Assista Agora</a></li>
+                <li><a href="sabedoria.html">Sabedoria</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
+                <li><a href="generosidade.html">Generosidade</a></li>
+            </ul>
+        </nav>
+       
+        <div class="Ouvir">
+            <button onclick="leitorDeTexto()">🔊 Ouvir Página</button>
+        
+            <div class="acessibilidade" class="container">
+                <label for="selecione"></label>
+                <select name="GrupoSelect" id="selecione">
+                <option value="" disabled selected>Escolha uma opção: Cor/Fonte:</option>
+                <option value="cor">Alterar Cor Da Página</option>
+                <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
+                <option value="fonte-media">Tamanho de Fonte Médio</option>
+                <option value="fonte-grande">Tamanho de Fonte Grande</option>
+                <option value="reset">Voltar ao Padrão</option>
+                </select>
+            </div>
+    </header>
+
+    <main>
+
+        <h2 class="sub-titulo">Eventos</h2>
+
+      <section class="eventos">
+        <h2>📅 Próximos Eventos</h2>
+        <p>Acompanhe a agenda e participe dos nossos encontros!</p>
+       <p>🚨 Use botão Adicionar para incluir lembretes em sua agenda do Google!</p>
+    
+        <table class="agenda">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Evento</th>
+                    <th>Descrição</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01/06/2025</td>
+                    <td>Rede Barnabé</td>
+                    <td>Encontro especial de discipulado e comunhão.</td>
+                    <td>
+                        <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Rede+Barnabé&dates=20250601T190000Z/20250601T210000Z&details=Encontro+especial+de+discipulado+e+comunhão&ctz=America/Sao_Paulo"
+                           target="_blank" class="add-calendar">
+                           <button className='button-link'> Adicionar</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>20/06/2025</td>
+                    <td>Rede Hadassa</td>
+                    <td>Evento voltado para mulheres cristãs.</td>
+                    <td>
+                        <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Rede+Hadassa&dates=20250620T190000Z/20250620T210000Z&details=Evento+voltado+para+mulheres+cristãs&ctz=America/Sao_Paulo"
+                           target="_blank" class="add-calendar">
+                           <button className='button-link'> Adicionar</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>08/06/2025</td>
+                    <td>Santa Ceia</td>
+                    <td>Celebração da Santa Ceia do Senhor.</td>
+                    <td>
+                        <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Santa+Ceia&dates=20250608T100000Z/20250608T120000Z&details=Celebração+da+Santa+Ceia+do+Senhor&ctz=America/Sao_Paulo"
+                           target="_blank" class="add-calendar">
+                           <button className='button-link'> Adicionar</button></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    </main>
+
+    <footer>
+        
+      <ul>
+        <li>
+            <a class="midia-link-lista" href="https://www.youtube.com/@MinisterioNovotempo">
+                <img src="../img/imag-YouTube.jpg" alt="Logo do YouTube" />
+            </a>
+        </li>
+        <!-- YouTube -->
+    
+        <li>
+            <a class="midia-link-lista" href="https://www.instagram.com/mnovotempo/">
+                <img src="../img/instagram.jpg" alt="Logo do Instagram" />
+            </a>
+        </li>
+        <!-- Instagram -->
+    
+        <li>
+            <a class="midia-link-lista" href="https://www.facebook.com/imnovotempo">
+                <img src="../img/facebook_log.png" alt="Logo do Facebook" />
+            </a>
+        </li>
+        <!-- Facebook -->
+    
+        <li>
+            <a class="midia-link-lista" href="https://www.tiktok.com/@hashtagprogramacao">
+                <img src="../img/imag-tik-tok.jpg" alt="Logo do TikTok" />
+            </a>
+        </li>
+        <!-- TikTok -->
+    
+        <li>
+            <a class="midia-link-lista" href="https://wa.me/5511918330406">
+                <img src="../img/imagwhatsapp.jpg" alt="Ícone do Whatsapp" />
+            </a>
+        </li>
+        <!-- Whatsapp -->
+    
+        <li>
+            <a href="#" class="midia-link-lista" id="retornar">
+                <img src="../img/Seta-volta.jpg" alt="Ícone de seta para voltar" />
+                <strong>Inicio</strong>
+            </a>
+        </li>
+        <!-- Retornar -->
+    </ul>
+    
+         <br>
+          <address>
+            <p>Endereço: Rua Jaime Duprat, 530, Bairro: Parque Vitoria, Cidade Franco da Rocha, Estado SP,CEP:07857-0800 </p>
+        
+          </address>
+          
+        
+        <p>&copy; 2025 Igreja Cristã Novo Tempo - Todos os direitos reservados.</p>
+    </footer>
+    <script src="../Js/index.js"></script>
+</body>
+</html>
+        
