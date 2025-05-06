@@ -1,82 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
-main{
-    font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
-}
 
-/* Adicionar estilo para a seção de evangelismo */
+/* Estilo para a seção de evangelismo */
 section {
-    background-color: white; /* Cor de fundo suave */
+    background-color: #f6e4f14b; /* Cor de fundo suave */
     padding: 20px;
-    border-radius: 8px; /* Borda arredondada */
+    border-radius: 10px; /* Borda arredondada */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    max-width: 900px;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: justify;
+    border-top: 0.5rem solid  #58137350;
+    border-bottom: 0.1rem solid #58137350;
+
+/* Título da seção */
+section h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
     text-align: center;
-    background-color: #f6e4f14b;
-    border-top: 2px solid  #ff00e150;
-    border-bottom: 2px solid #ff00e150;
 }
 
-
-section h2 {
-    color: #2c3e50; /* Cor do título */
-    font-size: 1.2rem;
+/* Parágrafos da seção */
+section p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
     margin-bottom: 10px;
 }
 
-section p {
-    color: #555; /* Cor do texto */
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
+/* Último parágrafo em negrito */
 section p:last-child {
-    font-weight: bold; /* Destacar o último parágrafo */
+    font-weight: bold;
 }
-
 
 /* Estilo para o versículo do dia */
 #versiculo {
     font-size: 1.2rem;
     font-style: italic;
     margin-top: 10px;
-    color:  #6d318c;
+    color: #6d318c;
     background-color: #f6e4f14b;
-    border-top: 2px solid  #ff00e150;
-    border-bottom: 2px solid #ff00e150;
+   
+     border-bottom: 0.1rem solid #58137350;
 
-    
-}
-
-/* Estilo base */
+/* Subtítulo */
 .sub-titulo {
     text-align: center;
     font-size: 2rem;
     margin: 20px 0;
-}
-
-section {
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-    padding: 20px;
-    background-color: #f6e4f14b;
-    border-top: 2px solid #ff00e150;
-    border-bottom: 2px solid #ff00e150;
-    border-radius: 10px;
-}
-
-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 10px;
 }
 
 /* Responsivo: até 768px */
@@ -92,7 +63,6 @@ section p {
 
     section h2 {
         font-size: 1.4rem;
-        margin-bottom: 8px;
     }
 
     section p {
@@ -119,5 +89,3 @@ section p {
         line-height: 1.5;
     }
 }
-
-
