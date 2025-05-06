@@ -11,7 +11,7 @@ section {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #f6e4f14b;
     border-top: 0.5rem solid  #58137350;
-    border-bottom: 0.1rem solid #58137350;
+     border-bottom: 0.1rem solid #58137350;
 }
 
 /* Estilização dos títulos dentro das seções */
@@ -38,7 +38,23 @@ blockquote {
     border-radius: 5px;
 }
 
-
+.titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      font-size:1.6rem;
+      margin-bottom: 1rem;
+      color: black;
+     font-weight: 800;
+     margin-bottom: 20px;}
+  
+   .sub-titulo {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: black;
+     font-weight: 600;
+    }
 
 
 /* Responsividade */
@@ -111,9 +127,7 @@ blockquote {
         padding: 10px;
     }
 
-    .titulo-pagina {
-        font-size: 22px;
-    }
+   
 
     section h2 {
         font-size: 18px;
@@ -123,4 +137,19 @@ blockquote {
         font-size: 13px;
         padding: 8px;
     }
-}
+  
+
+
+    .titulo {
+        font-size: 1.3rem;
+        padding: 0 10px;
+        font-weight: 800;
+    }
+
+    .sub-titulo {
+        font-size: 1.1rem;
+        padding: 0 10px;
+        font-weight: 600;
+    }
+      
+           }

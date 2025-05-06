@@ -10,19 +10,12 @@ section {
     margin: 0 auto 30px auto;
     text-align: justify;
     border-top: 0.5rem solid  #58137350;
-    border-bottom: 0.1rem solid #58137350;
+    border-bottom: 0.1rem solid #58137350;}
 
-/* Título da seção */
-section h2 {
-    color: #2c3e50;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    text-align: center;
-}
 
 /* Parágrafos da seção */
 section p {
-    color: #555;
+    color: black;
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 10px;
@@ -30,25 +23,48 @@ section p {
 
 /* Último parágrafo em negrito */
 section p:last-child {
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 /* Estilo para o versículo do dia */
-#versiculo {
-    font-size: 1.2rem;
+.versiculo {
+    font-size: 1rem;
     font-style: italic;
     margin-top: 10px;
-    color: #6d318c;
-    background-color: #f6e4f14b;
-   
+    background-color: #fff;
+    border-top: 0.3rem solid  #58137350;
      border-bottom: 0.1rem solid #58137350;
-
+     border-radius: 0.3rem;
+    padding: 0.8rem;}
 /* Subtítulo */
-.sub-titulo {
-    text-align: center;
-    font-size: 2rem;
-    margin: 20px 0;
-}
+.titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      font-size:1.6rem;
+      margin-bottom: 1rem;
+      color: black;
+     font-weight: 800;
+     margin-top: 2rem;
+   
+    }
+  
+   .sub-titulo {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: black;
+     font-weight: 600;
+    }
+
+    /* .evangelismo {
+        font-size: 18px;
+        color: black;
+        margin-bottom: 20px;
+        text-align: left;
+        margin: 0.5rem;
+      } */
 
 /* Responsivo: até 768px */
 @media (max-width: 768px) {
@@ -73,7 +89,7 @@ section p:last-child {
 /* Responsivo: até 480px */
 @media (max-width: 480px) {
     .sub-titulo {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     section {
@@ -85,7 +101,7 @@ section p:last-child {
     }
 
     section p {
-        font-size: 0.95rem;
+        font-size: 1rem;
         line-height: 1.5;
     }
 }
