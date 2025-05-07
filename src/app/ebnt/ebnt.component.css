@@ -24,7 +24,7 @@
     margin: 20px 0 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #f6e4f14b;
-   border-top: 0.5rem solid  #58137350;
+    border-top: 0.2rem solid  #58137350;
     border-bottom: 0.1rem solid #58137350;
 }
 
@@ -36,7 +36,7 @@
     margin-bottom: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #f6e4f14b;
-    border-top: 0.5rem solid  #58137350;
+    border-top: 0.2rem solid  #58137350;
     border-bottom: 0.1rem solid #58137350;
 }
 .testemunho 
@@ -67,6 +67,35 @@
     color: black;
    font-weight: 600;
   }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Alinha à direita */
+    gap: 10px; /* Espaço entre os botões */
+    padding: 20px; /* Espaço interno opcional */
+  }
+  
+  /* Estilo base para os botões */
+  .button-wrapper a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    color: #f4f4f4;
+    text-align: center;
+  }
+  
+  /* Estilo específico */
+  .signin {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+  }
+  
+  .signup {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+  }
+  
 /* Seção de boas-vindas */
 .welcome {
 
@@ -76,7 +105,7 @@
     margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     background-color: #f6e4f14b;
-    border-top: 0.5rem solid  #58137350;
+    border-top: 0.2rem solid  #58137350;
     border-bottom: 0.1rem solid #58137350; 
     
 }
