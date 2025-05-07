@@ -1,64 +1,88 @@
 /* Cabeçalho */
 header {
-    /* background-color: black; */
-    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
-    color: white;
-    padding: 10px 20px; /* Mantém espaço interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    width: 100%; /* Ocupa toda a largura da tela */
-    margin: 0; /* Remove qualquer margem */
-    border-radius: 0; /* Remove arredondamento */
-}
-header nav ul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    width: 100%;
+    margin: 0;
+    border-radius: 0 0 1rem 1rem;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  /* Container para logo e título */
+  .titulo-pagina {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente todo o conteúdo */
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+    gap: 15px; /* Espaço entre logo e texto */
+    flex-wrap: wrap;
+  }
+  
+  /* Logo */
+  .logo img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+  }
+  
+  /* Navegação */
+  header nav ul {
     list-style: none;
-    padding: 0;
-    margin-top: 5px;
-}
+    display: flex;
+    gap: 15px;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 
-header nav ul li {
+  }
+  
+  header nav ul li {
     display: inline-block;
-    margin-right: 20px;
-}
-
-header nav ul li a {
+    
+  }
+  
+  header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
-    
-}
-
-header nav ul li a:hover {
+    padding: 0.2rem;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
     color: #ffcc00;
-}
-
-/* Logo */
-
-.logo img {
-    max-width: 100%;  /* A imagem ocupará no máximo 100% da largura disponível */
-    height: auto;     /* A altura será ajustada automaticamente para manter a proporção */
-    max-height: 100px; /* Definir uma altura máxima para a imagem do logo 
-    */
-    border-radius: 50px;
-}
+  }
+  
 
 
 /* Acessibilidade */
 
 
 .Ouvir {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Alinha o conteúdo à direita */
-    background-color: #ddd; /* Fundo suave */
-    padding: 2xpx;
-    border-radius: 2px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin: 10px 0;
-    margin-left: auto; /* Move o container para a margem direita da tela */
-    width: fit-content; /* Ajusta a largura conforme o conteúdo */
+    padding: 0.2rem 0.8rem;
+    margin: 0.1rem;
+    font-size: 1rem;
+    color: #216fc2b3;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
 }
 
 .Ouvir img {
+    background-color: #216fc2b3;
     width: 20px;
     height: 20px;
     margin-right: 10px; /* Espaçamento entre o ícone e o botão */
@@ -75,21 +99,8 @@ header nav ul li a:hover {
     align-items: center; /* Centraliza verticalmente */
 }
 
-.Ouvir button {
-    background-color: #dddddd; /* Cor de fundo do botão */
-    color: black; /* Cor do texto do botão */
-    border: none;
-    padding: 2px 2px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Animações suaves */
-}
-
-
 .Ouvir button:hover {
-    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
-    /* background-color: #8938e069; Cor de fundo ao passar o mouse */
+    background-color: #004494; 
     transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
    color:white
 }
@@ -98,3 +109,38 @@ header nav ul li a:hover {
     background-color: #004494; /* Cor de fundo ao clicar */
 }
 
+
+.acessibilidade select {
+    margin-right: 2rem;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+/* Para telas menores que 480px (celulares) */
+@media (max-width: 600px) {
+    .titulo-pagina {
+      flex-direction: column; /* Empilha logo e título */
+      text-align: center;
+      gap: 10px;
+      font-size: 1.5rem;
+    }
+  
+    .logo img {
+        width: 70px; /* Diminui o tamanho da logo no celular */
+        margin: 0;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    header nav ul li {
+     
+      font-weight: 600;
+    }
+  }
+  
