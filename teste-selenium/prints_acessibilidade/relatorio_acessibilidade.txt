@@ -1,0 +1,8 @@
+Relatório de Teste de Acessibilidade
+-------------------------------------------------
+
+[✔️] Cor da página alterada. Screenshot salva.
+[✔️] Fonte alterada para pequena. Screenshot salva.
+[✔️] Fonte alterada para média. Screenshot salva.
+[✔️] Fonte alterada para grande. Screenshot salva.
+[✔️] Resetado ao padrão. Screenshot salva.

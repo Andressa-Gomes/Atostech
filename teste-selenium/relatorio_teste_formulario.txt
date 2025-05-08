@@ -1,0 +1,10 @@
+Relatório do Teste de Acesso ao Formulário
+URL do site: https://andressa-gomes.github.io/Atostech/
+Ação: Rolagem até o final da página e clique no link do formulário.
+Status: [✔️] Link para o formulário foi aberto corretamente.
+URL final: https://docs.google.com/forms/d/e/1FAIpQLScBrZ-7H9EToYZFedkFJhxYEkckoNlz3kjOe1HWFSV_96fHuw/viewform
+Captura de tela: prints_formulario/formulario_aberto.png
+Data e Hora: 2025-04-25 18:28:16
+
+-------------------------------------------------
+Observações: Teste realizado com sucesso.
