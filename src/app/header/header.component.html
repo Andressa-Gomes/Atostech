@@ -1,0 +1,38 @@
+<header>
+  <div class="logo">
+    <a routerLink="/"><img src="assets/img/logo.jpg" alt="Logo Igreja Novo Tempo" /></a>
+  </div>
+  <h1>Novo Tempo - A Igreja da Família</h1>
+  <nav aria-label="Navegação principal">
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/whoweare" routerLinkActive="active">Quem Somos</a></li>
+      <li><a routerLink="/cnt" routerLinkActive="active">CNT</a></li>
+      <li><a routerLink="/ebnt" routerLinkActive="active">EBNT</a></li>
+      <li><a routerLink="/events" routerLinkActive="active">Eventos</a></li>
+      <li><a routerLink="/on" routerLinkActive="active">Assista Agora</a></li>
+      <li><a routerLink="/wisdom" routerLinkActive="active">Sabedoria</a></li>
+      <li><a routerLink="/location" routerLinkActive="active">Localização</a></li>
+      <li><a routerLink="/generosity" routerLinkActive="active">Generosidade</a></li>
+      <li><a routerLink="/signin" routerLinkActive="active">Entrar</a></li>
+      <li><a routerLink="/signup" routerLinkActive="active">Cadastrar</a></li>
+      <li><a routerLink="/admin/dash" routerLinkActive="active">ADMIN</a></li>
+    </ul>
+  </nav>
+
+  <div class="Ouvir">
+    <button onclick="leitorDeTexto()">🔊 Ouvir Página</button>
+
+    <div class="acessibilidade container">
+      <label for="selecione"></label>
+      <select name="GrupoSelect" id="selecione">
+        <option value="" disabled selected>Escolha uma opção: Cor/Fonte:</option>
+        <option value="cor">Alterar Cor Da Página</option>
+        <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
+        <option value="fonte-media">Tamanho de Fonte Médio</option>
+        <option value="fonte-grande">Tamanho de Fonte Grande</option>
+        <option value="reset">Voltar ao Padrão</option>
+      </select>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,33 @@
+<form #f="ngForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Nome:</label>
+      <input id="name" name="name" [(ngModel)]="user.name" required />
+    </div>
+  
+    <div>
+      <label for="sobrenome">Sobrenome:</label>
+      <input id="sobrenome" name="sobrenome" [(ngModel)]="user.surname" required />
+    </div>
+  
+    <div>
+      <label for="email">E-mail:</label>
+      <input id="email" name="email" [(ngModel)]="user.email" required type="email" />
+    </div>
+  
+    <div>
+      <label for="senha">Senha:</label>
+      <input id="senha" name="senha" [(ngModel)]="user.password" required type="password" />
+    </div>
+  
+    <div>
+      <label for="confirmarSenha">Confirmar Senha:</label>
+      <input id="confirmarSenha" name="confirmarSenha" [(ngModel)]="confirmPassword" required type="password" />
+    </div>
+  
+    <div *ngIf="diffPassword" class="error-message">
+      As senhas não coincidem!
+    </div>
+  
+    <button type="submit" [disabled]="diffPassword">Cadastrar</button>
+  </form>
+  

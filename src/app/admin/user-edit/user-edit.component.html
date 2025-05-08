@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Usuários</h2>
+    <table class="table table-bordered table-hover">
+      <thead class="table-light">
+        <tr>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Email</th>
+          <th>Perfil</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.name }}</td>
+          <td>{{ user.surname }}</td>
+          <td>{{ user.email }}</td>
+          <td>
+            <select [(ngModel)]="user.role" class="form-select">
+              <option value="USER">USER</option>
+              <option value="ADMIN">ADMIN</option>
+            </select>
+          </td>
+          <td>
+            <button class="btn btn-sm btn-success" (click)="updateUser(user)">Atualizar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
