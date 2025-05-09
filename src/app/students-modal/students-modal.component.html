@@ -1,0 +1,13 @@
+<!-- Modal só aparece quando isOpen for true -->
+<div *ngIf="isOpen" id="modal-background" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span id="close-modal" (click)="closeModal()">&times;</span>
+    <p>
+      Adaildo S Silva, Alyssa A Silva,<br />
+      Andressa R G Marques, Cristina F Silva,<br />
+      Cicero M F Silva, Jefferson R Silva,<br />
+      Maria Ap C Santos, Vanderley F Magalhães
+    </p>
+  </div>
+</div>
+

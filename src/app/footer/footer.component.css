@@ -12,7 +12,7 @@
 footer {
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
     color: white;
-    padding: 10px 0;
+    padding: 08px 0;
     text-align: center;
     margin: 0; /* Remove as margens laterais */
     border-radius: 0; /* Remove arredondamento para alinhar com as bordas da tela */
@@ -24,6 +24,12 @@ footer p  {
     font-size: 1rem;
     font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
     
+}
+.colaboradores {
+
+  font-style: italic;
+  color: #ffcc00;
+  font-size: 0.7rem;
 }
 .retornar{
     margin-top: 20px;
@@ -103,5 +109,12 @@ footer ul {
 @media (max-width: 480px) {
     footer p lu li {
         font-size: 0.8rem;
+    }
+    .colaboradores {
+
+      font-style: italic;
+      color: #ffcc00;
+    
+      font-size: 0.4rem;
     }
 }
