@@ -19,35 +19,32 @@ export class UserService {
 
   constructor(private http: HttpClient) {}
 
-  //updateUser(user: any): Observable<any> {
-  //  return this.http.put(`${this.baseUrl}/${this.user}/${this.signup}`, user); // ajuste a URL real
-  //}
-
   getUserById(userId: String): Observable<any> {
-    return this.http.get(`/api/user/${userId}`); // ajuste a URL real
+    return this.http.get(`${this.baseUrl}/${this.user}/${userId}`); 
   }
 
   deleteUser(userId: String): Observable<any> {
-    return this.http.delete(`/api/user/${userId}`); // ajuste a URL real
+    return this.http.delete(`${this.baseUrl}/${this.user}/${userId}`); 
   }
 
   getAllUsers(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.baseUrl}/${this.user}/${this.all}`); // ajuste a URL real
+    return this.http.get<any[]>(`${this.baseUrl}/${this.user}/${this.all}`, { withCredentials: true });
   }
 
   getUserByEmail(email: string): Observable<any> {
-    return this.http.get(`/api/user/email/${email}`); // ajuste a URL real
+    return this.http.get(`${this.baseUrl}/${this.user}/${email}`); 
   }
 
   signIn(email: string, password: string): Observable<any> {
-    return this.http.post('/api/user/signin', { email, password }); // ajuste a URL real
+    return this.http.post(`${this.baseUrl}/${this.user}/${this.signin}`, { email, password }, { withCredentials: true }); 
   }
 
   signUp(user: any): Observable<User> {
-    return this.http.post<User>(`${this.baseUrl}/${this.user}/${this.signup}`, user); // ajuste a URL real
+    return this.http.post<User>(`${this.baseUrl}/${this.user}/${this.signup}`, user); 
   }
 
   updateUserRole(user: Partial<User>): Observable<User> {
     return this.http.put<User>(`${this.baseUrl}/${this.user}/${this.admin}/${this.role}`, user);
   }
+
 }

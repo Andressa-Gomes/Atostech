@@ -1,8 +1,10 @@
 <header>
+  <div class="titulo-pagina">
   <div class="logo">
     <a routerLink="/"><img src="assets/img/logo.jpg" alt="Logo Igreja Novo Tempo" /></a>
   </div>
-  <h1>Novo Tempo - A Igreja da Família</h1>
+  <h1 class="titulo-pagina">Novo Tempo - A Igreja da Família</h1>
+</div>
   <nav aria-label="Navegação principal">
     <ul>
       <li><a routerLink="/" routerLinkActive="active">Home</a></li>
@@ -14,18 +16,16 @@
       <li><a routerLink="/wisdom" routerLinkActive="active">Sabedoria</a></li>
       <li><a routerLink="/location" routerLinkActive="active">Localização</a></li>
       <li><a routerLink="/generosity" routerLinkActive="active">Generosidade</a></li>
-      <li><a routerLink="/signin" routerLinkActive="active">Entrar</a></li>
-      <li><a routerLink="/signup" routerLinkActive="active">Cadastrar</a></li>
       <li><a routerLink="/admin/dash" routerLinkActive="active">ADMIN</a></li>
     </ul>
   </nav>
 
   <div class="Ouvir">
-    <button onclick="leitorDeTexto()">🔊 Ouvir Página</button>
-
+    <button (click)="leitorDeTexto()">🔊 Ouvir Página</button>
+    <button (click)="pararLeitura()">🛑 Parar</button>
     <div class="acessibilidade container">
       <label for="selecione"></label>
-      <select name="GrupoSelect" id="selecione">
+      <select name="GrupoSelect" id="selecione" (change)="handleChange($event)">
         <option value="" disabled selected>Escolha uma opção: Cor/Fonte:</option>
         <option value="cor">Alterar Cor Da Página</option>
         <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
@@ -35,4 +35,6 @@
       </select>
     </div>
   </div>
+  
+  
 </header>

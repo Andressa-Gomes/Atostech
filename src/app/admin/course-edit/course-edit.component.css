@@ -1,143 +1,139 @@
-/* Estilo principal do container */
 .course-management-container {
-    width: 80%;
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Títulos das seções */
-h2, h3 {
-    color: #333;
-    font-family: 'Arial', sans-serif;
-}
-
-h2 {
+    padding: 40px 30px;
+    background-color: #f6e4f14b;
+    border-radius: 12px;
+    border-top: 0.2rem solid #58137350;
+    border-bottom: 0.1rem solid #58137350;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    margin-top: 40px; 
+  }
+  
+  .titulo-centralizado {
+    text-align: center;
+    margin-bottom: 30px;
     font-size: 1.8rem;
-    margin-bottom: 20px;
-}
+  }
+  
+  .course-description-section h3,
+  .course-videos-section h3,
+  .add-video-section h3 {
 
-h3 {
-    font-size: 1.5rem;
     margin-bottom: 15px;
-}
-
-/* Estilo do texto da descrição */
-textarea {
+  }
+  
+  label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  textarea {
     width: 100%;
-    height: 120px;
+    min-height: 100px;
+    margin-top: 8px;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     font-size: 1rem;
-    font-family: 'Arial', sans-serif;
-    resize: none;
-    background-color: #fff;
-}
-
-/* Estilo do checkbox e label */
-.form-group {
-    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+  }
+  
+  .checkbox-label {
     display: flex;
     align-items: center;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-span {
-    font-size: 1rem;
-}
-
-/* Botão para salvar descrição */
-.save-description-btn, .save-video-btn {
-    background-color: #007bff;
-    color: #fff;
+    gap: 10px;
+    margin-top: 20px;
+    font-weight: normal;
+  }
+  
+  .botoes-curso {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn-save {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 1rem;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.save-description-btn:hover, .save-video-btn:hover {
-    background-color: #0056b3;
-}
-
-/* Estilo da lista de vídeos */
-.course-videos-section ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.video-item {
-    padding: 8px;
-    margin: 8px 0;
-    background-color: #e9ecef;
-    border-radius: 4px;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adicionado para garantir que o botão de delete apareça no lado direito */
-}
-
-.video-item:hover {
-    background-color: #dfe2e6;
-}
-
-.delete-video-btn {
-    background-color: transparent;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .btn-save:hover {
+    background: #253056;
+  }
+  
+  .btn-delete {
+    background-color: #b22020;
+    color: white;
     border: none;
-    color: red;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .btn-delete:hover {
+    background-color: #7d1111;
+  }
+  
+  .video-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .video-item {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 0.2rem solid #58137350;
+    border-right: 0.2rem solid #58137350;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .delete-video-btn {
+    background: none;
+    border: none;
     font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-.delete-video-btn:hover {
-    color: #b33b3b;
-}
-
-/* Estilo da seção de adicionar vídeo */
-.add-video-section input[type="file"] {
-    margin-bottom: 15px;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.add-video-section {
-    margin-top: 30px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .course-management-container {
-        width: 95%;
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    }
-
-    textarea {
-        height: 100px;
-    }
-
-    .save-description-btn, .save-video-btn {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
-}
+    cursor: pointer;
+    color: #b22020;
+    transition: transform 0.2s ease;
+  }
+  
+  .delete-video-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  .add-video-section input[type="file"] {
+    display: block;
+    margin: 15px 0;
+  }
+  
+  .save-video-btn {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .save-video-btn:hover {
+    background: #253056;
+  }
+  

@@ -1,23 +1,23 @@
 import { Component, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CourseAdminService } from '../services/course-admin.service';
+import { CourseService } from '../services/course.service';
 import { CommonModule } from '@angular/common'; 
 import { CourseResponse } from '../models/course/course-response.model';
 
 @Component({
-  selector: 'app-course-detail',
+  selector: 'app-watch-course',
   imports: [CommonModule],
-  templateUrl: './course-detail.component.html',
-  styleUrl: './course-detail.component.css'
+  templateUrl: './watch-course.component.html',
+  styleUrls: ['./watch-course.component.css']
 })
-export class CourseDetailComponent implements OnInit {
+export class WatchCourseComponent implements OnInit {
   course!: CourseResponse;
   selectedVideoPath: string | null = null;
   selectedVideoName: string | null = null;
 
   constructor(
     private route: ActivatedRoute,
-    private courseAdminService: CourseAdminService
+    private courseAdminService: CourseService
   ) {}
 
   ngOnInit(): void {

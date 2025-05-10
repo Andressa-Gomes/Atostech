@@ -13,10 +13,11 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { CreateCourseComponent } from './admin/create-course/create-course.component';
 import { CourseManagementComponent } from './admin/course-management/course-management.component';
-import { CourseDetailComponent } from './course-detail/course-detail.component';
+import { WatchCourseComponent } from './watch-course/watch-course.component';
 import { CourseEditComponent } from './admin/course-edit/course-edit.component';
 import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 import { UserEditComponent } from './admin/user-edit/user-edit.component';
+import { CourseDetailsComponent } from './course-details/course-details.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -30,10 +31,12 @@ export const routes: Routes = [
     { path: 'generosity', component: GenerosityComponent },
     { path: 'signin', component: SignInComponent },
     { path: 'signup', component: SignUpComponent },
+    { path: 'admin/dash', component: AdminDashboardComponent },
     { path: 'admin/create/course', component: CreateCourseComponent },
     { path: 'admin/edit/course/:id', component: CourseEditComponent },
     { path: 'admin/management/course', component: CourseManagementComponent },
     { path: 'admin/management/user', component: UserEditComponent },
-    { path: 'course/:id', component: CourseDetailComponent },
-    { path: 'admin/dash', component: AdminDashboardComponent }
+    { path: 'course/watch/:id', component: WatchCourseComponent },
+    { path: 'course/:id', component: CourseDetailsComponent }
+    
 ];

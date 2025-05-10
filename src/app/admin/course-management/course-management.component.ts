@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { CourseAdminService } from '../../services/course-admin.service';
+import { CourseService } from '../../services/course.service';
 import { FormsModule } from '@angular/forms';
 import { CourseResponse } from '../../models/course/course-response.model';
 import { CommonModule } from '@angular/common';
@@ -17,7 +17,7 @@ export class CourseManagementComponent implements OnInit {
   courses: CourseResponse[] = [];
 
   constructor(
-    private courseService: CourseAdminService,
+    private courseService: CourseService,
     private router: Router
   ) {}
 

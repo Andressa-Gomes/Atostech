@@ -1,115 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-
-
-.ebnt {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #f6e4f14b;
-}
-  
-.courses h3{
-font-size: 1.4rem;
-margin-bottom: 1%;
-margin-top: 3%;
-}  
-
-
-.testemunho h3{
+/* Estilo comum para h3 */
+.courses h3,
+.testemunhos h3,
+.welcome h3 {
     font-size: 1.4rem;
-    margin-bottom: 1%;
-    margin-top: 3%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
 }
 
-
-.welcome h3{
-    margin-bottom: 1%;
-    font-size: 1.4rem;
-}
-
-
-.welcome p{
-    margin-bottom: 1%;
+/* Estilo comum para p em welcome */
+.welcome p {
     font-size: 1.1rem;
+    margin-bottom: 1%;
     font-weight: normal;
 }
 
-
+/* Estilo da seção de cursos */
 .courses {
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f6e4f14b;
+    border-top: 0.2rem solid #58137350;
+    border-bottom: 0.1rem solid #58137350;
+}
+
+/* Estilo da seção de testemunho */
+.testemunhos {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f6e4f14b;
+    border-top: 0.2rem solid #58137350;
+    border-bottom: 0.1rem solid #58137350;
 }
-    
-    
 
-    .testemunho {
-        background-color: #f6e4f14b;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 40px;
-        background-color: #ffffff;
-    border-top: 2px solid  #ff00e150;
-    border-bottom: 2px solid #ff00e150;
+.testemunho {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-right: 0.2rem solid #58137350;
+    border-left: 0.2rem solid #58137350;
+}
 
-     }
+.titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
 
-        /* Seção de boas-vindas */
+.sub-titulo {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 600;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Alinha à direita */
+    gap: 10px; /* Espaço entre os botões */
+    padding: 20px; /* Espaço interno opcional */
+}
+
+/* Estilo base para os botões */
+.button-wrapper a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+/* Estilo específico */
+.signin {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+}
+
+.signup {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+}
+
+/* Seção de boas-vindas */
 .welcome {
-    color: white;
+    color: black;
     padding: 40px 20px;
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    border-top: 2px solid  #ff00e150;
-    border-bottom: 2px solid #ff00e150;
+    background-color: #f6e4f14b;
+    border-top: 0.2rem solid #58137350;
+    border-bottom: 0.1rem solid #58137350;
 }
-    
 
 .welcome h2 {
     font-size: 26px;
     margin-bottom: 10px;
 }
 
-/* Seção de cursos */
-.courses {
-    margin-top: 20px;
-    background-color: #ffffff;
-    border-top: 2px solid  #ff00e150;
-    border-bottom: 2px solid #ff00e150;
-}
-
+/* Container dos cursos */
 .course-container {
-    line-height: 1.4rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: block; /* Mudamos para display block para os cursos ocuparem toda a linha */
     margin-top: 20px;
-    
 }
-    
-
 
 /* Cartões dos cursos */
 .course {
-   
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    max-width: 320px;
+    width: 100%; /* Faz o curso ocupar toda a largura */
+    margin-bottom: 20px; /* Espaço entre os cursos */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-   
+    border-right: 0.2rem solid #58137350;
+    border-left: 0.2rem solid #58137350;
 }
-
 
 .course:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    background-color: #f6e4f14b;
+    background-color: #efcbe5d2;
 }
 
 .course h3 {
@@ -121,7 +146,6 @@ margin-top: 3%;
 .course p {
     font-size: 16px;
     color: black;
-    
 }
 
 /* Botões */
@@ -130,7 +154,7 @@ margin-top: 3%;
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 5px 8px;
     border-radius: 8px;
     margin-top: 10px;
     font-weight: bold;
@@ -138,11 +162,12 @@ margin-top: 3%;
 }
 
 .btn:hover {
-    background: #51236b;
+    background: #253056;
 }
 
 /* RESPONSIVIDADE */
-/* Telas grandes (entre 1024px e 1280px) */
+
+/* Telas grandes */
 @media (max-width: 1280px) {
     .course-container {
         flex-direction: row;
@@ -151,13 +176,13 @@ margin-top: 3%;
     }
 
     .course {
-        flex: 1 1 40%;
-        max-width: 45%;
+        flex: 1 1 100%; /* Garante que o curso ocupe toda a largura */
+        max-width: 100%; /* Garante que o curso ocupe toda a largura */
     }
 
     .welcome h2,
     .courses h2,
-    .testemunho h3 {
+    .testemunhos h3 {
         font-size: 1.8rem;
     }
 
@@ -167,7 +192,7 @@ margin-top: 3%;
     }
 }
 
-/* Telas médias (até 1024px) */
+/* Telas médias */
 @media (max-width: 1024px) {
     .course-container {
         flex-direction: row;
@@ -176,13 +201,13 @@ margin-top: 3%;
     }
 
     .course {
-        flex: 1 1 45%;
-        max-width: 90%;
+        flex: 1 1 100%; /* Garante que o curso ocupe toda a largura */
+        max-width: 100%;
     }
 
     .welcome h2,
     .courses h2,
-    .testemunho h3 {
+    .testemunhos h3 {
         font-size: 1.6rem;
     }
 
@@ -191,7 +216,7 @@ margin-top: 3%;
     }
 }
 
-/* Telas tablets e pequenas (até 768px) */
+/* Tablets e telas pequenas */
 @media (max-width: 768px) {
     .course-container {
         flex-direction: column;
@@ -204,7 +229,7 @@ margin-top: 3%;
     }
 
     .welcome,
-    .testemunho,
+    .testemunhos,
     .courses {
         padding: 20px 15px;
     }
@@ -214,7 +239,7 @@ margin-top: 3%;
     }
 
     .courses h3,
-    .testemunho h3,
+    .testemunhos h3,
     .welcome h3 {
         font-size: 1.2rem;
     }
@@ -232,32 +257,57 @@ margin-top: 3%;
     }
 }
 
-/* Telas muito pequenas (até 480px) */
+/* Celulares */
 @media (max-width: 480px) {
     .course {
-        padding: 15px;
+        padding: 8px;
     }
 
     .welcome,
-    .testemunho,
+    .testemunhos,
     .courses {
         border-radius: 8px;
         padding: 15px 10px;
     }
 
     .btn {
-        padding: 8px 12px;
+        padding: 2px 2px;
         font-size: 0.9rem;
     }
 
     .welcome h2,
     .courses h2,
-    .testemunho h3 {
+    .testemunhos h3 {
         font-size: 1.2rem;
     }
 
     .welcome p,
     .course p {
         font-size: 0.95rem;
+    }
+
+    .course {
+        padding: 5px;
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+
+    .titulo {
+        font-size: 1.3rem;
+        padding: 0 10px;
+        font-weight: 800;
+    }
+
+    .sub-titulo {
+        font-size: 1.1rem;
+        padding: 0 10px;
+        font-weight: 600;
+    }
+
+    .pagination-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
     }
 }

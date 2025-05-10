@@ -1,50 +1,115 @@
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #ffffff;
+.usuarios-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f6e4f14b;
+    border-top: 0.2rem solid #58137350;
+    border-bottom: 0.1rem solid #58137350;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    color: #333;
   }
   
-  .table {
+  .titulo {
+    font-size: 1.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  .usuarios-tabela {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .table th,
-  .table td {
-    padding: 0.75rem;
-    text-align: left;
-    vertical-align: middle;
+  .usuarios-tabela thead {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    font-size: 1.2rem;
   }
   
-  .table th {
-    background-color: #f8f9fa;
-    font-weight: 600;
-    color: #333;
+  .usuarios-tabela th,
+  .usuarios-tabela td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
   }
   
-  .table tr:nth-child(even) {
-    background-color: #f2f2f2;
+  .usuarios-tabela tbody tr:nth-child(even) {
+    background: #f2f2f2;
   }
   
-  .btn-primary {
-    background-color: #007bff;
+  .usuarios-tabela tbody tr:hover {
+    background: #d6eaf8;
+    transition: 0.3s;
+  }
+  
+  .usuarios-select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .btn-usuario {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
     border: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s;
   }
   
-  .btn-primary:hover {
-    background-color: #0056b3;
+  .btn-usuario:hover {
+    background: #253056;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .usuarios-container {
+      padding: 15px;
+    }
+  
+    .usuarios-tabela th,
+    .usuarios-tabela td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .titulo {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .usuarios-container {
+      width: 95%;
+      padding: 15px;
+      margin: 0 auto;
+    }
+  
+    .usuarios-tabela {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .titulo {
+      font-size: 1.3rem;
+    }
+  
+    .btn-usuario {
+      font-size: 0.9rem;
+      padding: 6px 10px;
+    }
   }
   

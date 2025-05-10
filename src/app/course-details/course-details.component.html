@@ -1,0 +1,29 @@
+<div class="body-global">
+    <div class="main-global">
+  
+        <!-- Título do curso -->
+        <h2 class="titulo">
+            Curso: {{ course.icon }} {{ course.title }}
+        </h2>
+  
+        <!-- Seção de descrição -->
+        <section class="welcome" *ngIf="course?.description">
+            <h3 class="sub-titulo">📘 Sobre o Curso</h3>
+            <p>{{ course.description }}</p>
+        </section>
+  
+        <!-- Seção de vídeos -->
+        <section class="videos" *ngIf="course?.videos?.length">
+            <h3 class="sub-titulo">🎥 Vídeos do Curso</h3>
+            <div class="course-container">
+                <div class="course" *ngFor="let video of course.videos">
+                    <h3>{{ video.title }}</h3>
+                </div>
+            </div>
+        </section>
+  
+        <div class="button-wrapper" style="justify-content: center; margin-top: 20px;">
+            <button class="btn signup" (click)="subscribeToCourse()">Inscrever-se</button>
+          </div>
+    </div>
+</div>

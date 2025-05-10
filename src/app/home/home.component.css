@@ -1,0 +1,203 @@
+
+
+.sub-titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size:1.6rem;
+    margin-bottom: 1rem;
+    color: black;
+   font-weight: 800;
+   margin-bottom: 20px;
+  
+}
+
+h2 {
+
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: black;
+   font-weight: 800;
+}
+
+.welcome p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    font-size: 1.3rem;
+    color: black;
+    line-height: 1.6;
+    text-align: center;
+} 
+
+.welcome {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    background-color: #f6e4f14b;
+    border-top: 0.2rem solid  #58137350;
+     border-bottom: 0.1rem solid #58137350;
+}
+
+.video-container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 700px;
+    border-bottom: 0.1rem solid #58137350;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+
+.live-link {
+    display: inline-block;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: #f4f4f4;
+    font-size: 15px;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Estilo para a seção "Queremos te conhecer" */
+.know-us {
+  text-align: center; /* Centraliza o texto horizontalmente */
+  margin: 10px 10px;
+  border-radius: 10px;
+  padding: 20px; 
+  background-color: #f6e4f14b;
+  border-top: 0.2rem solid  #58137350;
+  border-bottom: 0.1rem solid #58137350;
+}
+
+/* Título estilizado */
+
+
+.know-us  p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/* Botão moderno */
+.know-us a {
+    display: inline-block;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+.formulario-link a {
+    font-size: 15px; /* Aumenta o tamanho da fonte */
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold; /* Deixa o texto mais marcante */
+    
+    
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .know-us {
+        max-width: 100%;
+        padding: 30px 15px;
+       
+    }
+
+    
+    .know-us p {
+        font-size: 1.2rem;
+        
+    }
+
+    .know-us a {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .live-link{
+        font-size: 12px;
+        padding: 10px 20px;}
+        /* .pp{
+            font-size: 1.2rem; 
+            font-family: 
+        } */
+        
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+          font-size: 1rem;
+        }
+      
+      
+        .welcome p,
+        .video-container p {
+          font-size: 1.3rem;
+          text-align: left;
+          
+          
+        }
+      
+       
+       
+        .live-link
+        {
+          font-size: 0.9rem;
+          padding: 0.5rem;
+    
+        }
+    
+        .know-us a {
+            font-size: 0.9rem;
+          padding: 0.5rem;
+    
+        }
+    
+        .know-us p{
+          font-size: 1.3rem;
+          text-align: left;
+    
+        }
+    .schedule p {
+        font-size: 1.3rem;
+        text-align: left;
+
+    }
+     
+       
+      }
+     
+
+
+

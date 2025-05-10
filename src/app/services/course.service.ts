@@ -3,11 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CourseModel } from '../models/course/course.model';
 import { CourseResponse } from '../models/course/course-response.model';
+import { User } from '../models/user/user.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CourseAdminService {
+export class CourseService {
   
   private baseUrl = 'http://localhost:8080';
   private video = "video";
@@ -15,6 +16,7 @@ export class CourseAdminService {
   private create = "create";
   private upload = "upload";
   private delete = "delete";
+  private subscribe = "subscribe";
   private list_all_courses = "list_all_courses";
 
   constructor(private http: HttpClient) {}
@@ -47,4 +49,9 @@ export class CourseAdminService {
   deleteVideo(videoId: number): Observable<any> {
     return this.http.delete(`${this.baseUrl}/${this.video}/${videoId}`)
   }
+
+  subscribeCourse(courseId: number): Observable<Boolean> {
+    return this.http.get<Boolean>(`${this.baseUrl}/${this.course}/${this.subscribe}/${courseId}`, { withCredentials: true });
+  }
+
 }

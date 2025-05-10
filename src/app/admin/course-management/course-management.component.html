@@ -1,6 +1,6 @@
 <div class="admin-container">
     <div class="admin-header">
-      <h1>Gestão de Cursos</h1>
+      <h2 class="titulo">Gestão de Cursos</h2>
       <p class="sub-titulo">Visualize, edite ou remova cursos existentes</p>
     </div>
   
@@ -8,12 +8,12 @@
       <div class="course-item" *ngFor="let course of courses">
         <h3>{{ course.title }}</h3>
         <p>{{ course.shortDescription }}</p>
-        <button class="btn-edit" [routerLink]="['/admin/edit/course', course.id]">Editar</button>
+        <button class="btn btn-edit" [routerLink]="['/admin/edit/course', course.id]">Editar</button>
       </div>
     </div>
   
     <ng-template #noCourses>
-      <p>Nenhum curso encontrado.</p>
+      <p class="sub-titulo">Nenhum curso encontrado.</p>
     </ng-template>
   </div>
   

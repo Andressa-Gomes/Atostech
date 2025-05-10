@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CourseAdminService } from '../../services/course-admin.service';
+import { CourseService } from '../../services/course.service';
 import { CommonModule } from '@angular/common';
 import { CourseModel } from '../../models/course/course.model';
 import { CourseResponse } from '../../models/course/course-response.model';
@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
 })
 export class CreateCourseComponent implements OnInit {
 
-  constructor(private courseAdminService: CourseAdminService) {}
+  constructor(private courseService: CourseService) {}
 
   iconList: string[] = ['📘', '✝️', '🕊️', '📜', '🎓', '📖', '🧭'];
 
@@ -38,7 +38,7 @@ export class CreateCourseComponent implements OnInit {
   }
 
   loadCourses(): void {
-    this.courseAdminService.listAllCourses().subscribe({
+    this.courseService.listAllCourses().subscribe({
       next: (response) => {
         this.courses = response;
       },
@@ -56,7 +56,7 @@ export class CreateCourseComponent implements OnInit {
       return;
     } 
 
-    this.courseAdminService.createCourse(this.course).subscribe({
+    this.courseService.createCourse(this.course).subscribe({
       next: (response: any) => {
         console.log('Curso criado com sucesso!', response);
       },

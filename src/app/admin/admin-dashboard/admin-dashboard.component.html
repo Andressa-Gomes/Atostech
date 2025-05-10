@@ -1,11 +1,17 @@
-<div class="admin-dashboard">
-    <h1>Painel de Administração</h1>
-
-    <div class="admin-buttons">
-        <button (click)="goTo('create/course')">Criar Cursos</button>
-        <button (click)="goTo('management/course')">Gerenciar Cursos</button>
-        <button (click)="goTo('management/user')">Gerenciar Usuários</button>
+<div class="body-global">
+    <div class="main-global">
+  
+      <h2 class="titulo">Painel de Administração</h2>
+  
+      <section class="admin-section">
+        <h3 class="sub-titulo">⚙️ Ações Disponíveis</h3>
+        <div class="admin-actions">
+          <button class="btn" (click)="goTo('create/course')">Criar Cursos</button>
+          <button class="btn" (click)="goTo('management/course')">Gerenciar Cursos</button>
+          <button class="btn" (click)="goTo('management/user')">Gerenciar Usuários</button>
+        </div>
+      </section>
+  
     </div>
-
-    
-</div>    
+  </div>
+  

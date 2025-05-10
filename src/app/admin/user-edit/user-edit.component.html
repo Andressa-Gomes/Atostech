@@ -1,7 +1,7 @@
-<div class="container mt-5">
-    <h2 class="mb-4">Usuários</h2>
-    <table class="table table-bordered table-hover">
-      <thead class="table-light">
+<div class="usuarios-container">
+    <h2 class="titulo">Usuários</h2>
+    <table class="usuarios-tabela">
+      <thead>
         <tr>
           <th>Nome</th>
           <th>Sobrenome</th>
@@ -16,13 +16,13 @@
           <td>{{ user.surname }}</td>
           <td>{{ user.email }}</td>
           <td>
-            <select [(ngModel)]="user.role" class="form-select">
+            <select [(ngModel)]="user.role" class="usuarios-select">
               <option value="USER">USER</option>
               <option value="ADMIN">ADMIN</option>
             </select>
           </td>
           <td>
-            <button class="btn btn-sm btn-success" (click)="updateUser(user)">Atualizar</button>
+            <button class="btn-usuario" (click)="updateUser(user)">Atualizar</button>
           </td>
         </tr>
       </tbody>
