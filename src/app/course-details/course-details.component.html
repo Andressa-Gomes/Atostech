@@ -1,9 +1,9 @@
 <div class="body-global">
     <div class="main-global">
   
-        <!-- Título do curso -->
         <h2 class="titulo">
-            Curso: {{ course.icon }} {{ course.title }}
+            <span class="icon">{{ course.icon }}</span>
+            <span class="title-text">{{ course.title }}</span>
         </h2>
   
         <!-- Seção de descrição -->
@@ -24,6 +24,6 @@
   
         <div class="button-wrapper" style="justify-content: center; margin-top: 20px;">
             <button class="btn signup" (click)="subscribeToCourse()">Inscrever-se</button>
-          </div>
+        </div>
     </div>
 </div>

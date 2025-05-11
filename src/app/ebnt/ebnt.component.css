@@ -15,6 +15,40 @@
     font-weight: normal;
 }
 
+.course p {
+    font-size: 16px;
+    color: black;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 0 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+
+.course-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #6d318c;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Permite quebra quando necessário */
+    word-break: break-word;
+  }
+  
+  .course-titulo .icon {
+    flex-shrink: 0; /* Ícone não encolhe */
+    font-size: 1.5rem; /* Ajuste opcional */
+  }
+  
+  .course-titulo .text {
+    flex: 1; /* Ocupa o espaço restante */
+  }
+  
+
 /* Estilo da seção de cursos */
 .courses {
     padding: 30px;
@@ -151,14 +185,16 @@
 /* Botões */
 .btn {
     display: inline-block;
+    width: 100%; /* Faz o botão ocupar toda a largura do container */
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
     color: white;
     text-decoration: none;
-    padding: 5px 8px;
+    padding: 10px 0; /* Ajuste para o botão ficar mais fino */
     border-radius: 8px;
-    margin-top: 10px;
     font-weight: bold;
+    text-align: center;
     transition: background 0.3s ease-in-out;
+    box-sizing: border-box; /* Garante que o padding não afete a largura do botão */
 }
 
 .btn:hover {
@@ -270,11 +306,6 @@
         padding: 15px 10px;
     }
 
-    .btn {
-        padding: 2px 2px;
-        font-size: 0.9rem;
-    }
-
     .welcome h2,
     .courses h2,
     .testemunhos h3 {
@@ -304,10 +335,4 @@
         font-weight: 600;
     }
 
-    .pagination-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 20px;
-    }
 }

@@ -1,10 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CookieService } from '../services/cookie/cookie.service'; 
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'] // Corrigido: 'styleUrls' no plural
 })
@@ -13,6 +15,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   isPaused = false;
   selectedOption = '';
   speechInstance: SpeechSynthesisUtterance | null = null;
+
+  constructor(public cookieService: CookieService) {}
 
   ngOnInit() {
     if (typeof window !== 'undefined') {

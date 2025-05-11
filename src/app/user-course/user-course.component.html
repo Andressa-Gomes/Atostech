@@ -1,0 +1,21 @@
+<div class="admin-container">
+    <div class="admin-header">
+      <h2 class="titulo">
+        <span class="icon">🎓</span> Meus Cursos
+      </h2>
+      <p class="sub-titulo">Acesse seus cursos disponíveis abaixo</p>
+    </div>
+  
+    <div class="courses-list" *ngIf="courses.length > 0; else semCursos">
+      <div class="course-item" *ngFor="let course of courses">
+        <h3><span class="icon">{{ course.icon }}</span> {{ course.title }}</h3>
+        <p>{{ course.shortDescription }}</p>
+        <a class="btn-edit" [routerLink]="['/course/watch', course.id]">Acessar Curso</a>
+      </div>
+    </div>
+  
+    <ng-template #semCursos>
+      <p class="sub-titulo">Você ainda não está inscrito em nenhum curso.</p>
+    </ng-template>
+  </div>
+  
