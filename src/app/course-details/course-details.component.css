@@ -1,7 +1,66 @@
 /* Estilo específico para a página de curso */
+.course p, .course h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
 
+  .course-container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .body-global {
+    overflow-x: hidden;
+  }
+
+  .videos .course {
+    max-width: 100%;
+  }
+
+  .titulo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    line-height: 1.2;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .titulo .icon {
+    display: inline;
+    font-size: 1.6rem;
+    line-height: 1;
+    vertical-align: middle;
+  }
+  
+  .titulo .title-text {
+    display: inline;
+    font-size: 1.6rem;
+    white-space: normal;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+.welcome p,
+.videos h3,
+.course h3,
+.course p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: 100%;
+}
+
+  
 /* Seção de descrição do curso */
 .welcome {
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: #f6e4f14b;
     padding: 30px;
     border-radius: 10px;

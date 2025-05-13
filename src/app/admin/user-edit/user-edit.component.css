@@ -49,13 +49,39 @@
     transition: 0.3s;
   }
   
-  .usuarios-select {
-    width: 100%;
-    padding: 8px;
+/* Estilo do select para o "role" */
+.usuarios-select {
+    width: 100%; /* Garante que o select ocupe toda a largura do container */
+    min-width: 120px; /* Força uma largura mínima para o select */
+    padding: 10px; /* Garantindo espaço interno */
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 1rem;
+    box-sizing: border-box; /* Garante que o padding não afete a largura do select */
+    white-space: nowrap; /* Evita que o texto dentro dos options quebre */
+    overflow: hidden; /* Impede o overflow do conteúdo */
   }
+  
+  /* Responsividade para ajustar melhor o select nas telas menores */
+  @media (max-width: 768px) {
+    .usuarios-select {
+      font-size: 1rem; /* Ajuste de tamanho de fonte */
+      padding: 12px; /* Ajuste de padding */
+      min-width: 150px; /* Garante que o select tenha pelo menos 150px de largura */
+    }
+  }
+  
+  /* Ajustes para telas muito pequenas */
+  @media (max-width: 480px) {
+    .usuarios-select {
+      font-size: 1rem; /* Ajuste fino de tamanho de fonte */
+      padding: 12px; /* Ajuste de padding */
+      min-width: 100px; /* Garante que o select tenha pelo menos 100px de largura */
+    }
+  }
+  
+  
+  
   
   .btn-usuario {
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);

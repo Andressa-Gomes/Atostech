@@ -18,6 +18,7 @@ import { CourseEditComponent } from './admin/course-edit/course-edit.component';
 import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 import { UserEditComponent } from './admin/user-edit/user-edit.component';
 import { CourseDetailsComponent } from './course-details/course-details.component';
+import { UserCourseComponent } from './user-course/user-course.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -31,12 +32,13 @@ export const routes: Routes = [
     { path: 'generosity', component: GenerosityComponent },
     { path: 'signin', component: SignInComponent },
     { path: 'signup', component: SignUpComponent },
-    { path: 'admin/dash', component: AdminDashboardComponent },
+    { path: 'admin/dash', component: AdminDashboardComponent,  canActivate: [AuthGuard]},
     { path: 'admin/create/course', component: CreateCourseComponent },
     { path: 'admin/edit/course/:id', component: CourseEditComponent },
     { path: 'admin/management/course', component: CourseManagementComponent },
     { path: 'admin/management/user', component: UserEditComponent },
     { path: 'course/watch/:id', component: WatchCourseComponent },
-    { path: 'course/:id', component: CourseDetailsComponent }
+    { path: 'course/:id', component: CourseDetailsComponent },
+    { path: 'course/user/select', component: UserCourseComponent },
     
 ];

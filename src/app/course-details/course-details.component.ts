@@ -4,12 +4,13 @@ import { ActivatedRoute } from '@angular/router';
 import { CourseService } from '../services/course.service';
 import { CourseResponse } from '../models/course/course-response.model';
 import { UserService } from '../services/user.service';
+import Swal from 'sweetalert2'; // Importando o SweetAlert2
 
 @Component({
   selector: 'app-course-details',
   imports: [CommonModule],
   templateUrl: './course-details.component.html',
-  styleUrl: './course-details.component.css'
+  styleUrls: ['./course-details.component.css']
 })
 export class CourseDetailsComponent {
 
@@ -27,7 +28,8 @@ export class CourseDetailsComponent {
         next: (course) => {
           this.course = course;
           console.log(this.course);
-        }, error: (err) => {  
+        },
+        error: (err) => {  
           console.error('Erro ao carregar curso:', err);
         }
       });
@@ -35,13 +37,30 @@ export class CourseDetailsComponent {
   }
 
   subscribeToCourse(): void {
-      this.courseService.subscribeCourse(this.course.id).subscribe({
-        next: () => {
-          console.log('Inscrição realizada com sucesso!');
-        },
-        error: (err) => {
-          console.error('Erro ao se inscrever no curso:', err);
-        }
-      });
+    this.courseService.subscribeCourse(this.course.id).subscribe({
+      next: () => {
+        Swal.fire({
+          title: 'Inscrição realizada com sucesso!',
+          text: 'Você foi inscrito no curso com sucesso. Agora você pode começar a aprender!',
+          icon: 'success',
+          showCancelButton: false,
+          confirmButtonText: 'Ir para o curso',
+          confirmButtonColor: '#3085d6',
+          position: 'center',  // Centraliza o alerta
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = `/course/watch/${this.course.id}`;
+          }
+        });
+      },
+      error: (err) => {
+                Swal.fire({
+                  icon: 'error',
+                  title: 'Falha no cadastro',
+                  text: 'Falha ao tentar se cadastrar no curso. Fale com um administrador.',
+                  confirmButtonText: 'OK'
+                });
+      }
+    });
   }
 }

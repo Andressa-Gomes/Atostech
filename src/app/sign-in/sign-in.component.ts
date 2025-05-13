@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { UserService } from '../services/user.service';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-sign-in',
@@ -25,18 +26,32 @@ export class SignInComponent {
   onSubmit() {
     console.log('Submit disparado', this.loginForm.value); // debug
     // if (this.loginForm.valid) {
-      const { email, senha } = this.loginForm.value;
+    const { email, senha } = this.loginForm.value;
 
-      this.userService.signIn(email, senha).subscribe({
-        next: () => {
-          console.log('Login bem-sucedido.');
-          // this.router.navigate(['/painel']);
-        },
-        error: (err) => {
-          console.error('Erro no login:', err);
-          alert('Credenciais inválidas.');
-        }
-      });
-    }
+    this.userService.signIn(email, senha).subscribe({
+      next: () => {
+        Swal.fire({
+          title: 'Login realizado com sucesso!',
+          icon: 'success',
+          showCancelButton: false,
+          confirmButtonText: 'OK',
+          confirmButtonColor: '#3085d6',
+          position: 'center',  // Centraliza o alerta
+        }).then(() => {
+          // Redireciona para a página EBNT após o sucesso
+          window.location.href = '/ebnt';  // Caminho para a página EBNT
+        });
+      },
+      error: (err) => {
+        console.error('Erro no login:', err);
+        Swal.fire({
+          icon: 'error',
+          title: 'Falha no login',
+          text: 'Usuário ou senha incorretos. Por favor, tente novamente.',
+          confirmButtonText: 'OK'
+        });
+      }
+    });
   }
-// }
+}
+

@@ -1,6 +1,9 @@
 <div class="course-details-container">
     <div class="course-header">
-        <h3>{{ course.icon }} {{ course.title }}</h3>
+      <h3 class="course-title">
+        <span class="icon">{{ course.icon }}</span>
+        <span class="text">{{ course.title }}</span>
+      </h3>
       <p class="course-description">{{ course.description }}</p>
     </div>
   
@@ -16,10 +19,10 @@
       
   
     <div class="video-list-section">
-      <h3>Módulos do Curso</h3>
+      <h3>🎬 Videos do Curso</h3>
       <ul class="video-list">
         <li *ngFor="let video of course.videos" (click)="playVideo(video)" [class.active]="video.title === selectedVideoName">
-          🎬 {{ video.title }}
+           {{ video.title }}
         </li>
       </ul>
     </div>

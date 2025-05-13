@@ -20,15 +20,15 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   getUserById(userId: String): Observable<any> {
-    return this.http.get(`${this.baseUrl}/${this.user}/${userId}`); 
+    return this.http.get(`${this.baseUrl}/${this.user}/${userId}`, { withCredentials: true }); 
   }
 
   deleteUser(userId: String): Observable<any> {
-    return this.http.delete(`${this.baseUrl}/${this.user}/${userId}`); 
+    return this.http.delete(`${this.baseUrl}/${this.user}/${userId}`, { withCredentials: true }); 
   }
 
   getAllUsers(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.baseUrl}/${this.user}/${this.all}`, { withCredentials: true });
+    return this.http.get<any[]>(`${this.baseUrl}/${this.user}/${this.admin}/${this.all}`, { withCredentials: true });
   }
 
   getUserByEmail(email: string): Observable<any> {
@@ -40,7 +40,7 @@ export class UserService {
   }
 
   signUp(user: any): Observable<User> {
-    return this.http.post<User>(`${this.baseUrl}/${this.user}/${this.signup}`, user); 
+    return this.http.post<User>(`${this.baseUrl}/${this.user}/${this.signup}`, user, { withCredentials: true }); 
   }
 
   updateUserRole(user: Partial<User>): Observable<User> {

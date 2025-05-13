@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { CourseResponse } from '../../models/course/course-response.model';
 import { CommonModule } from '@angular/common';
 import { VideoInfoResponse } from '../../models/course/video-info-response.model';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-course-management',
@@ -21,7 +22,8 @@ export class CourseEditComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private courseService: CourseService,
-  ) {}
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.courseId = Number(this.route.snapshot.paramMap.get('id'));
@@ -30,14 +32,16 @@ export class CourseEditComponent implements OnInit {
 
   loadCourse() {
     this.courseService.getCourseById(this.courseId).subscribe({
-      next: (data) => { 
-        this.course = data
-        console.log(this.course);
+      next: (data) => {
+        this.course = data;
         this.course.videos?.forEach((video: VideoInfoResponse) => {
           console.log(video);
         });
       },
-      error: (err) => console.error(err)
+      error: (err) => {
+        Swal.fire('Erro', 'Erro ao carregar o curso.', 'error');
+        console.error(err);
+      }
     });
   }
 
@@ -47,17 +51,19 @@ export class CourseEditComponent implements OnInit {
 
   saveVideos() {
     const videoData = new FormData();
-    this.newVideos.forEach(video => 
-      videoData.append('file', video));
-      videoData.append('course_id', String(this.courseId));
+    this.newVideos.forEach(video => videoData.append('file', video));
+    videoData.append('course_id', String(this.courseId));
 
-      this.courseService.updateVideo(this.courseId, videoData).subscribe({
-        next: () => {
-          console.log('Vídeo enviados com sucesso!')
-          this.loadCourse();
-        },
-        error: err => console.error('Erro ao enviar vídeo:', err)
-      });
+    this.courseService.updateVideo(this.courseId, videoData).subscribe({
+      next: () => {
+        Swal.fire('Sucesso', 'Vídeos enviados com sucesso!', 'success');
+        this.loadCourse();
+      },
+      error: err => {
+        Swal.fire('Erro', 'Erro ao enviar vídeo.', 'error');
+        console.error(err);
+      }
+    });
   }
 
   updateCourseDetails(): void {
@@ -65,41 +71,67 @@ export class CourseEditComponent implements OnInit {
       description: this.course.shortDescription,
       isActive: this.course.isActive,
     };
-  
+
     this.courseService.updateCourseDescription(this.courseId, update).subscribe({
       next: () => {
-        console.log('Descrição atualizada com sucesso!');
+        Swal.fire('Sucesso', 'Descrição atualizada com sucesso!', 'success');
         this.loadCourse();
       },
-      error: err => console.error('Erro ao atualizar descrição:', err)  
+      error: err => {
+        Swal.fire('Erro', 'Erro ao atualizar descrição.', 'error');
+        console.error(err);
+      }
     });
   }
 
   deleteVideo(videoId: number): void {
-    if (confirm("Tem certeza que deseja deletar este vídeo?")) {
-      this.courseService.deleteVideo(videoId).subscribe({
-        next: () => {
-          console.log("Vídeo deletado com sucesso!");
-          this.course.videos = (this.course.videos ?? []).filter(video => video.id !== videoId);
-       },
-       error: err =>
-          console.error("Erro ao deletar o vídeo")
-        
+    Swal.fire({
+      title: 'Tem certeza?',
+      text: 'Deseja excluir este vídeo?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Sim, excluir!',
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.courseService.deleteVideo(videoId).subscribe({
+          next: () => {
+            Swal.fire('Excluído', 'Vídeo deletado com sucesso!', 'success');
+            this.course.videos = (this.course.videos ?? []).filter(video => video.id !== videoId);
+          },
+          error: err => {
+            Swal.fire('Erro', 'Erro ao deletar o vídeo.', 'error');
+            console.error(err);
+          }
+        });
+      }
     });
-    }
   }
-  
+
   deleteCourse(courseId: number): void {
-    if (confirm('Tem certeza que deseja excluir este curso?')) {
-      this.courseService.deleteCourse(courseId).subscribe({
-        next: () => {
-          this.course.id = this.course.id
-        },
-        error: (err) => {
-          console.error('Erro ao excluir curso:', err);
-        }
-      });
-    }
+    Swal.fire({
+      title: 'Tem certeza?',
+      text: 'Você não poderá reverter esta ação!',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sim, excluir!',
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.courseService.deleteCourse(courseId).subscribe({
+          next: () => {
+            Swal.fire('Excluído!', 'O curso foi deletado com sucesso.', 'success').then(() => {
+              this.router.navigate(['/admin/management/course']);
+            });
+          },
+          error: (err) => {
+            Swal.fire('Erro', 'Erro ao excluir curso.', 'error');
+            console.error('Erro ao excluir curso:', err);
+          }
+        });
+      }
+    });
   }
 }
-
