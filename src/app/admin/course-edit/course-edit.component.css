@@ -1,35 +1,65 @@
 .course-management-container {
     max-width: 900px;
-    margin: 0 auto;
+   margin: 10px auto;
     padding: 40px 30px;
     background-color: #f6e4f14b;
     border-radius: 12px;
     border-top: 0.2rem solid #58137350;
     border-bottom: 0.1rem solid #58137350;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    margin-top: 40px; 
+    
+    
   }
   
   .titulo-centralizado {
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+   font-weight: 600;
+    margin-top: 10px; 
   }
   
   .course-description-section h3,
   .course-videos-section h3,
   .add-video-section h3 {
-
+font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+   font-weight: 500;
     margin-bottom: 15px;
   }
   
+    .titulo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size:1.8rem;
+    margin-bottom: 2rem;
+    color: black;
+   font-weight: 600;
+   margin-bottom: 10px;
+  margin-top:30px ;}
+  
+ .sub-titulo {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+   font-weight: 600;
+  }
   label {
-    display: block;
-    margin-top: 20px;
-    font-weight: bold;
-    color: #333;
+   text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+   font-weight: 500;
   }
   
+
   textarea {
     width: 100%;
     min-height: 100px;
@@ -82,7 +112,7 @@
   }
   
   .btn-delete:hover {
-    background-color: #7d1111;
+    background: #253056;
   }
   
   .video-list {
@@ -136,4 +166,71 @@
   .save-video-btn:hover {
     background: #253056;
   }
-  
+ @media (max-width: 768px) {
+  .course-management-container {
+    padding: 20px 15px;
+    margin: 10px;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .titulo-centralizado,
+  .sub-titulo,
+  label,
+  .course-description-section h3,
+  .course-videos-section h3,
+  .add-video-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .botoes-curso {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-save,
+  .btn-delete,
+  .save-video-btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .video-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.95rem;
+  }
+
+  textarea {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 1.3rem;
+  }
+
+  .titulo-centralizado,
+  .sub-titulo,
+  label,
+  .course-description-section h3,
+  .course-videos-section h3,
+  .add-video-section h3 {
+    font-size: 1rem;
+  }
+
+  .btn-save,
+  .btn-delete,
+  .save-video-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .video-item {
+    font-size: 0.9rem;
+  }
+}

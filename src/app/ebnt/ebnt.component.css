@@ -13,6 +13,7 @@
     font-size: 1.1rem;
     margin-bottom: 1%;
     font-weight: normal;
+    line-height: 1.6;
 }
 
 .course p {
@@ -103,32 +104,45 @@
 
 .button-wrapper {
     display: flex;
-    justify-content: flex-end; /* Alinha à direita */
-    gap: 10px; /* Espaço entre os botões */
-    padding: 20px; /* Espaço interno opcional */
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 10px;
+    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas pequenas */
 }
 
 /* Estilo base para os botões */
 .button-wrapper a {
     display: inline-block;
-    padding: 12px 20px;
-    font-size: 15px;
-    font-weight: bold;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
-    border-radius: 15px;
-    color: #f4f4f4;
+    border-radius: 14px;
+    color: #fff;
     text-align: center;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Estilo específico */
+/* Hover */
+.button-wrapper a:hover {
+    background: #253056;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Estilos específicos, se quiser diferenciar */
 .signin {
-    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    /* Pode manter o mesmo gradiente ou ajustar */
 }
 
 .signup {
-    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    /* Pode colocar outra cor se quiser destacar */
+    background: linear-gradient(to right, #5821a5, #000);
 }
-
 /* Seção de boas-vindas */
 .welcome {
     color: black;
@@ -200,6 +214,7 @@
 .btn:hover {
     background: #253056;
 }
+
 
 /* RESPONSIVIDADE */
 

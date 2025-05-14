@@ -4,7 +4,7 @@
 section {
   
     max-width: 800px;
-    margin: 20px auto;
+  margin: 10px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -12,14 +12,15 @@ section {
     background-color: #f6e4f14b;
     border-top: 0.2rem solid  #58137350;
      border-bottom: 0.1rem solid #58137350;
+  
 }
 
 /* Parágrafos */
 p {
     font-size: 16px;
-    line-height: 1.6;
-    text-align: justify;
-    margin: 5px;
+    color:black;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 /* Estilização do mapa */
@@ -49,15 +50,17 @@ p {
 .map-button:hover {
     background-color: #6d318c;
 }
-
+.main-global h2{
+    font-size: 1.8rem;
+ 
+}
 .titulo {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-      text-align: center;
-      font-size:1.6rem;
-      margin-bottom: 1rem;
-      color: black;
-     font-weight: 800;
-     margin-bottom: 20px;}
+     text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black;
+font-weight: 800;
+
+}
 
 .sub-titulo {
   text-align: center;
@@ -76,11 +79,7 @@ p {
         margin: 0 auto;
     }
 
-    h2 {
-        font-size: 1.4rem;
-        margin: 10px 0;
-        text-align: center;
-    }
+  
 
     .map-button {
         font-size: 1rem;
