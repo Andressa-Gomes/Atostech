@@ -82,4 +82,44 @@
   .btn-edit:hover {
     background: #253056;
   }
-  
+  /* Responsividade */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .sub-titulo {
+    font-size: 1.1rem;
+  }
+
+  .course-item {
+    max-width: 100%;
+  }
+
+  .admin-container {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 1.3rem;
+  }
+
+  .sub-titulo {
+    font-size: 1rem;
+  }
+
+  .btn-edit {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .course-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .course-item p {
+    font-size: 0.95rem;
+  }
+}

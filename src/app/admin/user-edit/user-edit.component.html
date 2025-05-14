@@ -1,6 +1,13 @@
+
+
 <div class="usuarios-container">
     <h2 class="titulo">Usuários</h2>
+    <section class="usuarios-container">
+
+    
     <table class="usuarios-tabela">
+    
+
       <thead>
         <tr>
           <th>Nome</th>
@@ -10,6 +17,7 @@
           <th>Ações</th>
         </tr>
       </thead>
+
       <tbody>
         <tr *ngFor="let user of users">
           <td>{{ user.name }}</td>
@@ -17,8 +25,8 @@
           <td>{{ user.email }}</td>
           <td>
             <select [(ngModel)]="user.role" class="usuarios-select">
-              <option value="USER">USER</option>
-              <option value="ADMIN">ADMIN</option>
+              <option value="USER"><P>USER</P></option>
+              <option value="ADMIN">ADMIN <P> ADMIN</P></option>
             </select>
           </td>
           <td>
@@ -27,5 +35,6 @@
         </tr>
       </tbody>
     </table>
+     </section>
   </div>
   

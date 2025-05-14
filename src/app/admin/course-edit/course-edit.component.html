@@ -1,9 +1,12 @@
+
+ <div class="container">
+<h2 class="titulo">Gestão do Curso</h2>
 <div class="course-management-container">
-    <h2 class="titulo-centralizado">Gestão do Curso: {{ course.title }}</h2>
-  
+
+
+    <h2 class="titulo-centralizado">Curso: {{ course.title }}</h2>
+   <h3 class="sub-titulo">Editar Descrição</h3>
     <div class="course-description-section">
-      <h3>Editar Descrição</h3>
-  
       <label for="shortDescription">Descrição resumida do Curso</label>
       <textarea id="shortDescription" [(ngModel)]="course.shortDescription"
         placeholder="Digite a descrição resumida do curso..."></textarea>
@@ -40,5 +43,6 @@
       <input type="file" (change)="onVideoSelected($event)" multiple />
       <button class="save-video-btn" (click)="saveVideos()">Salvar</button>
     </div>
+  </div>
   </div>
   
