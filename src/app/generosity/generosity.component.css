@@ -30,15 +30,17 @@
 }
 
 
-.titulo {
 
+
+   .titulo-pagina{
     font-family: Georgia, 'Times New Roman', Times, serif;
       text-align: center;
-      font-size: 30px;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
       color: black;
      font-weight: 800;
-     margin-bottom: 20px;}
+     margin-bottom: 20px;
+   }
   
    .sub-titulo {
     color: #6d318c;
@@ -51,7 +53,7 @@
     }
 
 .doacao p {
-    font-size: 20px;
+    font-size: 1.3rem;
     color: black;
     margin-bottom: 10px;
 }
@@ -79,21 +81,22 @@
     padding: 5px;
 }
 
-.botao-doacao {
-    display: block; /* Troca de inline-block para block para ocupar 100% */
-    width: 100%;
-    max-width: 100%; /* Evita que alguma largura limite o botão */
+a {
+    
+     display: inline-block;
+    width: 100%; /* Faz o botão ocupar toda a largura do container */
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
     color: white;
     text-decoration: none;
-    padding: 10px 0 2;
+    padding: 10px 0; /* Ajuste para o botão ficar mais fino */
     border-radius: 8px;
     font-weight: bold;
     text-align: center;
     transition: background 0.3s ease-in-out;
-    box-sizing: border-box;
-    margin: 0 auto; /* Centraliza se o container for menor que 100% */
+    box-sizing: border-box; /* Garante que o padding não afete a largura do botão */
 }
+    
+
 
 .botao-doacao:hover {
     background: #253056;
@@ -109,14 +112,14 @@
         margin: 15px;
     }
 
-    .titulo {
-        font-size: 1.3rem;
+    .titulo-pagina {
+        font-size: 1.6rem;
         padding: 0 10px;
         font-weight: 800;
     }
 
     .sub-titulo {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 0 10px;
         font-weight: 600;
     }
