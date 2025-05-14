@@ -17,11 +17,10 @@ font-size: 2rem;
 footer {
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
     color: white;
-    padding: 0rem;
+    padding: 0.6rem;
     text-align: center;
    margin: 0;
-    /* Remove as margens laterais */
-    border-radius: 0.5rem; /* Remove arredondamento para alinhar com as bordas da tela */
+    border-radius: 01rem 1rem 0 0;
     width: 100%; /* Garante que ocupe toda a largura */
 }
 
