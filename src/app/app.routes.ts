@@ -32,7 +32,7 @@ export const routes: Routes = [
     { path: 'generosity', component: GenerosityComponent },
     { path: 'signin', component: SignInComponent },
     { path: 'signup', component: SignUpComponent },
-    { path: 'admin/dash', component: AdminDashboardComponent,  canActivate: [AuthGuard]},
+    { path: 'admin/dash', component: AdminDashboardComponent,
     { path: 'admin/create/course', component: CreateCourseComponent },
     { path: 'admin/edit/course/:id', component: CourseEditComponent },
     { path: 'admin/management/course', component: CourseManagementComponent },
