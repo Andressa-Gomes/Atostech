@@ -32,7 +32,7 @@ export class WatchCourseComponent implements OnInit {
     const courseId = Number(this.route.snapshot.paramMap.get('id'));
     this.selectedVideoPath = '';
     setTimeout(() => {
-      this.selectedVideoPath = `http://localhost:8080/video/stream/${courseId}/${video.title}`;
+      this.selectedVideoPath = `api/video/stream/${courseId}/${video.title}`;
     }, 0);
     this.selectedVideoName = video.name;
   }
