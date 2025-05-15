@@ -8,7 +8,7 @@ import { User } from '../models/user/user.model';
 })
 export class UserService {
 
-  private baseUrl = 'http://localhost:8080';
+  private baseUrl = '/api';
   private admin = "admin";
   private role = "role";
   private user = "user";
