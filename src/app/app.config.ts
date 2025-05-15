@@ -11,5 +11,7 @@ export const appConfig: ApplicationConfig = {
      provideRouter(routes), 
      provideClientHydration(withEventReplay()),
      provideHttpClient(),
-     {provide: LocationStrategy, useClass: HashLocationStrategy }]
+     //{provide: LocationStrategy, useClass: HashLocationStrategy }
+    ]
+
 };
