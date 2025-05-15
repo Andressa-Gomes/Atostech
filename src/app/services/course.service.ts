@@ -10,7 +10,7 @@ import { User } from '../models/user/user.model';
 })
 export class CourseService {
   
-  private baseUrl = 'http://localhost:8080';
+  private baseUrl = 'api/';
   private video = "video";
   private course = "course";
   private user = "user";
