@@ -61,7 +61,7 @@ header {
     font-weight: bold;
   }
   
-  header nav ul li a:hover {
+  header nav ul li a:hover,:active {
     color: #ffcc00;
   }
   
@@ -124,8 +124,8 @@ header {
       flex-direction: column; /* Empilha logo e título */
       text-align: center;
       gap: 10px;
-      font-size: 1.1rem;
-      
+      font-size: 1rem;
+      font-weight: 600;
       margin: 0;
     }
   
@@ -143,8 +143,8 @@ header {
     header nav ul li a {
      
       font-weight: 500;
-      line-height: 0.2rem;
-      margin: 0.2rem;
+      line-height: 0.1rem;
+      margin: 0.1rem;
     }
    
   }

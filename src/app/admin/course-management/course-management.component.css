@@ -22,6 +22,24 @@
     align-items: center;
   }
   
+  .titulo{
+        text-align: center;
+font-size: 1.6rem;
+margin-bottom: 1rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black;
+font-weight: 600;
+margin-top: 0.2rem;
+  }
+
+  .sub-titulo {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+   font-weight: 600;
+  }
   .course-item {
     width: 100%;
     max-width: 600px;
@@ -81,6 +99,7 @@
   /* Efeito hover do botão */
   .btn-edit:hover {
     background: #253056;
+  
   }
   /* Responsividade */
 @media (max-width: 768px) {

@@ -9,12 +9,12 @@
 /* Título */
 .titulo {
   text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 1.6rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: black;
   font-weight: 800;
   margin-top: 1rem;
+  m
 }
 
 /* Tabela */
@@ -62,6 +62,7 @@
   box-sizing: border-box;
   white-space: nowrap;
   overflow: hidden;
+  
 }
 
 /* Botão */

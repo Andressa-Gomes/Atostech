@@ -2,7 +2,7 @@
 .form-container {
   width: 90%;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 10px auto;
   padding: 20px;
   background-color: #f6e4f14b;
   border-top: 0.2rem solid #58137350;
@@ -10,17 +10,19 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.titulo{
+      text-align: center;
+font-size: 1.6rem;
+margin-bottom: 1rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black;
+font-weight: 600;
+margin-top: 2rem;
 }
 
-/* Estilo para o título do formulário */
-.form-container h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: black;
-  margin-bottom: 20px;
-}
+
 
 /* Estilo para os rótulos e grupos */
 .form-group {
@@ -28,9 +30,10 @@
 }
 
 .form-group label {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   display: block;
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
   margin-bottom: 5px;
   color: black;
 }
@@ -106,12 +109,16 @@ button:hover {
     padding: 15px;
   }
 
-  .form-container h2 {
-    font-size: 1.6rem;
+  .titulo {
+      font-size: 1.3rem;
+      padding: 0 10px;
+      font-weight: 800;
   }
 
   .form-group label {
-    font-size: 1rem;
+    font-size: 1.1rem;
+      padding: 0 10px;
+      font-weight: 600;
   }
 
   input,
