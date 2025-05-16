@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { CourseService } from '../services/course.service';
 import { CommonModule } from '@angular/common'; 
 import { CourseResponse } from '../models/course/course-response.model';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-watch-course',
@@ -32,7 +33,7 @@ export class WatchCourseComponent implements OnInit {
     const courseId = Number(this.route.snapshot.paramMap.get('id'));
     this.selectedVideoPath = '';
     setTimeout(() => {
-      this.selectedVideoPath = `api/video/stream/${courseId}/${video.title}`;
+      this.selectedVideoPath = `${environment.apiUrl}/video/stream/${courseId}/${video.title}`;
     }, 0);
     this.selectedVideoName = video.name;
   }

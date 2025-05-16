@@ -3,14 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CourseModel } from '../models/course/course.model';
 import { CourseResponse } from '../models/course/course-response.model';
-import { User } from '../models/user/user.model';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CourseService {
   
-  private baseUrl = 'api/';
+  private baseUrl = environment.apiUrl; 
   private video = "video";
   private course = "course";
   private user = "user";

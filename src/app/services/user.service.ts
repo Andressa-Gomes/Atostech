@@ -2,13 +2,16 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';  
 import { User } from '../models/user/user.model';
+import { environment } from '../../environments/environment';
+
+console.log(environment.apiUrl);
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
-  private baseUrl = '/api';
+  private baseUrl = environment.apiUrl; 
   private admin = "admin";
   private role = "role";
   private user = "user";
