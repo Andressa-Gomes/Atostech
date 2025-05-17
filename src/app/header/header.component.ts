@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CookieService } from '../services/cookie/cookie.service'; 
 import { CommonModule } from '@angular/common';
-
+import { AuthService } from '../services/auth/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   selectedOption = '';
   speechInstance: SpeechSynthesisUtterance | null = null;
 
-  constructor(public cookieService: CookieService) {}
+  constructor(public cookieService: CookieService, public authService: AuthService) {}
 
   ngOnInit() {
     this.userRole = sessionStorage.getItem('userRole');

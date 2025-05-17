@@ -51,8 +51,8 @@ export class UserService {
     return this.http.put<User>(`${this.baseUrl}/${this.user}/${this.admin}/${this.role}`, user);
   }
 
-  getRole(): Observable<String> {
-    return this.http.get<String>(`${this.baseUrl}/${this.user}/${this.userInfo}`);
+  checkAuth(): Observable<String> {
+    return this.http.get<String>(`${this.baseUrl}/${this.user}/${this.userInfo}`, { withCredentials: true })
   }
 
 }

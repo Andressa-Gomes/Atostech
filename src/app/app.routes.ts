@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { AuthGuard } from './auth/auth.guard'; // opcional: se quiser proteger com guarda de autenticação
+import { AuthGuard } from './auth/guard/auth.guard'; // opcional: se quiser proteger com guarda de autenticação
 import { HomeComponent } from './home/home.component';
 import { WhoAreWeComponent } from './who-are-we/who-are-we.component';
 import { CntComponent } from './cnt/cnt.component'; 
@@ -32,13 +32,13 @@ export const routes: Routes = [
     { path: 'generosity', component: GenerosityComponent },
     { path: 'signin', component: SignInComponent },
     { path: 'signup', component: SignUpComponent },
-    { path: 'admin/dash', component: AdminDashboardComponent },
-    { path: 'admin/create/course', component: CreateCourseComponent },
-    { path: 'admin/edit/course/:id', component: CourseEditComponent },
-    { path: 'admin/management/course', component: CourseManagementComponent },
-    { path: 'admin/management/user', component: UserEditComponent },
-    { path: 'course/watch/:id', component: WatchCourseComponent },
+    { path: 'admin/dash', component: AdminDashboardComponent, canActivate: [AuthGuard], data: { roles: ['ROLE_ADMIN'] } },
+    { path: 'admin/create/course', component: CreateCourseComponent, canActivate: [AuthGuard], data: { roles: ['ROLE_ADMIN'] } },
+    { path: 'admin/edit/course/:id', component: CourseEditComponent, canActivate: [AuthGuard], data: { roles: ['ROLE_ADMIN'] } },
+    { path: 'admin/management/course', component: CourseManagementComponent, canActivate: [AuthGuard], data: { roles: ['ROLE_ADMIN'] } },
+    { path: 'admin/management/user', component: UserEditComponent, canActivate: [AuthGuard], data: { roles: ['ROLE_ADMIN'] } },
+    { path: 'course/watch/:id', component: WatchCourseComponent, canActivate: [AuthGuard], data: { roles: ['ROLE_ADMIN', 'ROLE_USER'] } },
     { path: 'course/:id', component: CourseDetailsComponent },
-    { path: 'course/user/select', component: UserCourseComponent },
+    { path: 'course/user/select', component: UserCourseComponent, canActivate: [AuthGuard], data: { roles: ['ROLE_ADMIN', 'ROLE_USER'] } },
     
 ];

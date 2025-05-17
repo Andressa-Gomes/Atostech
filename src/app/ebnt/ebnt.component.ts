@@ -3,6 +3,7 @@ import { CourseResponse } from '../models/course/course-response.model';
 import { CourseService } from '../services/course.service';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { AuthService } from '../services/auth/auth.service';
 
 @Component({
   selector: 'app-ebnt',
@@ -17,7 +18,7 @@ export class EbntComponent implements OnInit {
   pageSize = 5;
   showAllCourses = false;
 
-  constructor(private courseService: CourseService) {}
+  constructor(private courseService: CourseService, public authService: AuthService) {}
 
   ngOnInit(): void {
     this.courseService.listAllCourses().subscribe({

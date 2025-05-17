@@ -1,54 +1,53 @@
 <div class="body-global">
 
-    <div class="main-global">
+  <div class="main-global">
 
-        <h2 class="titulo">Escola Biblíca Novo Tempo</h2>
-       
+    <h2 class="titulo">Escola Biblíca Novo Tempo</h2>
 
-        <section class="welcome">
 
-            <h3 class="sub-titulo">📖 Bem-vindo à Escola Bíblica Novo Tempo!</h3>
-            <p>Nosso propósito é proporcionar um ensino bíblico de qualidade, capacitando líderes e todos aqueles que
-                desejam crescer no conhecimento da Palavra de Deus.
-              
-            </p>
-              <p>
-                Já tem uma conta?
-Faça login para continuar sua jornada de aprendizado.
-Novo por aqui? <br>Crie sua conta e comece agora mesmo!
-              </p>
-            <div class="button-wrapper">
-      
- <a routerLink="/signup" class="signup">Cadastrar</a>
-            <a routerLink="/signin" class="signin">Entrar</a>
-            
-          </div>
-        </section>
+    <section class="welcome">
 
-        <section class="courses">
-            <h3 class="sub-titulo">🎓 Cursos Oferecidos</h3>
-            <div class="course-container">
-              <div class="course" *ngFor="let course of courses">
-                <h3 class="course-titulo">
-                    <span class="icon">{{ course.icon }}</span>
-                    <span class="text">{{ course.title }}</span>
-                  </h3>
-                <p>{{ course.shortDescription }}</p>
-                <a [routerLink]="['/course', course.id]" class="btn">Saiba mais</a>
-              </div>
-            </div>
-        </section>
+      <h3 class="sub-titulo">📖 Bem-vindo à Escola Bíblica Novo Tempo!</h3>
+      <p>Nosso propósito é proporcionar um ensino bíblico de qualidade, capacitando líderes e todos aqueles que
+        desejam crescer no conhecimento da Palavra de Deus.
 
-        <section class="testemunhos">
-            <h3 class="sub-titulo">Depoimentos de Alunos</h3>
-            <div class="testemunho">
-                <p>"A Escola Bíblica Novo Tempo me ajudou a entender a palavra de Deus de maneira profunda e prática.
-                    Foi uma bênção em minha vida!" - João da Silva</p>
-            </div>
-            <div class="testemunho">
-                <p>"Os cursos são muito bem estruturados e os professores são excelentes. Agradeço a Deus por essa
-                    oportunidade." - Maria Santos</p>
-            </div>
-        </section>
-    </div>
+      </p>
+      <p *ngIf=!authService.isLogued()>
+        Já tem uma conta?
+        Faça login para continuar sua jornada de aprendizado.
+        Novo por aqui? <br>Crie sua conta e comece agora mesmo!
+      </p>
+      <div class="button-wrapper">
+        <a *ngIf=!authService.isLogued() routerLink="/signup" class="signup">Cadastrar</a>
+        <a *ngIf=!authService.isLogued() routerLink="/signin" class="signin">Entrar</a>
+
+      </div>
+    </section>
+
+    <section class="courses">
+      <h3 class="sub-titulo">🎓 Cursos Oferecidos</h3>
+      <div class="course-container">
+        <div class="course" *ngFor="let course of courses">
+          <h3 class="course-titulo">
+            <span class="icon">{{ course.icon }}</span>
+            <span class="text">{{ course.title }}</span>
+          </h3>
+          <p>{{ course.shortDescription }}</p>
+          <a [routerLink]="['/course', course.id]" class="btn">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testemunhos">
+      <h3 class="sub-titulo">Depoimentos de Alunos</h3>
+      <div class="testemunho">
+        <p>"A Escola Bíblica Novo Tempo me ajudou a entender a palavra de Deus de maneira profunda e prática.
+          Foi uma bênção em minha vida!" - João da Silva</p>
+      </div>
+      <div class="testemunho">
+        <p>"Os cursos são muito bem estruturados e os professores são excelentes. Agradeço a Deus por essa
+          oportunidade." - Maria Santos</p>
+      </div>
+    </section>
+  </div>
 </div>
