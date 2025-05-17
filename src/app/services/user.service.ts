@@ -19,6 +19,7 @@ export class UserService {
   private signin = "signin";
   private delete = "delete";
   private all = "all";
+  private userInfo = "user-info"
 
   constructor(private http: HttpClient) {}
 
@@ -48,6 +49,10 @@ export class UserService {
 
   updateUserRole(user: Partial<User>): Observable<User> {
     return this.http.put<User>(`${this.baseUrl}/${this.user}/${this.admin}/${this.role}`, user);
+  }
+
+  getRole(): Observable<String> {
+    return this.http.get<String>(`${this.baseUrl}/${this.user}/${this.userInfo}`);
   }
 
 }

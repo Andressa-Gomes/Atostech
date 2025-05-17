@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { CookieService } from '../services/cookie/cookie.service'; 
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -12,6 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent implements OnInit, OnDestroy {
 
+  userRole: string | null = null;
   isPaused = false;
   selectedOption = '';
   speechInstance: SpeechSynthesisUtterance | null = null;
@@ -19,6 +21,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   constructor(public cookieService: CookieService) {}
 
   ngOnInit() {
+    this.userRole = sessionStorage.getItem('userRole');
     if (typeof window !== 'undefined') {
       window.addEventListener('scroll', this.verificarFimDaPagina);
     }

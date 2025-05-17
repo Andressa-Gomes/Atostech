@@ -36,10 +36,14 @@ export class SignInComponent {
           showCancelButton: false,
           confirmButtonText: 'OK',
           confirmButtonColor: '#3085d6',
-          position: 'center',  // Centraliza o alerta
+          position: 'center',  
         }).then(() => {
-          // Redireciona para a página EBNT após o sucesso
-          window.location.href = '/ebnt';  // Caminho para a página EBNT
+          this.userService.getRole().subscribe({
+            next: (role) => {
+              sessionStorage.setItem('userRole', role.toString());
+            },
+          });
+          window.location.href = '/ebnt';  
         });
       },
       error: (err) => {

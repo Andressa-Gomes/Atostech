@@ -17,7 +17,9 @@
       <li><a routerLink="/location" routerLinkActive="active">Localização</a></li>
       <li><a routerLink="/generosity" routerLinkActive="active">Generosidade</a></li>
       <li><a routerLink="/course/user/select" routerLinkActive="active">Meus Cursos</a></li>
-      <li><a routerLink="/admin/dash" routerLinkActive="active">ADMIN</a></li>
+      <li *ngIf="userRole === 'ADMIN'">
+        <a routerLink="/admin/dash" routerLinkActive="active">ADMIN</a>
+      </li>
     </ul>
   </nav>
 
