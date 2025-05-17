@@ -1,16 +1,14 @@
 const TerserPlugin = require('terser-webpack-plugin');
 
-module.exports = {
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new TerserPlugin({
-        terserOptions: {
-          compress: {
-            drop_console: true, // <- remove todos os console.*
-          },
-        },
-      }),
-    ],
-  },
+module.exports = (config) => {
+  if (config.optimization && config.optimization.minimizer) {
+    config.optimization.minimizer.forEach((plugin) => {
+      if (plugin instanceof TerserPlugin) {
+        plugin.options.terserOptions.compress.drop_console = true;
+      }
+    });
+  }
+
+  return config;
 };
+  
