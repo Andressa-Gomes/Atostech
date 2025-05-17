@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-who-are-we',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './who-are-we.component.html',
-  styleUrl: './who-are-we.component.css'
+  styleUrls: ['./who-are-we.component.css']
 })
 export class WhoAreWeComponent {
-
+  mostrarAlunos = false;
 }
+

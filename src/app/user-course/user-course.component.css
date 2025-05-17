@@ -1,13 +1,14 @@
 .admin-container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 10px auto;
     background-color: #f6e4f14b;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     border-top: 0.2rem solid #58137350;
     border-bottom: 0.1rem solid #58137350;
-    margin-top: 40px;
+    margin-top: 100px;
+    margin-bottom: 100PX;
   }
   
   .admin-header {
@@ -83,3 +84,49 @@
     background: #253056;
   }
   
+  /* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 25px 15px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .course-item {
+    padding: 16px;
+  }
+
+  .course-item h3 {
+    font-size: 1.05rem;
+  }
+
+  .course-item p {
+    font-size: 0.95rem;
+  }
+
+  .btn-edit {
+    font-size: 0.95rem;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-container {
+    padding: 20px 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .course-item h3 {
+    font-size: 1rem;
+  }
+
+  .course-item p {
+    font-size: 0.9rem;
+  }
+
+  .btn-edit {
+    font-size: 0.9rem;
+    padding: 7px 0;
+  }
+}

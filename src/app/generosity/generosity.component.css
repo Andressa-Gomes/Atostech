@@ -8,45 +8,39 @@
     text-align: center;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 100%;
     background-color: #f6e4f14b;
     border-top: 0.2rem solid  #58137350;
     border-bottom: 0.1rem solid #58137350;
+    
 }
 
-.doacao h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    font-size:1.6rem;
-    margin-bottom: 1rem;
-    color: black;
-   font-weight: 800;
-   margin-bottom: 20px;
-} 
+ 
 
 
 
 .doacao h3 {
-   color: #6d318c;
+   color:black;
       text-align: center;
       font-size: 1.3rem;
       margin-bottom: 1rem;
       font-family: Georgia, 'Times New Roman', Times, serif;
-
      font-weight: 600;
 }
 
 
-.titulo {
 
+
+   .titulo-pagina{
     font-family: Georgia, 'Times New Roman', Times, serif;
       text-align: center;
-      font-size:1.6rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
       color: black;
      font-weight: 800;
-     margin-bottom: 20px;}
+     margin-bottom: 20px;
+   }
   
    .sub-titulo {
     color: #6d318c;
@@ -59,7 +53,7 @@
     }
 
 .doacao p {
-    font-size: 20px;
+    font-size: 1.3rem;
     color: black;
     margin-bottom: 10px;
 }
@@ -87,21 +81,27 @@
     padding: 5px;
 }
 
-.botao-doacao {
-    display: inline-block;
+a {
+    
+     display: inline-block;
+    width: 100%; /* Faz o botão ocupar toda a largura do container */
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
-    color: #fff;
-    padding: 12px 20px;
-    font-size: 18px;
-    border-radius: 8px;
+    color: white;
     text-decoration: none;
-    transition: 0.3s;
-    margin-top: 15px;
+    padding: 10px 0; /* Ajuste para o botão ficar mais fino */
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    box-sizing: border-box; /* Garante que o padding não afete a largura do botão */
 }
+    
+
 
 .botao-doacao:hover {
-    background: #511d6b;
+    background: #253056;
 }
+
 
 
 
@@ -112,14 +112,14 @@
         margin: 15px;
     }
 
-    .titulo {
-        font-size: 1.3rem;
+    .titulo-pagina {
+        font-size: 1.6rem;
         padding: 0 10px;
         font-weight: 800;
     }
 
     .sub-titulo {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 0 10px;
         font-weight: 600;
     }

@@ -22,5 +22,17 @@
        font-family: Georgia, 'Times New Roman', Times, serif;
    }
 
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .main-global {
+        padding: 30px 15px;
+    }
+}
 
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    .main-global {
+        padding: 20px 10px;
+    }
+}
 

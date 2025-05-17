@@ -1,5 +1,6 @@
 <div class="body-global">
     <div class="main-global">
+        
         <h2 class="titulo">Quem Somos</h2>
     
         <section class="historia">
@@ -147,5 +148,49 @@ Mais do que uma igreja, a Novo Tempo é uma família espiritual que continua flo
             </div>
         </section>
         
+
+        <section class="hSite">
+            <div class="container">
+              
+              <div class="texto">
+                <h3 class="sub-titulo">Surgimento do Site:</h3>
+                <h3 class="sub-titulo">Uma Jornada de Propósito e Colaboração</h3>
+                <p>Em 07/02/2025, uma data que ficará marcada em nossa trajetória, fomos abordados por um grupo de dedicados estudantes de Tecnologia da Informação  da <strong>Univesp</strong>  (Universidade Virtual do Estado de São Paulo), que nos convidaram a participar de seu projeto integrador III, a proposta inicial era [ <strong>Atostech</strong> -conectando a Igreja ao futuro].</p>
+                <p>Aceitamos prontamente o convite, movidos pelo desejo de contribuir com o crescimento e desenvolvimento acadêmico desses jovens talentos. Contudo, no decorrer do processo de desenvolvimento, percebemos que aquele encontro não havia sido mera coincidência.</p>
+                <p>Sentimos que Deus nos proporcionou, através desses estudantes, uma oportunidade singular de levar Seus ensinamentos a um público ainda mais vasto. Expressamos nossa profunda gratidão a Ele por colocar em nosso caminho essas pessoas talentosas, que com esmero e dedicação desenvolveram nossa página.</p>
+                
+
+                <p>
+  Para conhecer mais sobre essa inspiradora jornada,clique em.
+  <button (click)="mostrarAlunos = true" class="botao-link">👨‍🎓 Alunos</button>
+</p>
+
+<!-- O article só aparece quando mostrarAlunos for true -->
+@if (mostrarAlunos) {
+  <article class="alunos-box">
+  <p>
+    👨‍🎓 Alunos<br>
+    Adaildo S Da Silva,<br> Alyssa A Silva,<br>  Andressa R G Marques,<br>  Cristina F Silva,<br> 
+    Cicero M F Silva,<br>  Jefferson R Silva,<br>  Maria Ap C Santos,<br>  Vanderley F Magalhães.
+    <br><br>
+    Em 07 de fevereiro de 2025, tivemos a honra de dar início a uma jornada que ultrapassou os limites acadêmicos. Como estudantes de Tecnologia da Informação da Univesp, buscávamos aplicar na prática os conhecimentos adquiridos ao longo do curso, e encontramos na Igreja Novo Tempo uma parceira generosa e acolhedora.<br>
+
+O projeto, inicialmente batizado de "Atostech – Conectando a Igreja ao Futuro", era, para nós, uma oportunidade de desenvolver habilidades técnicas e realizar um trabalho significativo. No entanto, com o passar dos dias, percebemos que aquilo se tornava muito mais do que um simples projeto curricular.
+
+Fomos acolhidos com carinho, respeito e confiança. Cada reunião, cada troca de ideias, cada desafio superado nos aproximava de algo maior: um propósito que unia tecnologia e fé. Sentimos que Deus guiava cada passo, fortalecendo nossa missão de usar o conhecimento para servir, impactar e transformar.
+
+Agradecemos profundamente à Igreja Novo Tempo por abrir as portas e os corações para que esse trabalho florescesse. Levamos conosco não só o aprendizado técnico, mas também o exemplo de fé, generosidade e união. Que essa parceria continue inspirando outros alunos e comunidades, mostrando que, quando se caminha com propósito, o futuro se torna mais próximo — e mais iluminado.
+    
+    <!-- botão para fechar -->
+    <button (click)="mostrarAlunos = false" class="fechar-artigo">Fechar</button>
+  </p>
+</article>}
+
+              </div>
+            </div>
+          </section>
+
+         
+
     </div>
 </div>

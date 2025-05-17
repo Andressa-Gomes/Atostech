@@ -42,6 +42,8 @@
 p{
     font-size: 1.1rem;
     line-height: 1.5;
+    
+    
 
 }
 
@@ -141,6 +143,51 @@ h3{
 }
 
 
+
+.hSite {
+    padding: 40px;
+    background-color: #f6e4f14b;
+    border-top: 0.2rem solid  #58137350;
+     border-bottom: 0.1rem solid #58137350;
+     border-radius: 0.5rem;
+  }
+  
+  /* história site */
+
+.botao-link {
+
+     display: inline-block;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: #f4f4f4;
+    font-size: 15px;
+     padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+
+ 
+}
+.botao-link:hover{
+    background:rgb(22, 22, 197);
+}
+
+.fechar-artigo {
+ display: inline-block;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    font-size: 15px;
+     padding: 0.5rem;
+    text-decoration: none;
+   
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fechar-artigo:hover{
+    background:rgb(22, 22, 197);
+}
 
 /* Responsivo */
 @media (max-width: 768px) {

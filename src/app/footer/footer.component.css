@@ -3,20 +3,24 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: #B3E5FC; /* Pode ajustar conforme o tema da sua página */
     text-align: center;
-    width: 100%;
+}
+.estudantes{
+font-size: 2rem;
+    font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
+    
+
 }
 
 /* Rodapé */
 footer {
+  width: 100%; 
     background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
     color: white;
-    padding: 10px 0;
+    padding: 0.6rem;
     text-align: center;
-    margin: 0; /* Remove as margens laterais */
-    border-radius: 0; /* Remove arredondamento para alinhar com as bordas da tela */
-    width: 100%; /* Garante que ocupe toda a largura */
+   margin: 0;
+    
 }
 
 
@@ -79,6 +83,7 @@ footer ul {
 /* Media Queries para Responsividade */
 
 /* Para telas menores que 768px (tablets e dispositivos móveis em modo paisagem) */
+
 @media (max-width: 768px) {
     footer p ul li{
         font-size: 0.9rem;
@@ -91,17 +96,22 @@ footer ul {
 @media (max-width: 480px) {
     footer ul li a{
       width: 100%;
+    
     }
   
     footer p {
       font-size: 10px;
       margin: 5px;
     }
-  }
+    
 
-/* Para telas menores que 480px (smartphones) */
-@media (max-width: 480px) {
-    footer p lu li {
+footer p lu li {
         font-size: 0.8rem;
     }
-}
+    footer{
+       border-radius: 0;
+    }
+
+  }
+
+
