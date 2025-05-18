@@ -81,6 +81,9 @@ font-weight: 800;}
     color: white;
     border-radius: 8px;
   }
+    .agenda tbody button :hover {
+  background: #253056;
+}
   
   /* Responsividade para tablets */
   @media (max-width: 768px) {
