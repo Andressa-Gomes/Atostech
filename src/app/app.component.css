@@ -1,0 +1,19 @@
+/* Garante que o corpo e o html ocupem a altura total da tela */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Container principal do app */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Área do conteúdo principal */
+  .content {
+    flex: 1; /* Ocupa o espaço restante entre o header e o footer */
+    padding: 1rem; /* Ajuste opcional */
+  }
+  
