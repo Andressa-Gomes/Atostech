@@ -1,25 +1,29 @@
 const TerserPlugin = require('terser-webpack-plugin');
 
-module.exports = (config) => {
-  console.log('📦 Configuração Webpack original:', JSON.stringify(config, null, 2));
+module.exports = (config, options) => {
+  const isProd = options.configuration === 'production';
 
-  // Personalização da configuração
   config.optimization = {
     ...config.optimization,
-    minimize: true,
-    minimizer: [
-      new TerserPlugin({
-        parallel: false, // economiza RAM
-        terserOptions: {
-          compress: {
-            drop_console: true,
-          },
-        },
-      }),
-    ],
+    minimize: isProd, // ❗ só minimiza em produção
+    minimizer: isProd
+      ? [
+          new TerserPlugin({
+            parallel: true,
+            terserOptions: {
+              compress: {
+                drop_console: true,
+                pure_funcs: ['ngDevMode'], // remove ngDevMode só em prod
+              },
+              output: {
+                comments: false,
+              },
+            },
+          }),
+        ]
+      : [],
   };
 
-  // Opcional: desativar cache do webpack (em tempo de build)
   config.cache = false;
 
   return config;
