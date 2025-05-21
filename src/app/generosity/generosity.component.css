@@ -1,0 +1,202 @@
+
+
+
+/* Estilização da seção de doações */
+.doacao {
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    max-width: 100%;
+    background-color: #f6e4f14b;
+    border-top: 0.2rem solid  #58137350;
+    border-bottom: 0.1rem solid #58137350;
+    
+}
+
+ 
+
+
+
+.doacao h3 {
+   color:black;
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: 600;
+}
+
+
+
+
+   .titulo-pagina{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: black;
+     font-weight: 800;
+     margin-bottom: 20px;
+   }
+  
+   .sub-titulo {
+    color: #6d318c;
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+     font-weight: 600;
+    }
+
+.doacao p {
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.doacao ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.doacao li {
+    font-size: 16px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.qrcode {
+    width: 200px;
+    height: auto;
+    margin: 15px 0;
+    border: 2px solid #6d318c;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+a {
+    
+     display: inline-block;
+    width: 100%; /* Faz o botão ocupar toda a largura do container */
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    text-decoration: none;
+    padding: 10px 0; /* Ajuste para o botão ficar mais fino */
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    box-sizing: border-box; /* Garante que o padding não afete a largura do botão */
+}
+    
+
+
+.botao-doacao:hover {
+    background: #253056;
+}
+
+
+
+
+/* RESPONSIVIDADE PARA A SEÇÃO DE DOAÇÃO */
+@media (max-width: 768px) {
+    .doacao {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .titulo-pagina {
+        font-size: 1.6rem;
+        padding: 0 10px;
+        font-weight: 800;
+    }
+
+    .sub-titulo {
+        font-size: 1rem;
+        padding: 0 10px;
+        font-weight: 600;
+    }
+   }
+
+    .doacao p {
+        font-size: 1.3rem;
+    }
+
+    .doacao ul {
+        width: 100%;
+        text-align: left;
+    }
+
+    .doacao li {
+        font-size: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .qrcode {
+        width: 150px;
+        margin: 10px 0;
+    }
+
+    .botao-doacao {
+        font-size: 16px;
+        padding: 10px 16px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+@media (max-width: 480px) {
+    .doacao {
+        padding: 15px 12px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+  
+    }
+
+    .doacao p,
+    .doacao li {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+
+    .qrcode {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .botao-doacao {
+        font-size: 1rem;
+        padding: 10px 16px;
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .titulo {
+        font-size: 1.3rem;
+        padding: 0 10px;
+        font-weight: 800;
+    }
+
+    .sub-titulo {
+        font-size: 0.9rem;
+        padding: 0 10px;
+        font-weight: 500;
+    }
+   

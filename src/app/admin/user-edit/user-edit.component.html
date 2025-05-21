@@ -1,0 +1,39 @@
+
+
+<div class="usuarios-container">
+    <h2 class="titulo">Usuários</h2>
+    <section class="usuarios-container">
+
+    
+    <table class="usuarios-tabela">
+    
+
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Email</th>
+          <th>Perfil</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.name }}</td>
+          <td>{{ user.surname }}</td>
+          <td>{{ user.email }}</td>
+          <td>
+            <select [(ngModel)]="user.role" class="usuarios-select">
+              <option value="USER"><P>USER</P></option>
+              <option value="ADMIN">ADMIN</option>
+            </select>
+          </td>
+          <td>
+            <button class="btn-usuario" (click)="updateUser(user)">Atualizar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+     </section>
+  </div>

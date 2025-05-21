@@ -1,0 +1,233 @@
+/* Estilo específico para a página de curso */
+.course p, .course h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  .course-container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .body-global {
+    overflow-x: hidden;
+  }
+
+  .videos .course {
+    max-width: 100%;
+  }
+
+  .titulo {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size:1.6rem;
+    margin-bottom: 1rem;
+    color: black;
+   font-weight: 800;
+   margin-bottom: 20px;
+  }
+  
+  .titulo .icon {
+    display: inline;
+    font-size: 1.6rem;
+    line-height: 1;
+    vertical-align: middle;
+  }
+  
+  .titulo .title-text {
+    display: inline;
+    font-size: 1.6rem;
+    white-space: normal;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+.welcome p,
+.videos h3,
+.course h3,
+.course p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: 100%;
+}
+
+  
+/* Seção de descrição do curso */
+.welcome {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #f6e4f14b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-top: 0.2rem solid #58137350;
+    border-bottom: 0.1rem solid #58137350;
+    color: black;
+}
+
+.welcome p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+
+color: black;
+}
+
+/* Seção de vídeos do curso */
+.videos {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f6e4f14b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    border-top: 0.2rem solid #58137350;
+    border-bottom: 0.1rem solid #58137350;
+    border-radius: 1rem;
+}
+
+.videos .course {
+    padding: 15px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+     border-radius: 1rem;
+}
+
+.videos .course:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+   
+
+}
+
+.videos h3 {
+   text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+   font-weight: 600;
+}
+
+.videos h4 {
+   text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+   font-weight: 500;
+}
+
+.videos p {
+    font-size: 1.1rem;
+    color: black;
+}
+.videos h4:hover{
+    color: white;
+}
+
+/* Estilo base para os botões */
+.button-wrapper a,
+.button-wrapper button {
+    display: inline-block;
+    width: 100%; /* Faz o botão ocupar toda a largura do container */
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    text-decoration: none;
+    padding: 10px 0; /* Ajuste para o botão ficar mais fino */
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    box-sizing: border-box; /* Garante que o padding não afete a largura do botão */
+}
+
+/* Estilo específico para o botão de inscrição */
+.signup {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+}
+
+/* Hover para o botão */
+.button-wrapper button:hover {
+    background: #253056;
+     /* Cor no hover */
+}
+
+/* Responsividade - Telas pequenas */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .welcome,
+    .videos {
+        padding: 20px 15px;
+    }
+
+    .videos h3 {
+        font-size: 1.3rem;
+    }
+
+    .videos .course {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .button-wrapper .signup {
+        width: 100%;
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 1.3rem;
+        padding: 0 10px;
+        font-weight: 800;
+    }
+
+    .sub-titulo {
+        font-size: 1.1rem;
+        padding: 0 10px;
+        font-weight: 600;
+    }
+}
+@media (max-width: 480px) {
+ 
+
+.sub-titulo{
+  font-size: 0.8rem;
+  font-weight:100;
+}
+
+    .eventos p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        text-align: justify;
+    }
+
+    /* Agenda responsiva */
+    
+  
+
+
+   
+
+    .titulo {
+      font-size: 1.3rem;
+      padding: 0 10px;
+      font-weight: 800;
+  }
+
+  .sub-titulo {
+      font-size: 1.1rem;
+      padding: 0 10px;
+      font-weight: 600;
+  }
+ 
+ 
+  }

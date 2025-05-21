@@ -1,0 +1,156 @@
+
+  
+/* Estilo da Seção de Eventos */
+.eventos {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f6e4f14b;
+    border-top: 0.2rem solid  #58137350;
+     border-bottom: 0.1rem solid #58137350;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .titulo {
+    text-align: center;
+font-size: 1.8rem;
+margin-bottom: 1rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black;
+font-weight: 800;}
+
+.sub-titulo {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+ font-weight: 600;
+}
+  
+
+  
+  .eventos p {
+    font-size: 16px;
+    color:black;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  /* Estilo da Tabela */
+  .agenda {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .agenda thead {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    font-weight: bold;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+  
+  }
+  
+  .agenda th, .agenda td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+  }
+  
+  .agenda tbody tr:nth-child(even) {
+    background: #f2f2f2;
+  }
+  
+  .agenda tbody tr:hover {
+    background: #d6eaf8;
+    transition: 0.3s;
+  }
+
+  .agenda tbody button {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    transition: 0.3s;
+    padding: 5px;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  /* Responsividade para tablets */
+  @media (max-width: 768px) {
+    .eventos {
+        padding: 15px;
+    }
+  
+    .agenda th, .agenda td {
+        padding: 10px;
+        font-size: 14px;
+    }
+  
+    .eventos h2 {
+        font-size: 24px;
+    }
+  }
+  
+  /* Responsividade para telas menores (celulares) */
+  @media (max-width: 480px) {
+    .eventos {
+        width: 95%;
+        padding: 15px;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+
+.sub-titulo{
+  font-size: 0.8rem;
+  font-weight:100;
+}
+
+    .eventos p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        text-align: justify;
+    }
+
+    /* Agenda responsiva */
+    .agenda {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+
+    .agenda table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+
+    .agenda th,
+    .agenda td {
+        font-size: 1rem;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .titulo {
+      font-size: 1.3rem;
+      padding: 0 10px;
+      font-weight: 800;
+  }
+
+  .sub-titulo {
+      font-size: 1.1rem;
+      padding: 0 10px;
+      font-weight: 600;
+  }
+ 
+ 
+  }

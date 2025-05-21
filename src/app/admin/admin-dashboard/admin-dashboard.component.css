@@ -1,0 +1,111 @@
+.admin-section {
+  width: 100%;
+    background-color: #f6e4f14b;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 10px 0 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 0.2rem solid #58137350;
+    border-bottom: 0.1rem solid #58137350;
+    text-align: center;
+  }
+
+  /* Estilo base para os botões na seção de administração */
+.admin-actions button {
+    display: inline-block;
+    width: 100%; /* Faz o botão ocupar toda a largura do container */
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    text-decoration: none;
+    padding: 5px 0; /* Ajuste para o botão ficar mais fino */
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  .admin-actions button:hover {
+    background: #253056;
+    transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse */
+  }
+  
+  .admin-actions button:active {
+    transform: scale(0.98); /* Efeito de clique */
+  }
+  
+  
+  .admin-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .admin-actions .btn {
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .titulo {
+ font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size:1.6rem;
+    margin-bottom: 1rem;
+    color: black;
+   font-weight: 600;
+   margin-bottom: 20px;
+  }
+
+ .sub-titulo{
+ text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+ font-weight: 500;
+}
+
+  
+  
+ @media (max-width: 768px) {
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .sub-titulo {
+    font-size: 1.1rem;
+  }
+
+  .admin-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .main-global {
+    padding: 20px 15px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 1.3rem;
+  }
+
+  .sub-titulo {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}

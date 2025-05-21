@@ -1,0 +1,48 @@
+
+ <div class="container">
+<h2 class="titulo">Gestão do Curso</h2>
+<div class="course-management-container">
+
+
+    <h2 class="titulo-centralizado">Curso: {{ course.title }}</h2>
+   <h3 class="sub-titulo">Editar Descrição</h3>
+    <div class="course-description-section">
+      <label for="shortDescription">Descrição resumida do Curso</label>
+      <textarea id="shortDescription" [(ngModel)]="course.shortDescription"
+        placeholder="Digite a descrição resumida do curso..."></textarea>
+  
+      <label for="description">Descrição completa do Curso</label>
+      <textarea id="description" [(ngModel)]="course.description"
+        placeholder="Digite a descrição do curso..."></textarea>
+  
+      <div class="form-group">
+        <label class="checkbox-label">
+          <input type="checkbox" [(ngModel)]="course.isActive" name="isActive" />
+          <span>Curso Ativo</span>
+        </label>
+      </div>
+  
+      <div class="botoes-curso">
+        <button class="btn-save" (click)="updateCourseDetails()">Salvar Descrição</button>
+        <button class="btn-delete" (click)="deleteCourse(course.id)">Excluir Curso</button>
+      </div>
+    </div>
+  
+    <div class="course-videos-section">
+      <h3>Vídeos Atuais</h3>
+      <ul class="video-list">
+        <li *ngFor="let video of course?.videos" class="video-item">
+          {{ video.title }}
+          <button class="delete-video-btn" (click)="deleteVideo(video.id)">🗑️</button>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="add-video-section">
+      <h3>Adicionar Novos Vídeos</h3>
+      <input type="file" (change)="onVideoSelected($event)" multiple />
+      <button class="save-video-btn" (click)="saveVideos()">Salvar</button>
+    </div>
+  </div>
+  </div>
+  

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+  
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    font-style: 62.5%;
+  }
+
+.main-global {
+       font: 1em sans-serif;
+       padding: 40px 20px;
+       max-width: 1200px;
+       margin: 0 auto;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .main-global {
+        padding: 30px 15px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    .main-global {
+        padding: 20px 10px;
+    }
+}
+

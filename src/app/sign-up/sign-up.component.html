@@ -1,0 +1,74 @@
+<main>
+    <h2 class="sub-titulo">Criar Conta</h2>
+  
+    <section>
+      <h2>📝 Cadastro</h2>
+  
+      <form #f="ngForm" (ngSubmit)="onSubmit()">
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="name" [(ngModel)]="user.name" name="name" required />
+        </div>
+  
+        <div class="campo">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenome" [(ngModel)]="user.surname" name="surname" required />
+        </div>
+  
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            [(ngModel)]="user.email"
+            name="email"
+            required
+            [class.invalid]="!isEmailValid && user.email"
+          />
+          <p *ngIf="!isEmailValid && user.email" style="color: red;">E-mail inválido.</p>
+        </div>
+  
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input
+            type="password"
+            id="senha"
+            [(ngModel)]="user.password"
+            name="password"
+            required
+            [class.invalid]="!isPasswordStrong && user.password"
+          />
+          <p *ngIf="!isPasswordStrong && user.password" style="color: red;">
+            A senha deve ter pelo menos 8 caracteres, incluindo maiúsculas, minúsculas, números e caracteres especiais.
+          </p>
+        </div>
+  
+        <div class="campo">
+          <label for="confirmarSenha">Confirmar Senha</label>
+          <input
+            type="password"
+            id="confirmarSenha"
+            [(ngModel)]="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+          <p *ngIf="diffPassword" style="color: red;">As senhas não coincidem.</p>
+        </div>
+  
+        <button type="submit" [disabled]="diffPassword || !isEmailValid || !isPasswordStrong">Cadastrar</button>
+      </form>
+  
+      <!-- Alerta -->
+      <div
+        *ngIf="alertMessage"
+        class="alert"
+        [ngClass]="{
+          'alert-success': alertType === 'success',
+          'alert-error': alertType === 'error'
+        }"
+      >
+        {{ alertMessage }}
+      </div>
+    </section>
+  </main>
+  

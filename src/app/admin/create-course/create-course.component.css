@@ -1,0 +1,157 @@
+/* Container do formulário - estilo baseado na seção .eventos */
+.form-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #f6e4f14b;
+  border-top: 0.2rem solid #58137350;
+  border-bottom: 0.1rem solid #58137350;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.titulo{
+      text-align: center;
+font-size: 1.6rem;
+margin-bottom: 1rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black;
+font-weight: 600;
+margin-top: 2rem;
+}
+
+
+
+/* Estilo para os rótulos e grupos */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: block;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: black;
+}
+
+/* Campos de entrada e textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #581373;
+  outline: none;
+}
+
+/* Ícones */
+.icon-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px 0;
+  gap: 0;
+}
+
+.icon-option {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 8px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-option:hover {
+  border-color: #58137350;
+  background-color: #f6e4f14b;
+}
+
+.icon-option.selected {
+  border-color: #58137350;
+  background-color: #efcbe5d2;
+}
+
+/* Botão de salvar */
+button {
+  background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #253056;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  .titulo {
+      font-size: 1.3rem;
+      padding: 0 10px;
+      font-weight: 800;
+  }
+
+  .form-group label {
+    font-size: 1.1rem;
+      padding: 0 10px;
+      font-weight: 600;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    width: 95%;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .form-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .form-group label {
+    font-size: 0.95rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}

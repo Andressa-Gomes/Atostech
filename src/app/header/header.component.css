@@ -1,0 +1,151 @@
+/* Cabeçalho */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    width: 100%;
+    margin: 0;
+    border-radius: 0 0 1rem 1rem;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  /* Container para logo e título */
+  .titulo-pagina {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente todo o conteúdo */
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+    gap: 15px; /* Espaço entre logo e texto */
+    flex-wrap: wrap;
+  }
+  
+  /* Logo */
+  .logo img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+  }
+  
+  /* Navegação */
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.2rem;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover,:active {
+    color: #ffcc00;
+  }
+  
+
+
+/* Acessibilidade */
+
+
+.Ouvir {
+    padding: 0.2rem 0.8rem;
+    margin: 0.1rem;
+    font-size: 1rem;
+    color: #216fc2b3;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.Ouvir img {
+    background-color: #216fc2b3;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o botão */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.Ouvir img:hover {
+    transform: scale(1.2); /* Aumenta levemente o ícone ao passar o mouse */
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens no lado direito */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.Ouvir button:hover {
+    background-color: #004494; 
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+   color:white
+}
+
+.Ouvir button:active {
+    background-color: #004494; /* Cor de fundo ao clicar */
+}
+
+
+.acessibilidade select {
+    margin-right: 2rem;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+/* Para telas menores que 480px (celulares) */
+@media (max-width: 600px) {
+    .titulo-pagina {
+      flex-direction: column; /* Empilha logo e título */
+      text-align: center;
+      gap: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+  
+    .logo img {
+        width: 70px; /* Diminui o tamanho da logo no celular */
+        margin: 0;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    header nav ul li a {
+     
+      font-weight: 500;
+      line-height: 0.1rem;
+      margin: 0.1rem;
+    }
+   
+  }
+  

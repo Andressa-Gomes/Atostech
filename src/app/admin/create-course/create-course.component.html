@@ -1,0 +1,52 @@
+<!-- Formulário de criação/edição de cursos -->
+
+<h2 class="titulo">Adicionar Novo Curso</h2>
+<div class="form-container">
+
+  <form (ngSubmit)="onSubmit()" #courseForm="ngForm">
+      <div class="form-group">
+          <label for="title">Título do Curso</label>
+          <input
+              type="text"
+              id="title"
+              name="title"
+              [(ngModel)]="course.title"
+          />
+      </div>
+
+      <div class="form-group">
+          <label for="description">Descrição resumida do Curso</label>
+          <textarea
+              id="description"
+              name="description"
+              [(ngModel)]="course.shortDescription"
+          ></textarea>
+      </div>
+
+      <div class="form-group">
+          <label for="description">Descrição do Curso</label>
+          <textarea
+              id="description"
+              name="description"
+              [(ngModel)]="course.description"
+          ></textarea>
+      </div>
+
+      <!-- Seletor de Ícone -->
+      <div class="form-group">
+          <label>Escolher Ícone do Curso</label>
+          <div class="icon-options">
+              <span
+                  *ngFor="let icon of iconList"
+                  (click)="selectIcon(icon)"
+                  [class.selected]="icon === course.icon"
+                  class="icon-option"
+              >
+                  {{ icon }}
+              </span>
+          </div>
+      </div>
+
+      <button type="submit">Salvar Curso</button>
+  </form>
+</div>

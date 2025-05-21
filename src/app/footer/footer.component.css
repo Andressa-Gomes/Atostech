@@ -1,0 +1,117 @@
+#pageFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+.estudantes{
+font-size: 2rem;
+    font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
+    
+
+}
+
+/* Rodapé */
+footer {
+  width: 100%; 
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    padding: 0.6rem;
+    text-align: center;
+   margin: 0;
+    
+}
+
+
+footer p  {
+    font-size: 1rem;
+    font-family: "Roboto Serif", Arial, Helvetica, sans-serif;
+    
+}
+.retornar{
+    margin-top: 20px;
+    font-size: 1rem;
+    color: black;
+
+}
+
+#volta {
+    width: 100%px;
+    height: 20px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  
+  .midia-link-lista {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background 0.3s;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .midia-link-lista:hover {
+    background: #dbdd;
+  }
+  
+  .midia-link-lista li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .midia-link-lista img {
+    width: 20px;
+    height: 20px;
+  }
+  
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 768px (tablets e dispositivos móveis em modo paisagem) */
+
+@media (max-width: 768px) {
+    footer p ul li{
+        font-size: 0.9rem;
+        
+    }
+ 
+
+}
+
+@media (max-width: 480px) {
+    footer ul li a{
+      width: 100%;
+    
+    }
+  
+    footer p {
+      font-size: 10px;
+      margin: 5px;
+    }
+    
+
+footer p lu li {
+        font-size: 0.8rem;
+    }
+    footer{
+       border-radius: 0;
+    }
+
+  }
+
+

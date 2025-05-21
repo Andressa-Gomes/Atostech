@@ -1,0 +1,110 @@
+
+
+/* Seções */
+section {
+  
+    max-width: 800px;
+  margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f6e4f14b;
+    border-top: 0.2rem solid  #58137350;
+     border-bottom: 0.1rem solid #58137350;
+  
+}
+
+/* Parágrafos */
+p {
+    font-size: 16px;
+    color:black;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Estilização do mapa */
+.map-container {
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Botão do Google Maps */
+.button-container {
+    margin-top: 15px;
+}
+
+.map-button {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.map-button:hover {
+    background-color: #6d318c;
+}
+.main-global h2{
+    font-size: 1.8rem;
+ 
+}
+.titulo {
+     text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black;
+font-weight: 800;
+
+}
+
+.sub-titulo {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+ font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section {
+        max-width: 90%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+  
+
+    .map-button {
+        font-size: 1rem;
+        padding: 10px 16px;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+        display: block;
+        border-radius: 8px;
+    }
+}
+
+/* Centraliza o título e o parágrafo */
+.titulo-pagina, p {
+    text-align: center;
+}
+  .titulo {
+        font-size: 1.3rem;
+        padding: 0 10px;
+        font-weight: 600;
+    }
+
+    .sub-titulo {
+        font-size: 1.3rem;
+        padding: 0 10px;
+        font-weight: 500;
+    }
+

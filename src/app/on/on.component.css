@@ -1,0 +1,241 @@
+
+/* Seção de transmissões ao vivo */
+.live-transmission {
+    text-align: center;
+    color: black;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f6e4f14b;
+    border-top: 0.2rem solid  #58137350;
+    border-bottom: 0.1rem solid #58137350;
+}
+
+/* Títulos */
+.live-transmission h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Link estilizado */
+.live-link {
+    display: inline-block;
+    width: 100%;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.live-link:hover {
+    background: #253056;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Título de programação */
+.schedule h3 {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Vídeo responsivo */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: black;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Títulos principais */
+.titulo {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 800;
+}
+
+.sub-titulo {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 600;
+}
+
+/* ---------------------- */
+/* RESPONSIVIDADE */
+/* ---------------------- */
+@media (max-width: 768px) {
+    .live-transmission {
+        padding: 30px 15px;
+    }
+
+    .live-transmission h2 {
+        font-size: 20px;
+    }
+
+    .live-link {
+        font-size: 0.95rem;
+        padding: 8px 0;
+    }
+
+    .schedule h3 {
+        font-size: 1.1rem;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .sub-titulo {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .live-transmission {
+        padding: 25px 10px;
+    }
+
+    .live-transmission h2 {
+        font-size: 18px;
+    }
+
+    .live-link {
+        font-size: 0.9rem;
+        padding: 7px 0;
+    }
+
+    .schedule h3 {
+        font-size: 1rem;
+    }
+
+    .titulo {
+        font-size: 1.3rem;
+    }
+
+    .sub-titulo {
+        font-size: 1rem;
+    }
+}
+
+
+/* Responsividade */
+
+/* Telas grandes (até 1280px) */
+@media (max-width: 1280px) {
+    .live-transmission {
+        max-width: 95%;
+        padding: 35px 20px;
+    }
+
+    .live-transmission h2 {
+        font-size: 24px;
+    }
+
+    .live-link {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+   
+}
+
+/* Telas médias (até 1024px) */
+@media (max-width: 1024px) {
+    .live-transmission {
+        max-width: 92%;
+        padding: 30px 20px;
+    }
+
+    
+    }
+
+    .live-link {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    
+
+
+/* Telas pequenas (até 768px) */
+@media (max-width: 768px) {
+    .live-transmission {
+        max-width: 90%;
+        padding: 30px 15px;
+    }
+
+    .live-transmission h2 {
+        font-size: 20px;
+    }
+
+      .live-link {
+        font-size: 0.95rem;
+        padding: 8px 0;
+    }
+
+    .schedule h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+    .live-transmission {
+        padding: 20px 10px;
+    }
+
+    .live-transmission h2 {
+        font-size: 18px;
+    }
+
+  
+  
+    .live-link {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+
+    .schedule h3 {
+        font-size: 0.9rem;
+    }
+        .titulo {
+        font-size: 1.3rem;
+        padding: 0 10px;
+        font-weight: 800;
+    }
+
+    .sub-titulo {
+        font-size: 1rem;
+        padding: 0 10px;
+        font-weight: 600;
+    }
+    }
+
+   
