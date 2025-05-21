@@ -169,7 +169,7 @@ h3{
  
 }
 .botao-link:hover{
-    background:rgb(22, 22, 197);
+    background: #253056;
 }
 
 .fechar-artigo {
@@ -186,8 +186,9 @@ h3{
 }
 
 .fechar-artigo:hover{
-    background:rgb(22, 22, 197);
+    background: #253056;
 }
+
 
 /* Responsivo */
 @media (max-width: 768px) {
