@@ -77,12 +77,11 @@ header {
     font-size: 1rem;
     color: black;
     border: none;
-   
-
     background-color: white;
     cursor: pointer;
     border-radius: 8px;
     transition: 0.3s;
+    line-height: center;
 }
 
 
@@ -117,7 +116,7 @@ header {
 
 
 .acessibilidade select {
-    margin-right: 2rem;
+    margin-right: -1rem;
     padding: 5px;
     font-size: 1rem;
     border: 1px solid #ddd;
