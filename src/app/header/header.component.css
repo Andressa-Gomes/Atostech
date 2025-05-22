@@ -70,16 +70,21 @@ header {
 /* Acessibilidade */
 
 
-.Ouvir {
+.Ouvir  button {
+ 
     padding: 0.2rem 0.8rem;
-    margin: 0.1rem;
+    margin: 0.2rem;
     font-size: 1rem;
-    color: #216fc2b3;
+    color: black;
     border: none;
+   
+
+    background-color: white;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: 0.3s;
 }
+
 
 .Ouvir img {
     background-color: #216fc2b3;
@@ -110,12 +115,13 @@ header {
 }
 
 
+
 .acessibilidade select {
     margin-right: 2rem;
     padding: 5px;
     font-size: 1rem;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 8px;
   }
 
 /* Para telas menores que 480px (celulares) */

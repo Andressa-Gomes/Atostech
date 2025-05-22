@@ -77,7 +77,13 @@ h2 {
     border-radius: 15px;
     text-align: center;
 }
+.live-link:hover {
+  background: #253056;
+}
 
+.formulario-link a:hover{
+  background: #253056;
+}
 /* Estilo para a seção "Queremos te conhecer" */
 .know-us {
   text-align: center; /* Centraliza o texto horizontalmente */
